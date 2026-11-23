@@ -4,7 +4,7 @@ Usage: python3 vahan_fetch.py OUT_DIR
 Queries the public report view: two-wheeler vehicle classes, electric fuels, month-wise,
 by Maker and by State, one calendar year per request. Standard library only.
 """
-import html, http.cookiejar, re, sys, time, urllib.parse, urllib.request
+import html, http.cookiejar, os, re, sys, time, urllib.parse, urllib.request
 
 URL = "https://vahan.parivahan.gov.in/vahan4dashboard/vahan/view/reportview.xhtml"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) e2w-dashboard/1.0"
@@ -23,6 +23,12 @@ def get(url, data=None, ajax=False):
         req.add_header("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
     with op.open(req, timeout=90) as r:
         return r.read().decode("utf-8", "ignore")
+
+def state_codes():
+    """Vahan state codes and display names from the report page's state list."""
+    page = html.unescape(get(URL))
+    sel = re.search(r'<select id="j_idt36_input"[^>]*>(.*?)</select>', page, re.S).group(1)
+    return [(c, state_name(re.sub(r"\(\d+\)$", "", n))) for c, n in re.findall(r'<option value="([^"]+)"[^>]*>([^<]+)</option>', sel) if c != "-1"]
 
 class Session:
     """One browser-like session on the report page. ViewState is refreshed from every reply."""
@@ -49,8 +55,8 @@ class Session:
             self.vs = m.group(1)
         return x
 
-    def report(self, y_axis, year, fuels, categories):
-        self.fields = {"j_idt25_input": "A", "j_idt36_input": "-1", "selectedRto_input": "-1",
+    def report(self, y_axis, year, fuels, categories, state="-1"):
+        self.fields = {"j_idt25_input": "A", "j_idt36_input": state, "selectedRto_input": "-1",
                        "yaxisVar_input": y_axis, "xaxisVar_input": "Month Wise",
                        "selectedYearType_input": "C", "selectedYear_input": str(year)}
         self.post(self.main_btn, "VhCatg norms fuel VhClass combTablePnl groupingTable msg vhCatgPnl", {self.main_btn: self.main_btn})
@@ -136,6 +142,43 @@ def month_cols(head, row):
     vals = row[2:2 + len(months)]
     return list(zip(months, vals))
 
+def maker_by_state(out, cache_dir, first_year=2021):
+    """e2W registrations by brand x state x month. Years before last year are cached in cache_dir and not re-pulled."""
+    import csv, datetime, os
+    today = datetime.date.today()
+    cur = f"{today.year}-{today.month:02d}"
+    os.makedirs(cache_dir, exist_ok=True)
+    codes = state_codes()
+    rows = []
+    for year in range(first_year, today.year + 1):
+        cache = f"{cache_dir}/oem_state_{year}.csv"
+        if year < today.year - 1 and os.path.exists(cache):
+            rows += list(csv.reader(open(cache)))[1:]
+            continue
+        yrows = []
+        for code, st in codes:
+            for attempt in range(3):
+                try:
+                    head, data = Session().report("Maker", year, EV_FUELS, TWO_W_CATEGORIES, state=code); break
+                except Exception as e:
+                    print("retry", year, code, e, file=sys.stderr); time.sleep(5)
+            else:
+                raise SystemExit(f"Vahan query failed: {year} {code}")
+            agg = {}
+            for row in data:
+                for mon, v in month_cols(head, row):
+                    m = f"{year}-{MONTHS.index(mon) + 1:02d}"
+                    if m >= "2021-04" and num(v):
+                        k = (m, brand(row[1].strip())); agg[k] = agg.get(k, 0) + num(v)
+            yrows += [[m, fy_of(m), st, b, u, 1 if m == cur else 0] for (m, b), u in sorted(agg.items())]
+            print(year, code, len(data), "makers", file=sys.stderr)
+        with open(cache, "w", newline="") as f:
+            w = csv.writer(f, lineterminator="\n"); w.writerow(["month", "fy", "state", "oem", "units", "partial"]); w.writerows(yrows)
+        rows += yrows
+    with open(f"{out}/oem_state_monthly.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n"); w.writerow(["month", "fy", "state", "oem", "units", "partial"])
+        w.writerows(sorted(rows, key=lambda r: (r[0], r[2], r[3])))
+
 def main(out, first_year=2021):
     import csv, datetime
     today = datetime.date.today()
@@ -171,6 +214,10 @@ def main(out, first_year=2021):
             e = sum(v for (mm, _), v in ev_state.items() if mm == m)
             t = sum(v for (mm, _), v in all_state.items() if mm == m)
             w.writerow([m, fy_of(m), e, t, 1 if m == cur else 0])
+    with open(f"{out}/state_monthly.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n"); w.writerow(["month", "fy", "state", "e2w_units", "total_2w_units", "partial"])
+        for (m, st), t in sorted(all_state.items()):
+            w.writerow([m, fy_of(m), st, ev_state.get((m, st), 0), t, 1 if m == cur else 0])
     with open(f"{out}/oem_monthly.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n"); w.writerow(["month", "fy", "oem", "units", "partial"])
         for (m, b), v in sorted(oem.items()):
@@ -191,4 +238,6 @@ def main(out, first_year=2021):
     print("wrote", out, "through", cur, file=sys.stderr)
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else ".")
+    out = sys.argv[1] if len(sys.argv) > 1 else "."
+    main(out)
+    maker_by_state(out, os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache"))

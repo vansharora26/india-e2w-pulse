@@ -73,6 +73,25 @@ if old:
              if k < cutoff and k in by_month and abs(int(by_month[k]["e2w_units"]) - prev[k]) > 0.02 * prev[k]]
     add("History stable vs previous pull (older months ±2%)", "FAIL" if moved else "PASS", "; ".join(moved[:5]) or f"months before {cutoff} unchanged within 2%")
 
+# 9. state data adds up to All India, and makers within each state add up to the state
+import os
+if os.path.exists(f"{new}/state_monthly.csv") and os.path.exists(f"{new}/oem_state_monthly.csv"):
+    sm = read(new, "state_monthly.csv"); osm = read(new, "oem_state_monthly.csv")
+    st_tot = {}
+    for r in sm:
+        st_tot[r["month"]] = st_tot.get(r["month"], 0) + int(r["e2w_units"])
+    off = [k for k, v in st_tot.items() if k in by_month and abs(v - int(by_month[k]["e2w_units"])) > max(50, 0.01 * v)]
+    add("States add up to All India (±1%)", "FAIL" if off else "PASS", ", ".join(off[:6]) or "all months")
+    ms = {}
+    for r in osm:
+        ms[(r["month"], r["state"])] = ms.get((r["month"], r["state"]), 0) + int(r["units"])
+    big = [(k, int(r["e2w_units"])) for r in sm for k in [(r["month"], r["state"])] if int(r["e2w_units"]) >= 500]
+    bad = [f"{k[1]} {k[0]}" for k, v in big if abs(ms.get(k, 0) - v) > 0.03 * v]
+    add("Makers add up to each state (±3%)", "FAIL" if len(bad) > len(big) * 0.02 else ("WARN" if bad else "PASS"),
+        f"{len(big) - len(bad)} of {len(big)} state-months match" + (f"; e.g. {', '.join(bad[:3])}" if bad else ""))
+else:
+    add("State drill-down files present", "FAIL", "state_monthly.csv or oem_state_monthly.csv missing")
+
 stamp = datetime.datetime.now().astimezone().isoformat(timespec="minutes")
 with open(f"{new}/checks.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=["check", "status", "detail", "run_at"], lineterminator="\n")

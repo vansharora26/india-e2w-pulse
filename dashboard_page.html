@@ -34,7 +34,14 @@
   .mk-title em { font-style: italic; color: var(--mk-cyan); }
   .mk-lede { margin: 12px 0 0; max-width: 60ch; font-size: 1.05rem; line-height: 1.55; color: #d7e2ee; }
   .mk-lede b { color: var(--mk-ink); font-weight: 600; font-variant-numeric: tabular-nums; }
-  .mk-period { display: grid; gap: 6px; justify-self: end; width: min(100%, 320px); font-size: 11px; color: var(--mk-ink-2); text-transform: uppercase; letter-spacing: .12em; font-weight: 600; }
+  .mk-controls { display: grid; gap: 12px; justify-self: end; width: min(100%, 320px); }
+  .mk-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; font-size: 13px; color: var(--mk-ink-2); min-height: 30px; }
+  .mk-crumbs button { font: inherit; cursor: pointer; border-radius: 999px; padding: 4px 12px; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.06); color: var(--mk-ink); }
+  .mk-crumbs button:hover, .mk-crumbs button:focus-visible { background: rgba(255,255,255,.14); outline: none; }
+  .mk-crumbs .here { color: var(--mk-cyan); font-weight: 600; }
+  .mk-scope { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: color-mix(in srgb, var(--mk-c1) 14%, transparent); color: var(--color-fg); letter-spacing: .06em; }
+  .mk-scope:empty { display: none; }
+  .mk-period { display: grid; gap: 6px; width: 100%; font-size: 11px; color: var(--mk-ink-2); text-transform: uppercase; letter-spacing: .12em; font-weight: 600; }
   .mk-period .dash-select { width: 100%; text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 500; color: var(--mk-ink); background-color: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.22); border-radius: 8px; color-scheme: dark; }
   .mk-period .dash-select:focus-visible { outline: 2px solid var(--mk-cyan); outline-offset: 2px; }
 
@@ -110,6 +117,11 @@
   .mk-map text { font-family: var(--font-anthropic-sans); }
   .mk-scale { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--color-fg-muted); }
   .mk-scale i { width: 120px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, color-mix(in srgb, var(--mk-c1) 12%, var(--color-panel)), var(--mk-c1)); }
+  .mk-row.click { cursor: pointer; border-radius: 6px; margin: 0 -6px; padding: 2px 6px; }
+  .mk-row.click:hover, .mk-row.click:focus-visible { background: color-mix(in srgb, var(--mk-c1) 8%, transparent); outline: none; }
+  .mk-row.sel { background: color-mix(in srgb, var(--mk-c1) 16%, transparent); }
+  .mk-map g.t { cursor: pointer; outline: none; }
+  .mk-map g.t:focus-visible rect.hit { stroke: var(--color-fg); stroke-width: 2; }
   .mk-st .mk-rows-head, .mk-st .mk-row { grid-template-columns: 8rem minmax(0, 1fr) 4.4rem 3.6rem; }
 
   .mk-tablewrap { overflow-x: auto; min-width: 0; }
@@ -129,7 +141,7 @@
 
   @media (max-width: 960px) {
     .mk-grid, .mk-headline { grid-template-columns: minmax(0, 1fr); }
-    .mk-period { justify-self: start; }
+    .mk-controls { justify-self: start; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); width: 100%; }
     .mk-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 480px) {
@@ -150,8 +162,51 @@
     <div class="mk-headline">
       <div>
         <h1 class="mk-title">India <em>e2W</em> Pulse</h1>
-        <p class="mk-lede" data-read lang="en">In <b data-draw="lede-period" data-source="kpi" data-field="period_label" data-row="0">—</b>, India registered <b><span data-draw="lede-units" data-source="kpi" data-field="e2w_lakh" data-row="0">—</span> lakh</b> electric two-wheelers, <b><span data-draw="lede-pen" data-source="kpi" data-field="pen_pct" data-row="0">—</span>%</b> of all two-wheelers. <b data-draw="lede-leader" data-source="kpi" data-field="leader" data-row="0">—</b> leads with a <b><span data-draw="lede-share" data-source="kpi" data-field="leader_share_pct" data-row="0">—</span>%</b> share.</p>
+        <div class="mk-crumbs" data-draw="crumbs"></div>
+        <p class="mk-lede" data-read lang="en">In <b data-draw="lede-period" data-source="kpi" data-field="period_label" data-row="0">—</b>, <span data-draw="lede-scope">India</span> registered <b data-draw="lede-units" data-source="kpi" data-field="e2w_units" data-row="0">—</b> electric two-wheelers, <b><span data-draw="lede-pen" data-source="kpi" data-field="pen_pct" data-row="0">—</span>%</b> of all two-wheelers. <b data-draw="lede-leader" data-source="kpi" data-field="leader" data-row="0">—</b> leads with a <b><span data-draw="lede-share" data-source="kpi" data-field="leader_share_pct" data-row="0">—</span>%</b> share.</p>
       </div>
+      <div class="mk-controls">
+      <label class="mk-period" for="mk-state-select">Region
+        <select class="dash-select" id="mk-state-select" aria-label="Region">
+          <option value="">All India</option>
+          <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Dadra &amp; Nagar Haveli and Daman &amp; Diu">Dadra &amp; Nagar Haveli and Daman &amp; Diu</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Lakshadweep">Lakshadweep</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Puducherry">Puducherry</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+        </select>
+      </label>
       <label class="mk-period" for="mk-period-select">Period
         <select class="dash-select" id="mk-period-select" aria-label="Period">
           <option value="FY27">FY27 to date · Apr–Oct 2026</option>
@@ -163,12 +218,13 @@
           <option value="ALL">All months · Apr 2021 – Oct 2026</option>
         </select>
       </label>
+      </div>
     </div>
 
     <section class="mk-kpis" id="kpis" aria-label="Headline figures">
       <div class="mk-kpi" id="kpi-volume">
         <span class="mk-kpi-label">e2W registrations</span>
-        <span class="mk-kpi-value"><span data-draw="k-units" data-source="kpi" data-field="e2w_lakh" data-row="0">—</span><small>lakh</small></span>
+        <span class="mk-kpi-value"><span data-draw="k-units" data-source="kpi" data-field="e2w_units" data-row="0">—</span><small data-draw="k-units-unit">lakh</small></span>
         <span class="mk-delta" data-draw="k-units-d">—</span>
         <div class="mk-spark" data-draw="spark-units" data-source="monthly"></div>
       </div>
@@ -196,7 +252,7 @@
   <div class="mk-grid">
     <section class="mk-card" id="exhibit-volume">
       <div class="mk-ex-head">
-        <span class="mk-ex-num">Exhibit 1</span>
+        <span class="mk-ex-num">Exhibit 1 <span class="mk-scope" data-draw="scope-tag"></span></span>
         <h2 class="mk-ex-title">Registrations kept climbing through two subsidy cuts, with festive months setting each new peak</h2>
         <p class="mk-ex-sub">Monthly e2W registrations (bars, lakh) and EV share of all two-wheelers (line, %). Selected period in blue.</p>
       </div>
@@ -212,7 +268,7 @@
 
     <section class="mk-card" id="exhibit-waffle">
       <div class="mk-ex-head">
-        <span class="mk-ex-num">Exhibit 2</span>
+        <span class="mk-ex-num">Exhibit 2 <span class="mk-scope" data-draw="scope-tag"></span></span>
         <h2 class="mk-ex-title">Electric is still a small slice of every 100 two-wheelers sold</h2>
         <p class="mk-ex-sub">Each square is 1% of two-wheeler registrations in the selected period</p>
       </div>
@@ -228,8 +284,8 @@
   <div class="mk-grid">
     <section class="mk-card" id="exhibit-share-trend">
       <div class="mk-ex-head">
-        <span class="mk-ex-num">Exhibit 3</span>
-        <h2 class="mk-ex-title">Incumbents TVS, Bajaj and Hero have taken the market from the start-ups that opened it</h2>
+        <span class="mk-ex-num">Exhibit 3 <span class="mk-scope" data-draw="scope-tag"></span></span>
+        <h2 class="mk-ex-title">How the maker mix has shifted, quarter by quarter</h2>
         <p class="mk-ex-sub">Share of e2W registrations per quarter (100% = all e2W that quarter). The eight makers that have led the market are named; River, BGauss, Pure EV and the rest are in grey.</p>
       </div>
       <div class="mk-chart" data-draw="share-trend" data-source="share_trend"></div>
@@ -238,7 +294,7 @@
 
     <section class="mk-card" id="exhibit-oem">
       <div class="mk-ex-head">
-        <span class="mk-ex-num">Exhibit 4</span>
+        <span class="mk-ex-num">Exhibit 4 <span class="mk-scope" data-draw="scope-tag"></span></span>
         <h2 class="mk-ex-title">Top 15 makers</h2>
         <p class="mk-ex-sub">Share in the selected period; change in percentage points vs the same months a year earlier. 326 Vahan legal entities grouped into brands.</p>
       </div>
@@ -254,7 +310,7 @@
       <div class="mk-ex-head">
         <span class="mk-ex-num">Exhibit 5</span>
         <h2 class="mk-ex-title">Adoption is concentrated in the south and west; the Hindi belt lags</h2>
-        <p class="mk-ex-sub">EV share of two-wheeler registrations by state, selected financial year. Tiles are placed roughly by geography.</p>
+        <p class="mk-ex-sub">EV share of two-wheeler registrations by state, selected financial year. Tiles are placed roughly by geography. <b>Click a state to drill into it.</b></p>
       </div>
       <div class="mk-scale"><span>Lower</span><i></i><span>Higher penetration</span></div>
       <div class="mk-map" data-draw="tile-map" data-source="state_view"></div>
@@ -265,7 +321,7 @@
       <div class="mk-ex-head">
         <span class="mk-ex-num">Exhibit 6</span>
         <h2 class="mk-ex-title">Top 15 states by volume</h2>
-        <p class="mk-ex-sub">e2W registrations and penetration, selected financial year</p>
+        <p class="mk-ex-sub">e2W registrations and penetration, selected financial year. Click a state to drill into it.</p>
       </div>
       <div>
         <div class="mk-rows-head" aria-hidden="true"><span>State</span><span></span><span>Units</span><span>Pen.</span></div>
@@ -276,7 +332,7 @@
 
   <section class="mk-card" id="exhibit-check">
     <div class="mk-ex-head">
-      <span class="mk-ex-num">Exhibit 7</span>
+      <span class="mk-ex-num">Exhibit 7 <span class="mk-scope">All India</span></span>
       <h2 class="mk-ex-title">How these numbers are checked</h2>
       <p class="mk-ex-sub">Telangana registrations moved onto Vahan late, so most published full-year totals leave them out. The last two columns remove Telangana from this dashboard's totals for a like-for-like check. Recent months also run slightly higher here because Vahan keeps adding late registrations.</p>
     </div>
@@ -359,20 +415,26 @@
   document.querySelectorAll('#mk-period-select').forEach((sel) => {
     sel.addEventListener('change', () => dash.setParams({ period: sel.value }));
   });
+  document.querySelectorAll('#mk-state-select').forEach((sel) => {
+    sel.addEventListener('change', () => dash.setParams({ state: sel.value }));
+  });
+  E.setState = (s) => dash.setParams({ state: (dash.params().state || '') === s ? '' : s });
   dash.onData(() => {
-    const p = dash.params().period || 'FY27';
+    const p = dash.params().period || 'FY27', st = dash.params().state || '';
     document.querySelectorAll('#mk-period-select').forEach((sel) => { if (document.activeElement !== sel) sel.value = p; });
+    document.querySelectorAll('#mk-state-select').forEach((sel) => { if (document.activeElement !== sel) sel.value = st; });
   });
 
   // ---------- calculations ----------
   dash.calc('kpi', {
     title: 'Headline figures for the selected period',
     description: 'e2W units, penetration, leader and top-4 share for the chosen period, compared with the same months a year earlier.',
-    inputs: ['monthly', 'oem_monthly'],
-    fn: (monthly_all, oem_all) => {
-      // month-to-date rows are left out so comparisons use whole months
-      const monthly = monthly_all.filter((r) => String(r.partial) !== '1');
-      const oem_monthly = oem_all.filter((r) => String(r.partial) !== '1');
+    inputs: ['monthly', 'oem_monthly', 'state_monthly', 'oem_state_monthly'],
+    fn: (monthly_in, oem_in, state_monthly, oem_state_monthly) => {
+      // All India, or one state when a region is picked; month-to-date rows are left out so comparisons use whole months
+      const st = dash.params().state || '';
+      const monthly = (st ? state_monthly.filter((r) => r.state === st) : monthly_in).filter((r) => String(r.partial) !== '1');
+      const oem_monthly = (st ? oem_state_monthly.filter((r) => r.state === st) : oem_in).filter((r) => String(r.partial) !== '1');
       const p = dash.params().period || 'FY27';
       const allMonths = monthly.map((r) => r.month);
       const cur = p === 'ALL' ? allMonths : monthly.filter((r) => r.fy === p).map((r) => r.month);
@@ -397,19 +459,19 @@
       const s = shares(cur), ps = hasPrev ? shares(prev) : [];
       const top4 = s.slice(0, 4).reduce((a, x) => a + x[1], 0);
       const ptop4 = ps.slice(0, 4).reduce((a, x) => a + x[1], 0);
-      const leaderPrev = ps.find((x) => x[0] === s[0][0]);
+      const leaderPrev = s.length ? ps.find((x) => x[0] === s[0][0]) : null;
       const r1 = (x) => Math.round(x * 10) / 10;
       return [{
         period_label: lab(cur),
         cmp_label: hasPrev ? lab(prev) : '',
         e2w_units: e,
         e2w_lakh: r1(e / 1e5),
-        e2w_yoy_pct: hasPrev ? r1((e / pe - 1) * 100) : null,
-        pen_pct: r1((e / t) * 100),
-        pen_change_pp: hasPrev ? r1((e / t - pe / pt) * 100) : null,
-        leader: s[0][0],
-        leader_share_pct: r1(s[0][1]),
-        leader_prev: hasPrev ? ps[0][0] : '',
+        e2w_yoy_pct: hasPrev && pe ? r1((e / pe - 1) * 100) : null,
+        pen_pct: t ? r1((e / t) * 100) : 0,
+        pen_change_pp: hasPrev && pt && t ? r1((e / t - pe / pt) * 100) : null,
+        leader: s.length ? s[0][0] : '—',
+        leader_share_pct: s.length ? r1(s[0][1]) : 0,
+        leader_prev: hasPrev && ps.length ? ps[0][0] : '',
         leader_change_pp: hasPrev && leaderPrev ? r1(s[0][1] - leaderPrev[1]) : null,
         top4_share_pct: r1(top4),
         top4_change_pp: hasPrev ? r1(top4 - ptop4) : null,
@@ -420,9 +482,10 @@
   dash.calc('oem_share', {
     title: 'Manufacturer share in the selected period',
     description: 'Each manufacturer’s share of e2W registrations, and its change against the same months a year earlier.',
-    inputs: ['oem_monthly'],
-    fn: (oem_all) => {
-      const oem_monthly = oem_all.filter((r) => String(r.partial) !== '1');
+    inputs: ['oem_monthly', 'oem_state_monthly'],
+    fn: (oem_in, oem_state_monthly) => {
+      const st = dash.params().state || '';
+      const oem_monthly = (st ? oem_state_monthly.filter((r) => r.state === st) : oem_in).filter((r) => String(r.partial) !== '1');
       const p = dash.params().period || 'FY27';
       const allMonths = [...new Set(oem_monthly.map((r) => r.month))];
       const cur = p === 'ALL' ? allMonths : [...new Set(oem_monthly.filter((r) => r.fy === p).map((r) => r.month))];
@@ -453,9 +516,10 @@
   dash.calc('share_trend', {
     title: 'Manufacturer share by quarter',
     description: 'Quarterly share of e2W registrations by manufacturer, complete quarters only.',
-    inputs: ['oem_monthly'],
-    fn: (oem_all) => {
-      let oem_monthly = oem_all.filter((r) => String(r.partial) !== '1');
+    inputs: ['oem_monthly', 'oem_state_monthly'],
+    fn: (oem_in, oem_state_monthly) => {
+      const st = dash.params().state || '';
+      let oem_monthly = (st ? oem_state_monthly.filter((r) => r.state === st) : oem_in).filter((r) => String(r.partial) !== '1');
       const named = ['TVS', 'Bajaj', 'Ather', 'Ola Electric', 'Hero (Vida)', 'Greaves (Ampere)', 'Hero Electric', 'Okinawa'];
       oem_monthly = oem_monthly.map((r) => ({ ...r, oem: named.includes(r.oem) ? r.oem : 'All other makers' }));
       const q = (m) => { const [y, mo] = m.split('-').map(Number); return `${y}-${String(Math.floor((mo - 1) / 3) * 3 + 1).padStart(2, '0')}`; };
@@ -471,6 +535,16 @@
       const out = [];
       full.forEach((k) => oems.forEach((oem) => out.push({ quarter: k, oem, share_pct: Math.round(((units[k + '|' + oem] || 0) / tot[k]) * 1000) / 10 })));
       return out;
+    },
+  });
+
+  dash.calc('series', {
+    title: 'Monthly registrations for the selected region',
+    description: 'Monthly e2W and all two-wheeler registrations, All India or one state.',
+    inputs: ['monthly', 'state_monthly'],
+    fn: (monthly, state_monthly) => {
+      const st = dash.params().state || '';
+      return st ? state_monthly.filter((r) => r.state === st) : monthly;
     },
   });
 
@@ -553,11 +627,28 @@
   const numDraw = (field, dec, key) => (el) => { const r = kpiRow(); if (!r || r[field] == null) { el.textContent = '—'; return; } countTo(el, r[field], dec, key); };
   const txtDraw = (field) => (el) => { const r = kpiRow(); el.textContent = r && r[field] != null ? String(r[field]) : '—'; };
   dash.draw('lede-period', txtDraw('period_label'));
-  dash.draw('lede-units', (el) => { const r = kpiRow(); el.textContent = r ? r.e2w_lakh.toFixed(1) : '—'; });
+  dash.draw('lede-scope', (el) => { el.textContent = dash.params().state || 'India'; });
+  dash.draw('scope-tag', (el) => { el.textContent = dash.params().state || ''; });
+  dash.draw('crumbs', (el) => {
+    const st = dash.params().state || '';
+    el.replaceChildren();
+    if (!st) { const s = document.createElement('span'); s.textContent = 'All India · click a state on the map or pick a region to drill down'; el.appendChild(s); return; }
+    const b = document.createElement('button'); b.type = 'button'; b.textContent = '← All India'; b.onclick = () => dash.setParams({ state: '' });
+    const sep = document.createElement('span'); sep.textContent = '›';
+    const here = document.createElement('span'); here.className = 'here'; here.textContent = st;
+    el.append(b, sep, here);
+  });
+  E.volText = (r) => (r.e2w_units >= 1e5 ? `${r.e2w_lakh.toFixed(1)} lakh` : E.inr.format(r.e2w_units));
+  dash.draw('lede-units', (el) => { const r = kpiRow(); el.textContent = r ? E.volText(r) : '—'; });
   dash.draw('lede-pen', (el) => { const r = kpiRow(); el.textContent = r ? r.pen_pct.toFixed(1) : '—'; });
   dash.draw('lede-leader', txtDraw('leader'));
   dash.draw('lede-share', (el) => { const r = kpiRow(); el.textContent = r ? r.leader_share_pct.toFixed(1) : '—'; });
-  dash.draw('k-units', numDraw('e2w_lakh', 1, 'units'));
+  dash.draw('k-units', (el) => {
+    const r = kpiRow(); if (!r) { el.textContent = '—'; return; }
+    if (r.e2w_units >= 1e5) countTo(el, r.e2w_lakh, 1, 'units');
+    else { E.anim.units = (E.anim.units || 0) + 1; el.textContent = E.inr.format(r.e2w_units); }
+  });
+  dash.draw('k-units-unit', (el) => { const r = kpiRow(); el.textContent = r && r.e2w_units < 1e5 ? 'units' : 'lakh'; });
   dash.draw('k-pen', numDraw('pen_pct', 1, 'pen'));
   dash.draw('k-leader', txtDraw('leader'));
   dash.draw('k-top4', numDraw('top4_share_pct', 1, 'top4'));
@@ -620,17 +711,19 @@
     }
   };
   const monthlyRows = () => {
-    const m = dash.data('monthly');
+    const m = dash.data('series');
     return m.status === 'ok' ? m.data.map((r) => ({ month: r.month, fy: r.fy, e: +r.e2w_units, t: +r.total_2w_units, partial: String(r.partial) === '1' })) : null;
   };
   const window24 = (rows0) => { const rows = rows0.filter((r) => !r.partial); const end = periodEnd(rows.map((r) => r.month)); const i = rows.findIndex((r) => r.month === end); return rows.slice(Math.max(0, i - 23), i + 1); };
   dash.draw('spark-units', (el) => { const rows = monthlyRows(); if (!rows) { el.replaceChildren(); return; } spark(el, window24(rows).map((r) => ({ v: r.e })), (v) => E.inr.format(v), 'u'); });
   dash.draw('spark-pen', (el) => { const rows = monthlyRows(); if (!rows) { el.replaceChildren(); return; } spark(el, window24(rows).map((r) => ({ v: (r.e / r.t) * 100 })), (v) => v.toFixed(1) + '%', 'p'); });
   dash.draw('spark-leader', (el) => {
-    const o = dash.data('oem_monthly'), r = kpiRow();
+    const st = dash.params().state || '';
+    const o = dash.data(st ? 'oem_state_monthly' : 'oem_monthly'), r = kpiRow();
     if (o.status !== 'ok' || !r) { el.replaceChildren(); return; }
-    const by = d3.rollup(o.data.filter((d) => String(d.partial) !== '1'), (v) => ({ tot: d3.sum(v, (d) => +d.units), me: d3.sum(v.filter((d) => d.oem === r.leader), (d) => +d.units) }), (d) => d.month);
+    const by = d3.rollup((st ? o.data.filter((d) => d.state === st) : o.data).filter((d) => String(d.partial) !== '1'), (v) => ({ tot: d3.sum(v, (d) => +d.units), me: d3.sum(v.filter((d) => d.oem === r.leader), (d) => +d.units) }), (d) => d.month);
     const months = [...by.keys()].sort();
+    if (!months.length) { el.replaceChildren(); return; }
     const end = periodEnd(months), i = months.indexOf(end);
     spark(el, months.slice(Math.max(0, i - 23), i + 1).map((m) => ({ v: (by.get(m).me / by.get(m).tot) * 100 })), (v) => v.toFixed(1) + '%', 'l');
   });
@@ -653,7 +746,7 @@
   // ---------- Exhibit 1: monthly volume + penetration ----------
   dash.draw('volume', (el) => {
     const rows0 = monthlyRows();
-    if (!rows0) { msg(el, dash.data('monthly').status, 'Monthly registrations'); return; }
+    if (!rows0 || !rows0.length) { msg(el, dash.data('series').status, 'Monthly registrations'); return; }
     const p = dash.params().period || 'FY27';
     const rows = rows0.map((r) => ({ ...r, pen: (r.e / r.t) * 100 }));
     const inSel = (r) => p === 'ALL' || r.fy === p;
@@ -871,11 +964,16 @@
     const tip = E.tip(el);
     const g = svg.selectAll('g.t').data(TILES).join('g').attr('class', 't')
       .attr('transform', (t) => `translate(${ox + t[2] * (size + gap)},${t[3] * (size + gap)})`);
-    g.append('rect').attr('width', size).attr('height', size).attr('rx', 6).style('fill', 'var(--color-panel)');
+    const selSt = dash.params().state || '';
+    g.append('rect').attr('class', 'hit').attr('width', size).attr('height', size).attr('rx', 6).style('fill', 'var(--color-panel)')
+      .style('stroke', (t) => (t[1] === selSt ? 'var(--color-fg)' : 'none')).attr('stroke-width', 3);
+    g.attr('tabindex', 0).attr('role', 'button').attr('aria-label', (t) => `${t[1]}: drill into this state`)
+      .on('click', (ev, t) => E.setState(t[1]))
+      .on('keydown', (ev, t) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); E.setState(t[1]); } });
     g.append('rect').attr('width', size).attr('height', size).attr('rx', 6)
       .style('fill', (t) => (by.has(t[1]) ? dash.colors[1] : 'var(--cds-chart-grid)'))
-      .style('opacity', (t) => (by.has(t[1]) ? op(by.get(t[1]).penetration_pct) : 0.6));
-    const dark = (t) => by.has(t[1]) && op(by.get(t[1]).penetration_pct) > 0.55;
+      .style('opacity', (t) => (by.has(t[1]) ? op(by.get(t[1]).penetration_pct) : 0.6) * (selSt && t[1] !== selSt ? 0.55 : 1));
+    const dark = (t) => by.has(t[1]) && op(by.get(t[1]).penetration_pct) * (selSt && t[1] !== selSt ? 0.55 : 1) > 0.55;
     g.append('text').attr('x', 8).attr('y', 17).style('font-size', size < 50 ? '10px' : '12px').style('font-weight', 700)
       .style('fill', (t) => (dark(t) ? '#ffffff' : 'var(--color-fg)')).text((t) => t[0]);
     g.filter((t) => by.has(t[1])).append('text').attr('x', 8).attr('y', size - 9)
@@ -883,13 +981,13 @@
       .style('fill', (t) => (dark(t) ? '#ffffff' : 'var(--color-fg)'))
       .attr('data-source', 'state_view').attr('data-field', 'penetration_pct').attr('data-where', (t) => 'state=' + encodeURIComponent(t[1]))
       .text((t) => by.get(t[1]).penetration_pct.toFixed(1) + '%');
-    g.style('cursor', 'default')
-      .on('pointerenter', (ev, t) => {
+    g.on('pointerenter', (ev, t) => {
         tip.replaceChildren();
         const st = document.createElement('strong'); st.textContent = t[1]; tip.appendChild(st);
         const r = by.get(t[1]);
-        if (r) { E.tipRow(tip, 'e2W registrations', E.inr.format(r.e2w_units)); E.tipRow(tip, 'Penetration', r.penetration_pct.toFixed(1) + '%'); if (k) E.tipRow(tip, 'National average', k.pen_pct.toFixed(1) + '%'); }
+        if (r) { E.tipRow(tip, 'e2W registrations', E.inr.format(r.e2w_units)); E.tipRow(tip, 'Penetration', r.penetration_pct.toFixed(1) + '%'); }
         else { const d = document.createElement('div'); d.className = 'r'; d.textContent = 'No registrations in this period'; tip.appendChild(d); }
+        const hint = document.createElement('div'); hint.className = 'r'; hint.textContent = t[1] === selSt ? 'Click to go back to All India' : 'Click to drill down'; tip.appendChild(hint);
         tip.hidden = false;
         const [px, py] = d3.pointer(ev, el);
         E.placeTip(el, tip, px, py);
@@ -901,14 +999,21 @@
   dash.draw('state-rows', (el) => {
     const s = dash.data('state_view'), k = kpiRow();
     if (s.status !== 'ok' || !s.data) { msg(el, s.status, 'State data'); return; }
-    const nat = k ? k.pen_pct : null;
+    // national rate from the state rows themselves, so it stays All India while a state is picked
+    const natE = d3.sum(s.data, (r) => r.e2w_units), natT = d3.sum(s.data, (r) => (r.penetration_pct ? r.e2w_units / (r.penetration_pct / 100) : 0));
+    const nat = natT ? (natE / natT) * 100 : null;
     const max = d3.max(s.data, (r) => r.e2w_units) || 1;
     el.replaceChildren();
-    let rank = 0;
-    s.data.slice(0, 15).forEach((r) => {
-      const row = document.createElement('div'); row.className = 'mk-row';
+    const selSt = dash.params().state || '';
+    const list = s.data.slice(0, 15);
+    if (selSt && !list.some((r) => r.state === selSt)) { const extra = s.data.find((r) => r.state === selSt); if (extra) list.push(extra); }
+    list.forEach((r) => {
+      const row = document.createElement('div'); row.className = 'mk-row click' + (r.state === selSt ? ' sel' : '');
+      row.tabIndex = 0; row.setAttribute('role', 'button'); row.setAttribute('aria-label', `${r.state}: drill into this state`);
+      row.onclick = () => E.setState(r.state);
+      row.onkeydown = (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); E.setState(r.state); } };
       const n = document.createElement('span'); n.className = 'mk-row-name';
-      const rk = document.createElement('span'); rk.className = 'mk-rank'; rk.textContent = String(++rank);
+      const rk = document.createElement('span'); rk.className = 'mk-rank'; rk.textContent = String(s.data.indexOf(r) + 1);
       n.append(rk, r.state);
       const tr = document.createElement('div'); tr.className = 'mk-track';
       const f = document.createElement('div'); f.className = 'mk-fill';

@@ -53,9 +53,23 @@ SHIM = r"""
 // Minimal stand-in for the dashboard runtime: loads the CSVs, runs calculations, redraws on change.
 window.dash = (function () {
   const FILES = { monthly: 'data/monthly.csv', oem_monthly: 'data/oem_monthly.csv', states: 'data/states.csv',
-                  reconciliation: 'data/reconciliation.csv', refresh_checks: 'data/checks.csv' };
+                  reconciliation: 'data/reconciliation.csv', refresh_checks: 'data/checks.csv',
+                  state_monthly: 'data/state_monthly.csv', oem_state_monthly: 'data/oem_state_monthly.csv' };
   const store = {}, calcs = {}, draws = [], listeners = [];
-  let params = { period: 'FY27' }, version = 0, cache = {};
+  // filters live in the URL (?state=Bihar&period=FY26) so any drill-down can be shared as a link
+  const DEFAULTS = { period: 'FY27', state: '' };
+  const fromUrl = () => { const q = new URLSearchParams(location.search); return { period: q.get('period') || DEFAULTS.period, state: q.get('state') || DEFAULTS.state }; };
+  let params = fromUrl(), version = 0, cache = {};
+  const toUrl = () => {
+    const q = new URLSearchParams();
+    if (params.state) q.set('state', params.state);
+    if (params.period !== DEFAULTS.period) q.set('period', params.period);
+    const u = location.pathname + (q.toString() ? '?' + q : '') + location.hash;
+    if (u !== location.pathname + location.search + location.hash) history.pushState(null, '', u);
+    document.title = params.state ? `${params.state} · India e2W Pulse` : 'India e2W Pulse';
+  };
+  window.addEventListener('popstate', () => { params = fromUrl(); cache = {}; schedule(); });
+  document.title = params.state ? `${params.state} · India e2W Pulse` : 'India e2W Pulse';
   const bump = () => { version++; cache = {}; schedule(); };
   Object.entries(FILES).forEach(([id, url]) => {
     store[id] = { status: 'loading', data: [] };
@@ -86,8 +100,8 @@ window.dash = (function () {
   return {
     colors: ['var(--c0)', 'var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)', 'var(--c6)', 'var(--c7)'],
     data, params: () => params,
-    setParams: (p) => { params = { ...params, ...p }; cache = {}; schedule(); },
-    resetParams: () => { params = { period: 'FY27' }; cache = {}; schedule(); },
+    setParams: (p) => { params = { ...params, ...p }; cache = {}; toUrl(); schedule(); },
+    resetParams: () => { params = { ...DEFAULTS }; cache = {}; toUrl(); schedule(); },
     calc: (id, o) => { calcs[id] = o; },
     loader: () => {}, refresh: () => {}, setLink: () => {},
     draw: (name, fn) => { draws.push([name, fn]); },
@@ -125,7 +139,7 @@ dash._render();
 out = root / "site"
 (out / "data").mkdir(parents=True, exist_ok=True)
 (out / "index.html").write_text(html)
-for f in ["monthly.csv", "oem_monthly.csv", "states.csv", "reconciliation.csv", "checks.csv"]:
+for f in ["monthly.csv", "oem_monthly.csv", "states.csv", "reconciliation.csv", "checks.csv", "state_monthly.csv", "oem_state_monthly.csv"]:
     shutil.copy(root / "data" / f, out / "data" / f)
 (out / "_headers").write_text("/data/*\n  Cache-Control: no-cache\n  Access-Control-Allow-Origin: *\n")
 print("built", out)

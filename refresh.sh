@@ -23,7 +23,7 @@ if ! python3 -I validate.py tmp/new data; then
   echo "CHECKS FAILED"; exit 1
 fi
 
-cp tmp/new/{monthly,oem_monthly,states,maker_monthly_raw,checks}.csv data/
+cp tmp/new/{monthly,oem_monthly,states,maker_monthly_raw,checks,state_monthly,oem_state_monthly}.csv data/
 python3 -I build_site.py
 git add data && git -c user.email="vansharora26@users.noreply.github.com" commit -qm "Data refresh $(date +%F)" || echo "no data change"
 if npx -y netlify-cli@17.38.1 deploy --prod --dir site --site "$SITE_ID" --message "Data refresh $(date +%F)"; then
