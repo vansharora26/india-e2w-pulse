@@ -1,0 +1,9 @@
+check,status,detail,run_at
+No missing months,PASS,68 months from Apr 2021 to 2026-11,2026-11-23T22:50+05:30
+Data is current,PASS,"latest complete month 2026-10, expected 2026-10",2026-11-23T22:50+05:30
+Latest month within 0.5x–2.5x of last year,PASS,"2026-10: 225,357 vs 150,898 (1.49x)",2026-11-23T22:50+05:30
+Penetration between 0.2% and 35% every month,PASS,all months,2026-11-23T22:50+05:30
+Maker totals match monthly totals (±1%),PASS,all months,2026-11-23T22:50+05:30
+Unmapped makers under 5% of the latest month,PASS,0.7% in 2026-10,2026-11-23T22:50+05:30
+States and UTs present (latest FY),PASS,36 in FY27,2026-11-23T22:50+05:30
+History stable vs previous pull (older months ±2%),PASS,months before 2026-05 unchanged within 2%,2026-11-23T22:50+05:30
