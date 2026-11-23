@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 *.log
 tmp/
+
+# Local Netlify folder
+.netlify
+logs/
+tmp/
+site/
