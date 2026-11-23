@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>India e2W Pulse</title>
+<meta name="description" content="Electric two-wheeler registrations in India from the Vahan dashboard: volume, penetration, makers and states, refreshed daily.">
+<meta property="og:title" content="India e2W Pulse">
+<meta property="og:description" content="Electric two-wheeler registrations in India from Vahan, refreshed daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+  /* Navy report palette; light by default, dark follows the system or the toggle */
+  :root {
+    --color-bg: #f4f6f9; --color-panel: #ffffff; --color-fg: #051c2c; --color-fg-muted: #566676; --color-border-line: #d9e0e8;
+    --color-ok: #0a7a3a; --color-warn: #8a5a00; --color-bad: #a12c2c;
+    --c0: #051c2c; --c1: #2251ff; --c2: #00a9f4; --c3: #1f9e8f; --c4: #8c9ef7; --c5: #6e7b87; --c6: #c9952b; --c7: #b4325a;
+    --cds-chart-muted: #b9c3cd; --cds-chart-grid: #e3e8ee; --cds-chart-axis: #c5ced8; --cds-chart-reference: #8a98a6;
+    --cds-text-secondary: #5b6b7a; --cds-surface-popover: #ffffff; --cds-border: #d9e0e8; --cds-shadow-popover: 0 8px 24px rgba(5, 28, 44, .14);
+    --font-anthropic-sans: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-anthropic-serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --cds-font-size-caption: 12px; --cds-font-size-body: 14px; --cds-font-size-heading: 18px; --cds-font-size-title: 28px; --cds-font-weight-medium: 600;
+    --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px; --cds-gap-xl: 32px;
+    --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 20px; --cds-pad-xl: 32px; --cds-radius: 12px;
+    --cds-ease-out: cubic-bezier(.2, .7, .2, 1); --cds-dur-slow: 600ms;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --color-bg: #061019; --color-panel: #0c1b28; --color-fg: #eef2f6; --color-fg-muted: #93a1af; --color-border-line: #1c2f3f;
+    --color-ok: #3ccf74; --color-warn: #e8b04a; --color-bad: #f08a8a;
+    --c0: #dfe7f1; --c1: #5b7cff; --c2: #3fc3ff; --c3: #3cc2b1; --c4: #b7c3ff; --c5: #9aa6b2; --c6: #e0bc4a; --c7: #e0688a;
+    --cds-chart-muted: #4a5b6a; --cds-chart-grid: #1c2f3f; --cds-chart-axis: #2a3f52; --cds-chart-reference: #7d8d9c;
+    --cds-text-secondary: #9fadba; --cds-surface-popover: #10222f; --cds-border: #2a3f52; --cds-shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
+    color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --color-bg: #061019; --color-panel: #0c1b28; --color-fg: #eef2f6; --color-fg-muted: #93a1af; --color-border-line: #1c2f3f;
+    --color-ok: #3ccf74; --color-warn: #e8b04a; --color-bad: #f08a8a;
+    --c0: #dfe7f1; --c1: #5b7cff; --c2: #3fc3ff; --c3: #3cc2b1; --c4: #b7c3ff; --c5: #9aa6b2; --c6: #e0bc4a; --c7: #e0688a;
+    --cds-chart-muted: #4a5b6a; --cds-chart-grid: #1c2f3f; --cds-chart-axis: #2a3f52; --cds-chart-reference: #7d8d9c;
+    --cds-text-secondary: #9fadba; --cds-surface-popover: #10222f; --cds-border: #2a3f52; --cds-shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
+    color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-bg); color: var(--color-fg); font: 14px/1.5 var(--font-anthropic-sans); }
+  .site { max-width: 1280px; margin: 0 auto; padding-block: 24px 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .dash-select { appearance: none; font: inherit; padding: 8px 34px 8px 12px; border-radius: 8px; border: 1px solid var(--color-border-line);
+    background-color: var(--color-panel); color: var(--color-fg); cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2393a1af' stroke-width='1.8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center; }
+  .mk-foot a { color: inherit; }
+
+  /* Layout: navy hero band carrying the headline figures, then paired exhibits (wide chart + narrow companion) on white cards */
+  .mk { --mk-navy: #051c2c; --mk-navy-2: #0a2b47; --mk-ink: #ffffff; --mk-ink-2: #a9bdd1; --mk-cyan: #00a9f4; --mk-blue: #2251ff; --mk-line: rgba(255,255,255,.14);
+    display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .mk-hero { position: relative; overflow: hidden; border-radius: 14px; color: var(--mk-ink);
+    background:
+      radial-gradient(900px 380px at 88% -10%, rgba(0,169,244,.28), transparent 60%),
+      radial-gradient(700px 300px at -10% 120%, rgba(34,81,255,.30), transparent 60%),
+      linear-gradient(160deg, var(--mk-navy) 0%, var(--mk-navy-2) 100%);
+    padding: clamp(20px, 3.4vw, 40px); display: grid; gap: clamp(18px, 2.4vw, 28px); }
+  .mk-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+    background-image: linear-gradient(var(--mk-line) 1px, transparent 1px), linear-gradient(90deg, var(--mk-line) 1px, transparent 1px);
+    background-size: 56px 56px; mask-image: linear-gradient(115deg, transparent 35%, #000 100%); -webkit-mask-image: linear-gradient(115deg, transparent 35%, #000 100%); }
+  .mk-hero > * { position: relative; }
+  .mk-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+  .mk-eyebrow { margin: 0; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--mk-ink-2); font-weight: 600; display: flex; align-items: center; gap: 10px; }
+  .mk-eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--mk-cyan); }
+  .mk-live { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; color: var(--mk-ink-2); border: 1px solid var(--mk-line); background: rgba(255,255,255,.04); border-radius: 999px; padding: 5px 12px; }
+  .mk-live b { color: var(--mk-ink); font-weight: 600; }
+  .mk-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .mk-checks { text-decoration: none; }
+  .mk-checks:hover, .mk-checks:focus-visible { border-color: rgba(255,255,255,.4); outline: none; }
+  .mk-checks .ok { color: #4ee38f; } .mk-checks .bad { color: #ff8a8a; } .mk-checks .warn { color: #ffc861; }
+  .mk-checklist { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 13px; }
+  .mk-checklist li { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr); gap: 10px; align-items: baseline; }
+  .mk-checklist .d { color: var(--color-fg-muted); font-size: 12px; }
+  .mk-sub-h { margin: 6px 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--color-fg-muted); font-weight: 600; }
+  .mk-dot { width: 8px; height: 8px; border-radius: 50%; background: #2fd67b; }
+  @media (prefers-reduced-motion: no-preference) { .mk-dot { animation: mkpulse 2s ease-out infinite; } }
+  @keyframes mkpulse { 0% { box-shadow: 0 0 0 0 rgba(47,214,123,.6); } 100% { box-shadow: 0 0 0 10px rgba(47,214,123,0); } }
+  .mk-headline { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: end; }
+  .mk-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(34px, 5vw, 60px); line-height: 1.02; letter-spacing: -.01em; text-wrap: balance; color: var(--mk-ink); }
+  .mk-title em { font-style: italic; color: var(--mk-cyan); }
+  .mk-lede { margin: 12px 0 0; max-width: 60ch; font-size: 1.05rem; line-height: 1.55; color: #d7e2ee; }
+  .mk-lede b { color: var(--mk-ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .mk-controls { display: grid; gap: 12px; justify-self: end; width: min(100%, 320px); }
+  .mk-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; font-size: 13px; color: var(--mk-ink-2); min-height: 30px; }
+  .mk-crumbs button { font: inherit; cursor: pointer; border-radius: 999px; padding: 4px 12px; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.06); color: var(--mk-ink); }
+  .mk-crumbs button:hover, .mk-crumbs button:focus-visible { background: rgba(255,255,255,.14); outline: none; }
+  .mk-crumbs .here { color: var(--mk-cyan); font-weight: 600; }
+  .mk-scope { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: color-mix(in srgb, var(--mk-c1) 14%, transparent); color: var(--color-fg); letter-spacing: .06em; }
+  .mk-scope:empty { display: none; }
+  .mk-period { display: grid; gap: 6px; width: 100%; font-size: 11px; color: var(--mk-ink-2); text-transform: uppercase; letter-spacing: .12em; font-weight: 600; }
+  .mk-period .dash-select { width: 100%; text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 500; color: var(--mk-ink); background-color: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.22); border-radius: 8px; color-scheme: dark; }
+  .mk-period .dash-select:focus-visible { outline: 2px solid var(--mk-cyan); outline-offset: 2px; }
+
+  .mk-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--mk-line); border: 1px solid var(--mk-line); border-radius: 12px; overflow: hidden; }
+  .mk-kpi { background: rgba(5,28,44,.72); backdrop-filter: blur(4px); padding: 18px 20px 14px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+  .mk-kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--mk-ink-2); font-weight: 600; }
+  .mk-kpi-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(34px, 3.6vw, 48px); line-height: 1; color: var(--mk-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .mk-kpi-value small { font-family: var(--font-anthropic-sans); font-size: 13px; color: var(--mk-ink-2); margin-left: 6px; letter-spacing: .02em; }
+  .mk-kpi-name { font-size: clamp(26px, 2.6vw, 36px); white-space: normal; }
+  .mk-delta { font-size: 12px; color: var(--mk-ink-2); font-variant-numeric: tabular-nums; min-height: 1.4em; }
+  .mk-delta b { font-weight: 600; }
+  .mk-hero .mk-up { color: #4ee38f; } .mk-hero .mk-down { color: #ff8a8a; } .mk-hero .mk-flat { color: var(--mk-ink-2); }
+  .mk-spark { height: 38px; min-width: 0; }
+  .mk-spark svg { display: block; overflow: visible; }
+  .mk-seg { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-top: 14px; gap: 2px; }
+  .mk-seg i { display: block; height: 100%; }
+  .mk-seg-key { display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 11px; color: var(--mk-ink-2); }
+
+  .mk-grid { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: var(--cds-gap-lg); }
+  .mk-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 12px; padding: clamp(16px, 2vw, 24px); display: grid; gap: 14px; align-content: start; min-width: 0; }
+  .mk-ex-head { display: grid; gap: 6px; }
+  .mk-ex-num { font-size: 11px; text-transform: uppercase; letter-spacing: .16em; color: var(--color-fg-muted); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .mk-ex-num::before { content: ""; width: 18px; height: 2px; background: currentColor; }
+  .mk-ex-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(19px, 1.9vw, 24px); line-height: 1.22; text-wrap: balance; }
+  .mk-ex-sub { margin: 0; font-size: 12.5px; color: var(--color-fg-muted); line-height: 1.45; }
+  .mk-src { margin: 0; font-size: 11px; color: var(--color-fg-muted); border-top: 1px solid var(--color-border-line); padding-top: 10px; }
+  .mk-chart { position: relative; min-height: 300px; min-width: 0; }
+  .mk-chart svg { display: block; overflow: visible; }
+  .mk-chart text { fill: var(--cds-text-secondary); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .mk-chart .tick line { stroke: var(--cds-chart-grid); }
+  .mk-chart .domain { display: none; }
+  .mk-chart .mk-ann { fill: var(--color-fg); font-weight: 600; }
+  .mk-chart .mk-ann-sub { fill: var(--cds-text-secondary); }
+  .mk-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--color-fg-muted); }
+  .mk-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .mk-sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .mk-sw-line { height: 3px; width: 16px; border-radius: 2px; }
+  .mk-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: 8px; padding: 9px 11px; font-size: 12px; line-height: 1.5; min-width: 170px; z-index: 5; color: var(--color-fg); font-variant-numeric: tabular-nums; }
+  .mk-tip strong { display: block; margin-bottom: 3px; }
+  .mk-tip .r { display: flex; justify-content: space-between; gap: 14px; color: var(--cds-text-secondary); }
+  .mk-tip .r b { color: var(--color-fg); font-weight: 600; }
+  .mk-tip .r i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+  .mk-msg { color: var(--color-fg-muted); padding: 24px 0; }
+
+  .mk-waffle-wrap { display: grid; gap: 14px; justify-items: start; }
+  .mk-big { font-family: var(--font-anthropic-serif); font-size: clamp(44px, 5vw, 64px); line-height: 1; font-variant-numeric: tabular-nums; }
+  .mk-big small { font-family: var(--font-anthropic-sans); font-size: 14px; color: var(--color-fg-muted); margin-left: 6px; }
+  .mk-waffle { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; width: min(100%, 260px); }
+  .mk-waffle i { aspect-ratio: 1; border-radius: 3px; background: color-mix(in srgb, var(--cds-chart-grid) 80%, transparent); }
+  .mk-waffle i.on { background: var(--mk-c1); }
+  .mk-waffle i.part { background: linear-gradient(90deg, var(--mk-c1) var(--p), color-mix(in srgb, var(--cds-chart-grid) 80%, transparent) var(--p)); }
+  .mk-note { font-size: 13px; color: var(--color-fg-muted); line-height: 1.5; margin: 0; }
+  .mk-note b { color: var(--color-fg); }
+
+  .mk-rows { display: grid; gap: 9px; align-content: start; min-height: 240px; }
+  .mk-rows-head, .mk-row { display: grid; grid-template-columns: 8.6rem minmax(0, 1fr) 3.4rem 3.8rem; align-items: center; gap: 10px; }
+  .mk-rows-head { font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em; color: var(--color-fg-muted); font-weight: 600; padding-bottom: 6px; border-bottom: 1px solid var(--color-border-line); }
+  .mk-rows-head span:nth-child(n+3) { text-align: right; }
+  .mk-row { font-size: 13.5px; }
+  .mk-row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: flex; align-items: center; gap: 7px; }
+  .mk-rank { font-size: 11px; color: var(--color-fg-muted); width: 1.2em; font-variant-numeric: tabular-nums; }
+  .mk-track { height: 10px; border-radius: 5px; background: color-mix(in srgb, var(--cds-chart-grid) 55%, transparent); position: relative; overflow: hidden; }
+  .mk-fill { position: absolute; inset: 0 auto 0 0; border-radius: 5px; }
+  @media (prefers-reduced-motion: no-preference) { .mk-fill { transition: width .6s cubic-bezier(.2,.7,.2,1); } }
+  .mk-num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .mk-chg { justify-self: end; font-size: 11.5px; font-variant-numeric: tabular-nums; font-weight: 600; padding: 2px 7px; border-radius: 999px; }
+  .mk-card .mk-up { color: var(--color-ok); background: color-mix(in srgb, var(--color-ok) 12%, transparent); }
+  .mk-card .mk-down { color: var(--color-bad); background: color-mix(in srgb, var(--color-bad) 12%, transparent); }
+  .mk-card .mk-flat { color: var(--color-fg-muted); }
+
+  .mk-map { position: relative; min-height: 320px; min-width: 0; }
+  .mk-map svg { display: block; overflow: visible; }
+  .mk-map text { font-family: var(--font-anthropic-sans); }
+  .mk-scale { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--color-fg-muted); }
+  .mk-scale i { width: 120px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, color-mix(in srgb, var(--mk-c1) 12%, var(--color-panel)), var(--mk-c1)); }
+  .mk-row.click { cursor: pointer; border-radius: 6px; margin: 0 -6px; padding: 2px 6px; }
+  .mk-row.click:hover, .mk-row.click:focus-visible { background: color-mix(in srgb, var(--mk-c1) 8%, transparent); outline: none; }
+  .mk-row.sel { background: color-mix(in srgb, var(--mk-c1) 16%, transparent); }
+  .mk-map g.t { cursor: pointer; outline: none; }
+  .mk-map g.t:focus-visible rect.hit { stroke: var(--color-fg); stroke-width: 2; }
+  .mk-st .mk-rows-head, .mk-st .mk-row { grid-template-columns: 8rem minmax(0, 1fr) 4.4rem 3.6rem; }
+
+  .mk-tablewrap { overflow-x: auto; min-width: 0; }
+  .mk-table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  .mk-table th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em; color: var(--color-fg-muted); font-weight: 600; padding: 0 12px 8px 0; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .mk-table td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .mk-table .n { text-align: right; }
+  .mk-table td.src { white-space: normal; min-width: 14rem; color: var(--color-fg-muted); }
+  .mk-table a { color: var(--color-fg); }
+  .mk-gap { display: inline-block; padding: 1px 7px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+  .mk-gap.ok { color: var(--color-ok); background: color-mix(in srgb, var(--color-ok) 12%, transparent); }
+  .mk-gap.warn { color: var(--color-warn); background: color-mix(in srgb, var(--color-warn) 14%, transparent); }
+  .mk-gap.bad { color: var(--color-bad); background: color-mix(in srgb, var(--color-bad) 12%, transparent); }
+  .mk-foot { display: grid; gap: 6px; font-size: 12px; color: var(--color-fg-muted); max-width: 95ch; }
+  .mk-foot p { margin: 0; }
+  .mk-foot summary { cursor: pointer; color: var(--color-fg); }
+
+  @media (max-width: 960px) {
+    .mk-grid, .mk-headline { grid-template-columns: minmax(0, 1fr); }
+    .mk-controls { justify-self: start; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); width: 100%; }
+    .mk-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 480px) {
+    .mk-kpis { grid-template-columns: minmax(0, 1fr); }
+    .mk-rows-head, .mk-row, .mk-st .mk-rows-head, .mk-st .mk-row { grid-template-columns: 6.6rem minmax(0, 1fr) 3.6rem 3.6rem; }
+  }
+</style>
+</head>
+<body>
+<main class="site" id="dash-root">
+<div class="mk">
+  <header class="mk-hero" id="overview">
+    <div class="mk-top">
+      <p class="mk-eyebrow">India electric two-wheelers · Vahan registrations</p>
+      <span class="mk-pills">
+        <span class="mk-live"><span class="mk-dot"></span>Vahan · data through <b data-draw="asof" data-source="monthly">—</b></span>
+        <a class="mk-live mk-checks" href="#exhibit-check" data-draw="checks-pill" data-source="refresh_checks">—</a>
+      </span>
+    </div>
+    <div class="mk-headline">
+      <div>
+        <h1 class="mk-title">India <em>e2W</em> Pulse</h1>
+        <div class="mk-crumbs" data-draw="crumbs"></div>
+        <p class="mk-lede" data-read lang="en">In <b data-draw="lede-period" data-source="kpi" data-field="period_label" data-row="0">—</b>, <span data-draw="lede-scope">India</span> registered <b data-draw="lede-units" data-source="kpi" data-field="e2w_units" data-row="0">—</b> electric two-wheelers, <b><span data-draw="lede-pen" data-source="kpi" data-field="pen_pct" data-row="0">—</span>%</b> of all two-wheelers. <b data-draw="lede-leader" data-source="kpi" data-field="leader" data-row="0">—</b> leads with a <b><span data-draw="lede-share" data-source="kpi" data-field="leader_share_pct" data-row="0">—</span>%</b> share.</p>
+      </div>
+      <div class="mk-controls">
+      <label class="mk-period" for="mk-state-select">Region
+        <select class="dash-select" id="mk-state-select" aria-label="Region">
+          <option value="">All India</option>
+          <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Dadra &amp; Nagar Haveli and Daman &amp; Diu">Dadra &amp; Nagar Haveli and Daman &amp; Diu</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Lakshadweep">Lakshadweep</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Puducherry">Puducherry</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+        </select>
+      </label>
+      <label class="mk-period" for="mk-period-select">Period
+        <select class="dash-select" id="mk-period-select" aria-label="Period">
+          <option value="FY27">FY27 to date · Apr–Oct 2026</option>
+          <option value="FY26">FY26 · Apr 2025 – Mar 2026</option>
+          <option value="FY25">FY25 · Apr 2024 – Mar 2025</option>
+          <option value="FY24">FY24 · Apr 2023 – Mar 2024</option>
+          <option value="FY23">FY23 · Apr 2022 – Mar 2023</option>
+          <option value="FY22">FY22 · Apr 2021 – Mar 2022</option>
+          <option value="ALL">All months · Apr 2021 – Oct 2026</option>
+        </select>
+      </label>
+      </div>
+    </div>
+
+    <section class="mk-kpis" id="kpis" aria-label="Headline figures">
+      <div class="mk-kpi" id="kpi-volume">
+        <span class="mk-kpi-label">e2W registrations</span>
+        <span class="mk-kpi-value"><span data-draw="k-units" data-source="kpi" data-field="e2w_units" data-row="0">—</span><small data-draw="k-units-unit">lakh</small></span>
+        <span class="mk-delta" data-draw="k-units-d">—</span>
+        <div class="mk-spark" data-draw="spark-units" data-source="monthly"></div>
+      </div>
+      <div class="mk-kpi" id="kpi-penetration">
+        <span class="mk-kpi-label">EV penetration</span>
+        <span class="mk-kpi-value"><span data-draw="k-pen" data-source="kpi" data-field="pen_pct" data-row="0">—</span><small>% of 2W</small></span>
+        <span class="mk-delta" data-draw="k-pen-d">—</span>
+        <div class="mk-spark" data-draw="spark-pen" data-source="monthly"></div>
+      </div>
+      <div class="mk-kpi" id="kpi-leader">
+        <span class="mk-kpi-label">Market leader</span>
+        <span class="mk-kpi-value mk-kpi-name" data-draw="k-leader" data-source="kpi" data-field="leader" data-row="0">—</span>
+        <span class="mk-delta" data-draw="k-leader-d">—</span>
+        <div class="mk-spark" data-draw="spark-leader" data-source="oem_monthly"></div>
+      </div>
+      <div class="mk-kpi" id="kpi-concentration">
+        <span class="mk-kpi-label">Top-4 maker share</span>
+        <span class="mk-kpi-value"><span data-draw="k-top4" data-source="kpi" data-field="top4_share_pct" data-row="0">—</span><small>%</small></span>
+        <span class="mk-delta" data-draw="k-top4-d">—</span>
+        <div data-draw="seg-top4" data-source="oem_share"></div>
+      </div>
+    </section>
+  </header>
+
+  <div class="mk-grid">
+    <section class="mk-card" id="exhibit-volume">
+      <div class="mk-ex-head">
+        <span class="mk-ex-num">Exhibit 1 <span class="mk-scope" data-draw="scope-tag"></span></span>
+        <h2 class="mk-ex-title">Registrations kept climbing through two subsidy cuts, with festive months setting each new peak</h2>
+        <p class="mk-ex-sub">Monthly e2W registrations (bars, lakh) and EV share of all two-wheelers (line, %). Selected period in blue.</p>
+      </div>
+      <div class="mk-legend">
+        <span><i class="mk-sw" style="background: var(--mk-c1)"></i>Selected period</span>
+        <span><i class="mk-sw" style="background: color-mix(in srgb, var(--mk-c0) 22%, transparent)"></i>Other months</span>
+        <span><i class="mk-sw" style="background: color-mix(in srgb, var(--mk-c1) 40%, transparent); outline: 1px dashed var(--mk-c1)"></i>Current month to date</span>
+        <span><i class="mk-sw mk-sw-line" style="background: var(--mk-c2)"></i>Penetration</span>
+      </div>
+      <div class="mk-chart" data-draw="volume" data-source="monthly"></div>
+      <p class="mk-src">Source: Vahan dashboard (MoRTH), all 36 states and UTs including Telangana, so totals run about 4–5% above most published Vahan figures (see Exhibit 7). Policy markers: FAME-II subsidy cut, 1 Jun 2023; PM E-DRIVE replaces EMPS, 1 Oct 2024.</p>
+    </section>
+
+    <section class="mk-card" id="exhibit-waffle">
+      <div class="mk-ex-head">
+        <span class="mk-ex-num">Exhibit 2 <span class="mk-scope" data-draw="scope-tag"></span></span>
+        <h2 class="mk-ex-title">Electric is still a small slice of every 100 two-wheelers sold</h2>
+        <p class="mk-ex-sub">Each square is 1% of two-wheeler registrations in the selected period</p>
+      </div>
+      <div class="mk-waffle-wrap">
+        <span class="mk-big"><span data-draw="w-pen" data-source="kpi" data-field="pen_pct" data-row="0">—</span><small>in every 100</small></span>
+        <div class="mk-waffle" data-draw="waffle" data-source="kpi" role="img" aria-label="Waffle chart of EV penetration"></div>
+        <p class="mk-note" data-draw="w-note">—</p>
+      </div>
+      <p class="mk-src">Penetration = e2W registrations ÷ all two-wheeler registrations, same months.</p>
+    </section>
+  </div>
+
+  <div class="mk-grid">
+    <section class="mk-card" id="exhibit-share-trend">
+      <div class="mk-ex-head">
+        <span class="mk-ex-num">Exhibit 3 <span class="mk-scope" data-draw="scope-tag"></span></span>
+        <h2 class="mk-ex-title">How the maker mix has shifted, quarter by quarter</h2>
+        <p class="mk-ex-sub">Share of e2W registrations per quarter (100% = all e2W that quarter). The eight makers that have led the market are named; River, BGauss, Pure EV and the rest are in grey.</p>
+      </div>
+      <div class="mk-chart" data-draw="share-trend" data-source="share_trend"></div>
+      <p class="mk-src">Source: Vahan maker-wise registrations. Complete quarters only. Hero (Vida) is Hero MotoCorp; Greaves includes Ampere.</p>
+    </section>
+
+    <section class="mk-card" id="exhibit-oem">
+      <div class="mk-ex-head">
+        <span class="mk-ex-num">Exhibit 4 <span class="mk-scope" data-draw="scope-tag"></span></span>
+        <h2 class="mk-ex-title">Top 15 makers</h2>
+        <p class="mk-ex-sub">Share in the selected period; change in percentage points vs the same months a year earlier. 326 Vahan legal entities grouped into brands.</p>
+      </div>
+      <div>
+        <div class="mk-rows-head" aria-hidden="true"><span>Maker</span><span></span><span>Share</span><span>Δ pp</span></div>
+        <div class="mk-rows" data-draw="oem-rows" data-source="oem_share"></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="mk-grid mk-st">
+    <section class="mk-card" id="exhibit-map">
+      <div class="mk-ex-head">
+        <span class="mk-ex-num">Exhibit 5</span>
+        <h2 class="mk-ex-title">Adoption is concentrated in the south and west; the Hindi belt lags</h2>
+        <p class="mk-ex-sub">EV share of two-wheeler registrations by state, selected financial year. Tiles are placed roughly by geography. <b>Click a state to drill into it.</b></p>
+      </div>
+      <div class="mk-scale"><span>Lower</span><i></i><span>Higher penetration</span></div>
+      <div class="mk-map" data-draw="tile-map" data-source="state_view"></div>
+      <p class="mk-src">Source: Vahan dashboard, state-wise. Hover a tile for units. Grey tiles had fewer than 500 e2W registrations.</p>
+    </section>
+
+    <section class="mk-card" id="exhibit-states">
+      <div class="mk-ex-head">
+        <span class="mk-ex-num">Exhibit 6</span>
+        <h2 class="mk-ex-title">Top 15 states by volume</h2>
+        <p class="mk-ex-sub">e2W registrations and penetration, selected financial year. Click a state to drill into it.</p>
+      </div>
+      <div>
+        <div class="mk-rows-head" aria-hidden="true"><span>State</span><span></span><span>Units</span><span>Pen.</span></div>
+        <div class="mk-rows" data-draw="state-rows" data-source="state_view"></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="mk-card" id="exhibit-check">
+    <div class="mk-ex-head">
+      <span class="mk-ex-num">Exhibit 7 <span class="mk-scope">All India</span></span>
+      <h2 class="mk-ex-title">How these numbers are checked</h2>
+      <p class="mk-ex-sub">Telangana registrations moved onto Vahan late, so most published full-year totals leave them out. The last two columns remove Telangana from this dashboard's totals for a like-for-like check. Recent months also run slightly higher here because Vahan keeps adding late registrations.</p>
+    </div>
+    <div class="mk-tablewrap">
+      <table class="mk-table" data-source="recon" data-row-key="id">
+        <thead><tr>
+          <th data-field="check">Check</th>
+          <th data-field="published_units" class="n">Published</th>
+          <th data-field="dashboard_units" class="n">This dashboard</th>
+          <th data-field="gap_pct" class="n">Gap</th>
+          <th data-field="excl_telangana_units" class="n">Excl. Telangana</th>
+          <th data-field="gap_excl_pct" class="n">Gap</th>
+          <th data-field="published_by">Published by</th>
+        </tr></thead>
+        <tbody data-draw="recon-rows"></tbody>
+      </table>
+    </div>
+    <p class="mk-src">Gap = this dashboard ÷ published − 1. Green within ±2%, amber within ±6%.</p>
+    <h3 class="mk-sub-h">Checks on the latest refresh · <span data-draw="checks-at" data-source="refresh_checks">—</span></h3>
+    <ul class="mk-checklist" data-draw="checks-list" data-source="refresh_checks"></ul>
+  </section>
+
+  <footer class="mk-foot">
+    <p><b>Data.</b> Registrations from the Vahan dashboard (vahan.parivahan.gov.in), April 2021 to date. The current month is shown to date and left out of comparisons. Vahan keeps adding late registrations, so recent months can rise slightly on the next refresh.</p>
+    <details>
+      <summary>Definitions</summary>
+      <p>e2W: Vahan vehicle categories Two Wheeler (NT), Two Wheeler (T) and Two Wheeler (Invalid Carriage) with fuel ELECTRIC(BOV) or PURE EV. Low-speed models under 25 km/h need no registration and are not counted. Makers are grouped into brands; all other makers are in Others. Penetration: e2W registrations divided by all two-wheeler registrations in the same months. 1 lakh = 100,000. FY runs April to March, so FY26 is April 2025 to March 2026.</p>
+    </details>
+  </footer>
+</div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+// Minimal stand-in for the dashboard runtime: loads the CSVs, runs calculations, redraws on change.
+window.dash = (function () {
+  const FILES = { monthly: 'data/monthly.csv', oem_monthly: 'data/oem_monthly.csv', states: 'data/states.csv',
+                  reconciliation: 'data/reconciliation.csv', refresh_checks: 'data/checks.csv',
+                  state_monthly: 'data/state_monthly.csv', oem_state_monthly: 'data/oem_state_monthly.csv' };
+  const store = {}, calcs = {}, draws = [], listeners = [];
+  // filters live in the URL (?state=Bihar&period=FY26) so any drill-down can be shared as a link
+  const DEFAULTS = { period: 'FY27', state: '' };
+  const fromUrl = () => { const q = new URLSearchParams(location.search); return { period: q.get('period') || DEFAULTS.period, state: q.get('state') || DEFAULTS.state }; };
+  let params = fromUrl(), version = 0, cache = {};
+  const toUrl = () => {
+    const q = new URLSearchParams();
+    if (params.state) q.set('state', params.state);
+    if (params.period !== DEFAULTS.period) q.set('period', params.period);
+    const u = location.pathname + (q.toString() ? '?' + q : '') + location.hash;
+    if (u !== location.pathname + location.search + location.hash) history.pushState(null, '', u);
+    document.title = params.state ? `${params.state} · India e2W Pulse` : 'India e2W Pulse';
+  };
+  window.addEventListener('popstate', () => { params = fromUrl(); cache = {}; schedule(); });
+  document.title = params.state ? `${params.state} · India e2W Pulse` : 'India e2W Pulse';
+  const bump = () => { version++; cache = {}; schedule(); };
+  Object.entries(FILES).forEach(([id, url]) => {
+    store[id] = { status: 'loading', data: [] };
+    fetch(url, { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then((t) => { store[id] = { status: 'ok', data: d3.csvParse(t) }; bump(); })
+      .catch(() => { store[id] = { status: 'error', data: [] }; bump(); });
+  });
+  function data(id) {
+    if (store[id]) return store[id];
+    const c = calcs[id];
+    if (!c) return { status: 'missing', data: [] };
+    if (cache[id]) return cache[id];
+    const ins = c.inputs.map(data);
+    const bad = ins.find((d) => d.status !== 'ok');
+    let res;
+    if (bad) res = { status: bad.status, data: null };
+    else { try { res = { status: 'ok', data: c.fn(...ins.map((d) => d.data)) }; } catch (e) { console.error(id, e); res = { status: 'error', data: null }; } }
+    return (cache[id] = res);
+  }
+  let pending = false;
+  function schedule() { if (pending) return; pending = true; requestAnimationFrame(() => { pending = false; render(); }); }
+  function render() {
+    listeners.forEach((f) => { try { f(); } catch (e) { console.error(e); } });
+    draws.forEach(([name, fn]) => document.querySelectorAll(`[data-draw="${name}"]`).forEach((el) => { try { fn(el); } catch (e) { console.error(name, e); } }));
+  }
+  let lastW = window.innerWidth;
+  window.addEventListener('resize', () => { if (Math.abs(window.innerWidth - lastW) > 4) { lastW = window.innerWidth; schedule(); } });
+  return {
+    colors: ['var(--c0)', 'var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)', 'var(--c6)', 'var(--c7)'],
+    data, params: () => params,
+    setParams: (p) => { params = { ...params, ...p }; cache = {}; toUrl(); schedule(); },
+    resetParams: () => { params = { ...DEFAULTS }; cache = {}; toUrl(); schedule(); },
+    calc: (id, o) => { calcs[id] = o; },
+    loader: () => {}, refresh: () => {}, setLink: () => {},
+    draw: (name, fn) => { draws.push([name, fn]); },
+    onData: (fn) => { listeners.push(fn); },
+    _render: schedule,
+  };
+})();
+</script>
+<script>
+  // ---------- shared helpers ----------
+  window.e2w = window.e2w || {};
+  const E = window.e2w;
+  E.OEMS = ['TVS', 'Bajaj', 'Ather', 'Ola Electric', 'Hero (Vida)', 'Greaves (Ampere)', 'Hero Electric', 'Okinawa'];
+  E.color = (oem) => {
+    const i = E.OEMS.indexOf(oem);
+    return i < 0 ? 'var(--cds-chart-muted)' : dash.colors[i % dash.colors.length];
+  };
+  E.monthDate = (m) => new Date(m + '-01T00:00:00Z');
+  E.fmtMonth = d3.utcFormat('%b %Y');
+  E.fmtMonthShort = d3.utcFormat("%b '%y");
+  E.lakh = (n) => (n / 1e5).toFixed(n >= 1e6 ? 1 : 2) + 'L';
+  E.inr = new Intl.NumberFormat('en-IN');
+  E.reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  E.played = E.played || {};
+  E.measure = (svg, str) => {
+    const t = svg.append('text').attr('class', 'mk-measure').style('font-size', '11px').text(str);
+    const w = t.node().getComputedTextLength() || str.length * 6.2;
+    t.remove();
+    return w;
+  };
+  E.tip = (el) => {
+    let t = el.querySelector(':scope > .mk-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'mk-tip'; t.hidden = true; el.appendChild(t); }
+    return t;
+  };
+  E.placeTip = (el, tip, x, y) => {
+    const w = tip.offsetWidth, W = el.clientWidth;
+    tip.style.left = Math.max(0, Math.min(W - w, x + 14)) + 'px';
+    tip.style.top = Math.max(0, y - 10) + 'px';
+  };
+  E.tipRow = (tip, label, value) => {
+    const r = document.createElement('div'); r.className = 'r';
+    const a = document.createElement('span'); a.textContent = label;
+    const b = document.createElement('b'); b.textContent = value;
+    r.append(a, b); tip.appendChild(r);
+  };
+  E.HERO = ['#00a9f4', '#5b7cff', '#7fd1ae', '#c9a6ff'];
+
+  // series palette as CSS vars for the static legend
+  document.querySelectorAll('.mk').forEach((root) => {
+    root.style.setProperty('--mk-c0', dash.colors[0]);
+    root.style.setProperty('--mk-c1', dash.colors[1]);
+    root.style.setProperty('--mk-c2', dash.colors[2]);
+  });
+
+  // ---------- period control ----------
+  document.querySelectorAll('#mk-period-select').forEach((sel) => {
+    sel.addEventListener('change', () => dash.setParams({ period: sel.value }));
+  });
+  document.querySelectorAll('#mk-state-select').forEach((sel) => {
+    sel.addEventListener('change', () => dash.setParams({ state: sel.value }));
+  });
+  E.setState = (s) => dash.setParams({ state: (dash.params().state || '') === s ? '' : s });
+  dash.onData(() => {
+    const p = dash.params().period || 'FY27', st = dash.params().state || '';
+    document.querySelectorAll('#mk-period-select').forEach((sel) => { if (document.activeElement !== sel) sel.value = p; });
+    document.querySelectorAll('#mk-state-select').forEach((sel) => { if (document.activeElement !== sel) sel.value = st; });
+  });
+
+  // ---------- calculations ----------
+  dash.calc('kpi', {
+    title: 'Headline figures for the selected period',
+    description: 'e2W units, penetration, leader and top-4 share for the chosen period, compared with the same months a year earlier.',
+    inputs: ['monthly', 'oem_monthly', 'state_monthly', 'oem_state_monthly'],
+    fn: (monthly_in, oem_in, state_monthly, oem_state_monthly) => {
+      // All India, or one state when a region is picked; month-to-date rows are left out so comparisons use whole months
+      const st = dash.params().state || '';
+      const monthly = (st ? state_monthly.filter((r) => r.state === st) : monthly_in).filter((r) => String(r.partial) !== '1');
+      const oem_monthly = (st ? oem_state_monthly.filter((r) => r.state === st) : oem_in).filter((r) => String(r.partial) !== '1');
+      const p = dash.params().period || 'FY27';
+      const allMonths = monthly.map((r) => r.month);
+      const cur = p === 'ALL' ? allMonths : monthly.filter((r) => r.fy === p).map((r) => r.month);
+      const back = (m) => { const [y, mo] = m.split('-').map(Number); return `${y - 1}-${String(mo).padStart(2, '0')}`; };
+      const prev = p === 'ALL' ? [] : cur.map(back).filter((m) => allMonths.includes(m));
+      const hasPrev = prev.length === cur.length && prev.length > 0;
+      const sumM = (ms, k) => monthly.filter((r) => ms.includes(r.month)).reduce((s, r) => s + Number(r[k]), 0);
+      const shares = (ms) => {
+        const by = {};
+        oem_monthly.filter((r) => ms.includes(r.month)).forEach((r) => { by[r.oem] = (by[r.oem] || 0) + Number(r.units); });
+        const tot = Object.values(by).reduce((a, b) => a + b, 0) || 1;
+        return Object.entries(by).filter(([k]) => k !== 'Others').map(([k, v]) => [k, (v / tot) * 100]).sort((a, b) => b[1] - a[1]);
+      };
+      const names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const lab = (ms) => {
+        if (!ms.length) return '';
+        const [y1, m1] = ms[0].split('-').map(Number), [y2, m2] = ms[ms.length - 1].split('-').map(Number);
+        return y1 === y2 ? `${names[m1 - 1]}–${names[m2 - 1]} ${y2}` : `${names[m1 - 1]} ${y1} – ${names[m2 - 1]} ${y2}`;
+      };
+      const e = sumM(cur, 'e2w_units'), t = sumM(cur, 'total_2w_units');
+      const pe = sumM(prev, 'e2w_units'), pt = sumM(prev, 'total_2w_units');
+      const s = shares(cur), ps = hasPrev ? shares(prev) : [];
+      const top4 = s.slice(0, 4).reduce((a, x) => a + x[1], 0);
+      const ptop4 = ps.slice(0, 4).reduce((a, x) => a + x[1], 0);
+      const leaderPrev = s.length ? ps.find((x) => x[0] === s[0][0]) : null;
+      const r1 = (x) => Math.round(x * 10) / 10;
+      return [{
+        period_label: lab(cur),
+        cmp_label: hasPrev ? lab(prev) : '',
+        e2w_units: e,
+        e2w_lakh: r1(e / 1e5),
+        e2w_yoy_pct: hasPrev && pe ? r1((e / pe - 1) * 100) : null,
+        pen_pct: t ? r1((e / t) * 100) : 0,
+        pen_change_pp: hasPrev && pt && t ? r1((e / t - pe / pt) * 100) : null,
+        leader: s.length ? s[0][0] : '—',
+        leader_share_pct: s.length ? r1(s[0][1]) : 0,
+        leader_prev: hasPrev && ps.length ? ps[0][0] : '',
+        leader_change_pp: hasPrev && leaderPrev ? r1(s[0][1] - leaderPrev[1]) : null,
+        top4_share_pct: r1(top4),
+        top4_change_pp: hasPrev ? r1(top4 - ptop4) : null,
+      }];
+    },
+  });
+
+  dash.calc('oem_share', {
+    title: 'Manufacturer share in the selected period',
+    description: 'Each manufacturer’s share of e2W registrations, and its change against the same months a year earlier.',
+    inputs: ['oem_monthly', 'oem_state_monthly'],
+    fn: (oem_in, oem_state_monthly) => {
+      const st = dash.params().state || '';
+      const oem_monthly = (st ? oem_state_monthly.filter((r) => r.state === st) : oem_in).filter((r) => String(r.partial) !== '1');
+      const p = dash.params().period || 'FY27';
+      const allMonths = [...new Set(oem_monthly.map((r) => r.month))];
+      const cur = p === 'ALL' ? allMonths : [...new Set(oem_monthly.filter((r) => r.fy === p).map((r) => r.month))];
+      const back = (m) => { const [y, mo] = m.split('-').map(Number); return `${y - 1}-${String(mo).padStart(2, '0')}`; };
+      const prev = p === 'ALL' ? [] : cur.map(back).filter((m) => allMonths.includes(m));
+      const hasPrev = prev.length === cur.length && prev.length > 0;
+      const agg = (ms) => {
+        const by = {};
+        oem_monthly.filter((r) => ms.includes(r.month)).forEach((r) => { by[r.oem] = (by[r.oem] || 0) + Number(r.units); });
+        const tot = Object.values(by).reduce((a, b) => a + b, 0) || 1;
+        return { by, tot };
+      };
+      const c = agg(cur), pr = agg(prev);
+      const r1 = (x) => Math.round(x * 10) / 10;
+      // the 15 largest brands by name; every other maker (and Vahan's own "Others") in one row
+      const top = Object.keys(c.by).filter((o) => o !== 'Others').sort((a, b) => c.by[b] - c.by[a]).slice(0, 15);
+      const group = (by) => { const g = {}; Object.entries(by).forEach(([o, u]) => { const k = top.includes(o) ? o : 'All other makers'; g[k] = (g[k] || 0) + u; }); return g; };
+      const cg = group(c.by), pg = group(pr.by);
+      return Object.keys(cg).map((oem) => ({
+        oem,
+        units: cg[oem],
+        share_pct: r1((cg[oem] / c.tot) * 100),
+        change_pp: hasPrev ? r1((cg[oem] / c.tot - (pg[oem] || 0) / pr.tot) * 100) : null,
+      })).sort((a, b) => (a.oem === 'All other makers') - (b.oem === 'All other makers') || b.share_pct - a.share_pct);
+    },
+  });
+
+  dash.calc('share_trend', {
+    title: 'Manufacturer share by quarter',
+    description: 'Quarterly share of e2W registrations by manufacturer, complete quarters only.',
+    inputs: ['oem_monthly', 'oem_state_monthly'],
+    fn: (oem_in, oem_state_monthly) => {
+      const st = dash.params().state || '';
+      let oem_monthly = (st ? oem_state_monthly.filter((r) => r.state === st) : oem_in).filter((r) => String(r.partial) !== '1');
+      const named = ['TVS', 'Bajaj', 'Ather', 'Ola Electric', 'Hero (Vida)', 'Greaves (Ampere)', 'Hero Electric', 'Okinawa'];
+      oem_monthly = oem_monthly.map((r) => ({ ...r, oem: named.includes(r.oem) ? r.oem : 'All other makers' }));
+      const q = (m) => { const [y, mo] = m.split('-').map(Number); return `${y}-${String(Math.floor((mo - 1) / 3) * 3 + 1).padStart(2, '0')}`; };
+      const months = {}, units = {}, tot = {};
+      oem_monthly.forEach((r) => {
+        const k = q(r.month);
+        (months[k] = months[k] || new Set()).add(r.month);
+        units[k + '|' + r.oem] = (units[k + '|' + r.oem] || 0) + Number(r.units);
+        tot[k] = (tot[k] || 0) + Number(r.units);
+      });
+      const full = Object.keys(months).filter((k) => months[k].size === 3).sort();
+      const oems = [...new Set(oem_monthly.map((r) => r.oem))];
+      const out = [];
+      full.forEach((k) => oems.forEach((oem) => out.push({ quarter: k, oem, share_pct: Math.round(((units[k + '|' + oem] || 0) / tot[k]) * 1000) / 10 })));
+      return out;
+    },
+  });
+
+  dash.calc('series', {
+    title: 'Monthly registrations for the selected region',
+    description: 'Monthly e2W and all two-wheeler registrations, All India or one state.',
+    inputs: ['monthly', 'state_monthly'],
+    fn: (monthly, state_monthly) => {
+      const st = dash.params().state || '';
+      return st ? state_monthly.filter((r) => r.state === st) : monthly;
+    },
+  });
+
+  dash.calc('state_view', {
+    title: 'States in the selected financial year',
+    description: 'e2W registrations by state and EV share of that state’s two-wheeler registrations.',
+    inputs: ['states'],
+    fn: (states) => {
+      const p = dash.params().period || 'FY27';
+      const rows = p === 'ALL' ? states : states.filter((r) => r.fy === p);
+      const by = {};
+      rows.forEach((r) => {
+        const s = (by[r.state] = by[r.state] || { e: 0, t: 0 });
+        s.e += Number(r.e2w_units); s.t += Number(r.total_2w_units);
+      });
+      return Object.entries(by).map(([state, s]) => ({
+        state,
+        e2w_units: s.e,
+        penetration_pct: Math.round((s.e / s.t) * 1000) / 10,
+      })).sort((a, b) => (a.state === 'Rest of India') - (b.state === 'Rest of India') || b.e2w_units - a.e2w_units);
+    },
+  });
+
+    dash.calc('recon', {
+    title: 'Check against published figures',
+    description: 'Dashboard totals for each published figure\u2019s period, with and without Telangana.',
+    inputs: ['reconciliation', 'monthly', 'oem_monthly', 'states'],
+    fn: (reconciliation, monthly, oem_monthly, states) => {
+      const r1 = (x) => Math.round(x * 10) / 10;
+      const inRange = (m, r) => m >= r.start && m <= r.end;
+      return reconciliation.map((r) => {
+        const pub = Number(r.published_units);
+        const dashU = r.scope === 'brand'
+          ? oem_monthly.filter((x) => x.oem === r.brand && inRange(x.month, r)).reduce((s, x) => s + Number(x.units), 0)
+          : monthly.filter((x) => inRange(x.month, r)).reduce((s, x) => s + Number(x.e2w_units), 0);
+        // Telangana can be removed only for whole financial years (the state file is by FY)
+        let excl = null;
+        if (r.scope === 'total' && r.start.endsWith('-04') && r.end.endsWith('-03')) {
+          const fy = 'FY' + r.end.slice(2, 4);
+          excl = dashU - states.filter((x) => x.fy === fy && x.state === 'Telangana').reduce((s, x) => s + Number(x.e2w_units), 0);
+        }
+        return {
+          id: r.id,
+          check: r.scope === 'brand' ? `${r.brand}, ${r.period_label}` : `All e2W, ${r.period_label}`,
+          published_units: pub,
+          dashboard_units: dashU,
+          gap_pct: r1((dashU / pub - 1) * 100),
+          excl_telangana_units: excl,
+          gap_excl_pct: excl == null ? null : r1((excl / pub - 1) * 100),
+          published_by: r.published_by,
+          url: r.url,
+        };
+      });
+    },
+  });
+
+  // ---------- drawings ----------
+  const kpiRow = () => { const k = dash.data('kpi'); return k.status === 'ok' && k.data && k.data[0] ? k.data[0] : null; };
+  const msg = (el, status, what) => { el.replaceChildren(); const d = document.createElement('div'); d.className = 'mk-msg'; d.textContent = status === 'error' ? `${what} didn’t load.` : '—'; el.appendChild(d); };
+
+  // count-up on first arrival, plain text afterwards
+  // count up on first arrival; any later redraw cancels the animation and shows the exact value
+  E.anim = E.anim || {};
+  const countTo = (el, v, dec, key) => {
+    const txt = v.toFixed(dec);
+    const token = (E.anim[key] = (E.anim[key] || 0) + 1);
+    if (E.reduce || E.played['n-' + key]) { el.textContent = txt; return; }
+    E.played['n-' + key] = true;
+    const t0 = performance.now(), dur = 1100;
+    el.textContent = (0).toFixed(dec);
+    const step = (now) => {
+      if (E.anim[key] !== token) return;
+      const k = Math.min(1, Math.max(0, (now - t0) / dur)), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = k < 1 ? (v * e).toFixed(dec) : txt;
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+    setTimeout(() => { if (E.anim[key] === token) el.textContent = txt; }, dur + 400);
+  };
+  const numDraw = (field, dec, key) => (el) => { const r = kpiRow(); if (!r || r[field] == null) { el.textContent = '—'; return; } countTo(el, r[field], dec, key); };
+  const txtDraw = (field) => (el) => { const r = kpiRow(); el.textContent = r && r[field] != null ? String(r[field]) : '—'; };
+  dash.draw('lede-period', txtDraw('period_label'));
+  dash.draw('lede-scope', (el) => { el.textContent = dash.params().state || 'India'; });
+  dash.draw('scope-tag', (el) => { el.textContent = dash.params().state || ''; });
+  dash.draw('crumbs', (el) => {
+    const st = dash.params().state || '';
+    el.replaceChildren();
+    if (!st) { const s = document.createElement('span'); s.textContent = 'All India · click a state on the map or pick a region to drill down'; el.appendChild(s); return; }
+    const b = document.createElement('button'); b.type = 'button'; b.textContent = '← All India'; b.onclick = () => dash.setParams({ state: '' });
+    const sep = document.createElement('span'); sep.textContent = '›';
+    const here = document.createElement('span'); here.className = 'here'; here.textContent = st;
+    el.append(b, sep, here);
+  });
+  E.volText = (r) => (r.e2w_units >= 1e5 ? `${r.e2w_lakh.toFixed(1)} lakh` : E.inr.format(r.e2w_units));
+  dash.draw('lede-units', (el) => { const r = kpiRow(); el.textContent = r ? E.volText(r) : '—'; });
+  dash.draw('lede-pen', (el) => { const r = kpiRow(); el.textContent = r ? r.pen_pct.toFixed(1) : '—'; });
+  dash.draw('lede-leader', txtDraw('leader'));
+  dash.draw('lede-share', (el) => { const r = kpiRow(); el.textContent = r ? r.leader_share_pct.toFixed(1) : '—'; });
+  dash.draw('k-units', (el) => {
+    const r = kpiRow(); if (!r) { el.textContent = '—'; return; }
+    if (r.e2w_units >= 1e5) countTo(el, r.e2w_lakh, 1, 'units');
+    else { E.anim.units = (E.anim.units || 0) + 1; el.textContent = E.inr.format(r.e2w_units); }
+  });
+  dash.draw('k-units-unit', (el) => { const r = kpiRow(); el.textContent = r && r.e2w_units < 1e5 ? 'units' : 'lakh'; });
+  dash.draw('k-pen', numDraw('pen_pct', 1, 'pen'));
+  dash.draw('k-leader', txtDraw('leader'));
+  dash.draw('k-top4', numDraw('top4_share_pct', 1, 'top4'));
+  dash.draw('w-pen', numDraw('pen_pct', 1, 'wpen'));
+
+  const delta = (el, val, unit, cmp, goodIfUp = true) => {
+    el.replaceChildren();
+    if (val == null) { el.textContent = 'No earlier period to compare'; return; }
+    const b = document.createElement('b');
+    const up = val > 0.05, down = val < -0.05;
+    b.className = up ? (goodIfUp ? 'mk-up' : 'mk-down') : down ? (goodIfUp ? 'mk-down' : 'mk-up') : 'mk-flat';
+    b.textContent = `${up ? '▲ +' : down ? '▼ ' : ''}${val.toFixed(1)}${unit}`;
+    el.append(b, ` vs ${cmp}`);
+  };
+  dash.draw('k-units-d', (el) => { const r = kpiRow(); if (!r) { el.textContent = '—'; return; } delta(el, r.e2w_yoy_pct, '%', r.cmp_label); });
+  dash.draw('k-pen-d', (el) => { const r = kpiRow(); if (!r) { el.textContent = '—'; return; } delta(el, r.pen_change_pp, ' pp', r.cmp_label); });
+  dash.draw('k-top4-d', (el) => { const r = kpiRow(); if (!r) { el.textContent = '—'; return; } delta(el, r.top4_change_pp, ' pp', r.cmp_label, false); });
+  dash.draw('k-leader-d', (el) => {
+    const r = kpiRow(); if (!r) { el.textContent = '—'; return; }
+    el.replaceChildren();
+    const b = document.createElement('b'); b.textContent = r.leader_share_pct.toFixed(1) + '% share';
+    el.append(b);
+    if (r.leader_prev) el.append(r.leader_prev === r.leader ? ', also #1 a year earlier' : `, took #1 from ${r.leader_prev}`);
+  });
+  dash.draw('asof', (el) => {
+    const m = dash.data('monthly');
+    if (m.status !== 'ok' || !m.data.length) { el.textContent = '—'; return; }
+    const full = m.data.filter((r) => String(r.partial) !== '1').map((r) => r.month).sort().pop();
+    const mtd = m.data.find((r) => String(r.partial) === '1');
+    el.textContent = E.fmtMonth(E.monthDate(full)) + (mtd ? ` · ${d3.utcFormat('%b')(E.monthDate(mtd.month))} to date` : '');
+  });
+
+  // ---------- hero sparklines (24 months ending at the selected period) ----------
+  const periodEnd = (months) => {
+    const p = dash.params().period || 'FY27';
+    if (p === 'ALL') return months[months.length - 1];
+    const y = 2000 + Number(p.slice(2));
+    const end = `${y}-03`;
+    return months.filter((m) => m <= end).pop();
+  };
+  const spark = (el, pts, fmt, key) => {
+    el.replaceChildren();
+    if (!pts.length) return;
+    const W = Math.max(120, el.clientWidth), H = 38;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
+      .attr('aria-label', `Trend over the last ${pts.length} months, latest ${fmt(pts[pts.length - 1].v)}`);
+    const x = d3.scaleLinear().domain([0, pts.length - 1]).range([1, W - 5]);
+    const y = d3.scaleLinear().domain(d3.extent(pts, (p) => p.v)).nice().range([H - 3, 4]);
+    const gid = 'mkg-' + key;
+    const g = svg.append('defs').append('linearGradient').attr('id', gid).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    g.append('stop').attr('offset', 0).attr('stop-color', '#00a9f4').attr('stop-opacity', 0.45);
+    g.append('stop').attr('offset', 1).attr('stop-color', '#00a9f4').attr('stop-opacity', 0);
+    svg.append('path').datum(pts).attr('d', d3.area().x((_, i) => x(i)).y0(H).y1((p) => y(p.v))).attr('fill', `url(#${gid})`);
+    const path = svg.append('path').datum(pts).attr('d', d3.line().x((_, i) => x(i)).y((p) => y(p.v))).attr('fill', 'none').attr('stroke', '#00a9f4').attr('stroke-width', 1.75);
+    svg.append('circle').attr('cx', x(pts.length - 1)).attr('cy', y(pts[pts.length - 1].v)).attr('r', 3).attr('fill', '#ffffff');
+    if (!E.reduce && !E.played['s-' + key]) {
+      E.played['s-' + key] = true;
+      const L = path.node().getTotalLength();
+      path.attr('stroke-dasharray', `${L} ${L}`).attr('stroke-dashoffset', L).transition().duration(1200).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0);
+    }
+  };
+  const monthlyRows = () => {
+    const m = dash.data('series');
+    return m.status === 'ok' ? m.data.map((r) => ({ month: r.month, fy: r.fy, e: +r.e2w_units, t: +r.total_2w_units, partial: String(r.partial) === '1' })) : null;
+  };
+  const window24 = (rows0) => { const rows = rows0.filter((r) => !r.partial); const end = periodEnd(rows.map((r) => r.month)); const i = rows.findIndex((r) => r.month === end); return rows.slice(Math.max(0, i - 23), i + 1); };
+  dash.draw('spark-units', (el) => { const rows = monthlyRows(); if (!rows) { el.replaceChildren(); return; } spark(el, window24(rows).map((r) => ({ v: r.e })), (v) => E.inr.format(v), 'u'); });
+  dash.draw('spark-pen', (el) => { const rows = monthlyRows(); if (!rows) { el.replaceChildren(); return; } spark(el, window24(rows).map((r) => ({ v: (r.e / r.t) * 100 })), (v) => v.toFixed(1) + '%', 'p'); });
+  dash.draw('spark-leader', (el) => {
+    const st = dash.params().state || '';
+    const o = dash.data(st ? 'oem_state_monthly' : 'oem_monthly'), r = kpiRow();
+    if (o.status !== 'ok' || !r) { el.replaceChildren(); return; }
+    const by = d3.rollup((st ? o.data.filter((d) => d.state === st) : o.data).filter((d) => String(d.partial) !== '1'), (v) => ({ tot: d3.sum(v, (d) => +d.units), me: d3.sum(v.filter((d) => d.oem === r.leader), (d) => +d.units) }), (d) => d.month);
+    const months = [...by.keys()].sort();
+    if (!months.length) { el.replaceChildren(); return; }
+    const end = periodEnd(months), i = months.indexOf(end);
+    spark(el, months.slice(Math.max(0, i - 23), i + 1).map((m) => ({ v: (by.get(m).me / by.get(m).tot) * 100 })), (v) => v.toFixed(1) + '%', 'l');
+  });
+  dash.draw('seg-top4', (el) => {
+    const s = dash.data('oem_share');
+    el.replaceChildren();
+    if (s.status !== 'ok' || !s.data) return;
+    const top = s.data.filter((r) => r.oem !== 'All other makers').slice(0, 4);
+    const bar = document.createElement('div'); bar.className = 'mk-seg';
+    const key = document.createElement('div'); key.className = 'mk-seg-key';
+    const rest = 100 - d3.sum(top, (r) => r.share_pct);
+    top.forEach((r, ix) => {
+      const i = document.createElement('i'); i.style.width = r.share_pct + '%'; i.style.background = E.HERO[ix]; bar.appendChild(i);
+      const k = document.createElement('span'); k.style.color = E.HERO[ix]; k.textContent = `${r.oem} ${r.share_pct.toFixed(0)}%`; key.appendChild(k);
+    });
+    const ri = document.createElement('i'); ri.style.width = rest + '%'; ri.style.background = 'rgba(255,255,255,.16)'; bar.appendChild(ri);
+    el.append(bar, key);
+  });
+
+  // ---------- Exhibit 1: monthly volume + penetration ----------
+  dash.draw('volume', (el) => {
+    const rows0 = monthlyRows();
+    if (!rows0 || !rows0.length) { msg(el, dash.data('series').status, 'Monthly registrations'); return; }
+    const p = dash.params().period || 'FY27';
+    const rows = rows0.map((r) => ({ ...r, pen: (r.e / r.t) * 100 }));
+    const inSel = (r) => p === 'ALL' || r.fy === p;
+    el.replaceChildren();
+    const W = Math.max(280, el.clientWidth), H = 320;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', 'Monthly e2W registrations and EV penetration since April 2021');
+    const y = d3.scaleLinear().domain([0, d3.max(rows, (r) => r.e) * 1.18]).nice(4);
+    const yp = d3.scaleLinear().domain([0, Math.ceil(d3.max(rows, (r) => r.pen) * 1.25)]).nice(4);
+    const ml = E.measure(svg, E.lakh(y.domain()[1])) + 10, mr = E.measure(svg, yp.domain()[1] + '%') + 10;
+    const mt = 26, mb = 26;
+    const x = d3.scaleBand().domain(rows.map((r) => r.month)).range([ml, W - mr]).paddingInner(0.25);
+    y.range([H - mb, mt]); yp.range([H - mb, mt]);
+    svg.append('g').attr('transform', `translate(${ml},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(W - ml - mr)).tickFormat(E.lakh)).call((g) => g.selectAll('.tick line').attr('stroke-dasharray', '2,3'));
+    svg.append('g').attr('transform', `translate(${W - mr},0)`).call(d3.axisRight(yp).ticks(4).tickSize(0).tickPadding(6).tickFormat((d) => d + '%'));
+    const narrow = W < 560;
+    svg.append('g').attr('transform', `translate(0,${H - mb})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8)
+      .tickValues(rows.filter((r) => r.month.endsWith('-04') && (!narrow || +r.month.slice(0, 4) % 2 === 1)).map((r) => r.month))
+      .tickFormat((m) => 'FY' + String(+m.slice(2, 4) + 1)));
+    // policy markers
+    const events = [{ m: '2023-06', a: 'FAME-II cut' }, { m: '2024-10', a: 'PM E-DRIVE' }].filter((ev) => x(ev.m) != null);
+    const evg = svg.append('g');
+    events.forEach((ev) => {
+      const cx = x(ev.m) + x.bandwidth() / 2;
+      evg.append('line').attr('x1', cx).attr('x2', cx).attr('y1', mt - 8).attr('y2', H - mb).style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '2,3');
+      evg.append('text').attr('class', 'mk-ann-sub').attr('x', cx + 4).attr('y', mt - 12).text(ev.a);
+    });
+    const first = !E.played.volume && !E.reduce;
+    const bars = svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => x(r.month)).attr('width', x.bandwidth()).attr('rx', Math.min(2, x.bandwidth() / 3))
+      .style('fill', (r) => (inSel(r) || r.partial ? dash.colors[1] : dash.colors[0])).style('opacity', (r) => (r.partial ? 0.4 : inSel(r) ? 1 : 0.2))
+      .style('stroke', (r) => (r.partial ? dash.colors[1] : 'none')).attr('stroke-dasharray', (r) => (r.partial ? '2,2' : null));
+    if (first) bars.attr('y', H - mb).attr('height', 0).transition().duration(800).delay((_, i) => i * 9).ease(d3.easeCubicOut).attr('y', (r) => y(r.e)).attr('height', (r) => H - mb - y(r.e));
+    else bars.attr('y', (r) => y(r.e)).attr('height', (r) => H - mb - y(r.e));
+    const line = d3.line().x((r) => x(r.month) + x.bandwidth() / 2).y((r) => yp(r.pen));
+    const path = svg.append('path').datum(rows.filter((r) => !r.partial)).attr('d', line).attr('fill', 'none').style('stroke', dash.colors[2]).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    if (first) { const L = path.node().getTotalLength(); path.attr('stroke-dasharray', `${L} ${L}`).attr('stroke-dashoffset', L).transition().delay(300).duration(1400).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0); }
+    // peak annotation within the selected period
+    const sel = rows.filter((r) => inSel(r) && !r.partial), peak = d3.greatest(sel, (r) => r.e);
+    if (peak) {
+      const px = x(peak.month) + x.bandwidth() / 2, py = y(peak.e);
+      const label = `Peak ${E.fmtMonthShort(E.monthDate(peak.month))}: ${E.lakh(peak.e)}`;
+      const lw = E.measure(svg, label);
+      const lx = Math.min(W - mr - lw, Math.max(ml, px - lw / 2));
+      svg.append('circle').attr('cx', px).attr('cy', py - 6).attr('r', 2.5).style('fill', 'var(--color-fg)');
+      svg.append('text').attr('class', 'mk-ann').attr('x', lx).attr('y', py - 14).text(label);
+    }
+    const lastR = rows.filter((r) => !r.partial).pop();
+    svg.append('circle').attr('cx', x(lastR.month) + x.bandwidth() / 2).attr('cy', yp(lastR.pen)).attr('r', 4.5).style('fill', dash.colors[2]).style('stroke', 'var(--color-panel)').attr('stroke-width', 2);
+    E.played.volume = true;
+    const tip = E.tip(el);
+    const hl = svg.append('line').attr('y1', mt).attr('y2', H - mb).style('stroke', 'var(--color-fg)').attr('stroke-opacity', 0.35).attr('opacity', 0);
+    svg.append('rect').attr('x', ml).attr('y', 0).attr('width', W - ml - mr).attr('height', H - mb).style('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const i = Math.max(0, Math.min(rows.length - 1, Math.floor((px - ml) / x.step())));
+        const r = rows[i], cx = x(r.month) + x.bandwidth() / 2;
+        hl.attr('x1', cx).attr('x2', cx).attr('opacity', 1);
+        tip.replaceChildren(); const s = document.createElement('strong'); s.textContent = `${E.fmtMonth(E.monthDate(r.month))}${r.partial ? ' · month to date' : ''} · ${r.fy}`; tip.appendChild(s);
+        E.tipRow(tip, 'e2W registrations', E.inr.format(r.e));
+        E.tipRow(tip, 'All two-wheelers', E.inr.format(r.t));
+        E.tipRow(tip, 'EV penetration', r.pen.toFixed(1) + '%');
+        tip.hidden = false; E.placeTip(el, tip, (cx / W) * el.clientWidth, 0);
+      })
+      .on('pointerleave', () => { tip.hidden = true; hl.attr('opacity', 0); });
+  });
+
+  // ---------- Exhibit 2: waffle ----------
+  dash.draw('waffle', (el) => {
+    const r = kpiRow();
+    el.replaceChildren();
+    const pen = r ? r.pen_pct : 0;
+    const full = Math.floor(pen), frac = pen - full;
+    for (let i = 0; i < 100; i++) {
+      const c = document.createElement('i');
+      if (r && i < full) c.className = 'on';
+      else if (r && i === full && frac > 0.05) { c.className = 'part'; c.style.setProperty('--p', Math.round(frac * 100) + '%'); }
+      if (!E.reduce && !E.played.waffle && r) { c.style.opacity = '0'; c.style.transition = `opacity .35s ease ${i * 8}ms`; requestAnimationFrame(() => requestAnimationFrame(() => { c.style.opacity = '1'; })); setTimeout(() => { c.style.opacity = '1'; }, 1600); }
+      el.appendChild(c);
+    }
+    if (r) E.played.waffle = true;
+  });
+  dash.draw('w-note', (el) => {
+    const r = kpiRow(); if (!r) { el.textContent = '—'; return; }
+    el.replaceChildren();
+    if (r.pen_change_pp == null) { el.append(`Electric's share of two-wheelers in ${r.period_label}.`); return; }
+    const b = document.createElement('b');
+    b.textContent = `${r.pen_change_pp > 0 ? '+' : ''}${r.pen_change_pp.toFixed(1)} pp`;
+    el.append('That is ', b, ` compared with ${r.cmp_label}. The top four makers hold ${r.top4_share_pct.toFixed(0)}% of EV volume.`);
+  });
+
+  // ---------- Exhibit 3: 100% stacked area of share ----------
+  dash.draw('share-trend', (el) => {
+    const s = dash.data('share_trend');
+    if (s.status !== 'ok' || !s.data) { msg(el, s.status, 'Manufacturer data'); return; }
+    el.replaceChildren();
+    const W = Math.max(280, el.clientWidth), H = 340;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', 'Quarterly share of e2W registrations by manufacturer, stacked to 100%');
+    const quarters = [...new Set(s.data.map((r) => r.quarter))].sort();
+    const oems = [...E.OEMS, 'All other makers'].filter((o) => s.data.some((r) => r.oem === o));
+    const table = quarters.map((q) => { const o = { q, d: E.monthDate(q) }; oems.forEach((k) => { o[k] = 0; }); s.data.filter((r) => r.quarter === q).forEach((r) => { o[r.oem] = +r.share_pct; }); return o; });
+    const stack = d3.stack().keys(oems).offset(d3.stackOffsetExpand)(table);
+    const lastI = table.length - 1;
+    const labelled = stack.filter((l) => (l[lastI][1] - l[lastI][0]) >= 0.04);
+    const lab = (l) => `${l.key} ${Math.round((l[lastI][1] - l[lastI][0]) * 100)}%`;
+    const mr = (W < 520 ? 0 : d3.max(labelled, (l) => E.measure(svg, lab(l))) + 14);
+    const ml = E.measure(svg, '100%') + 8, mt = 6, mb = 26;
+    const x = d3.scaleUtc().domain(d3.extent(table, (t) => t.d)).range([ml, W - mr]);
+    const y = d3.scaleLinear().domain([0, 1]).range([H - mb, mt]);
+    const area = d3.area().x((d) => x(d.data.d)).y0((d) => y(d[0])).y1((d) => y(d[1])).curve(d3.curveLinear);
+    const first = !E.played.share && !E.reduce;
+    const clipId = 'mk-share-clip';
+    const clip = svg.append('defs').append('clipPath').attr('id', clipId).append('rect').attr('x', ml).attr('y', 0).attr('height', H).attr('width', first ? 0 : W - ml - mr);
+    if (first) clip.transition().duration(1300).ease(d3.easeCubicOut).attr('width', W - ml - mr);
+    E.played.share = true;
+    svg.append('g').attr('clip-path', `url(#${clipId})`).selectAll('path').data(stack).join('path')
+      .attr('d', area).style('fill', (l) => E.color(l.key)).style('stroke', 'var(--color-panel)').attr('stroke-width', 0.75)
+      .style('opacity', (l) => (l.key === 'All other makers' ? 0.55 : 0.95));
+    svg.append('g').attr('transform', `translate(${ml},0)`).call(d3.axisLeft(y).ticks(4).tickSize(0).tickPadding(6).tickFormat(d3.format('.0%')));
+    const years = d3.utcYear.every(W < 520 ? 2 : 1).range(x.domain()[0], d3.utcDay.offset(x.domain()[1], 1));
+    svg.append('g').attr('transform', `translate(0,${H - mb})`).call(d3.axisBottom(x).tickValues(years).tickSize(0).tickPadding(8).tickFormat(d3.utcFormat('%Y')));
+    // selected-period bracket
+    const p = dash.params().period || 'FY27';
+    if (p !== 'ALL') {
+      const y0 = 2000 + Number(p.slice(2)) - 1;
+      const a = Math.max(x.range()[0], x(new Date(Date.UTC(y0, 3, 1)))), b = Math.min(x.range()[1], x(new Date(Date.UTC(y0 + 1, 0, 1))));
+      if (b > a) {
+        svg.append('rect').attr('x', a).attr('y', mt).attr('width', b - a).attr('height', H - mt - mb).style('fill', 'none').style('stroke', 'var(--color-fg)').attr('stroke-width', 1.5).attr('stroke-dasharray', '4,3');
+      }
+    }
+    if (mr > 0) {
+      const ends = labelled.map((l) => ({ l, y: y((l[lastI][0] + l[lastI][1]) / 2) })).sort((a, b) => a.y - b.y);
+      for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 13) ends[i].y = ends[i - 1].y + 13;
+      svg.append('g').selectAll('text').data(ends).join('text').attr('x', x.range()[1] + 8).attr('y', (e) => e.y).attr('dy', '0.35em')
+        .style('fill', 'var(--color-fg)').style('font-weight', 600).text((e) => lab(e.l));
+      svg.append('g').selectAll('rect').data(ends).join('rect').attr('x', x.range()[1] + 2).attr('y', (e) => e.y - 4).attr('width', 3).attr('height', 8).style('fill', (e) => E.color(e.l.key));
+    }
+    const tip = E.tip(el);
+    const hl = svg.append('line').attr('y1', mt).attr('y2', H - mb).style('stroke', 'var(--color-panel)').attr('stroke-width', 2).attr('opacity', 0);
+    svg.append('rect').attr('x', ml).attr('y', mt).attr('width', W - ml - mr).attr('height', H - mt - mb).style('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const d = x.invert(px); const i = d3.minIndex(table, (t) => Math.abs(t.d - d));
+        const cx = x(table[i].d);
+        hl.attr('x1', cx).attr('x2', cx).attr('opacity', 1);
+        tip.replaceChildren();
+        const qd = table[i].d, mo = qd.getUTCMonth(), fyq = ((mo + 9) % 12) / 3 + 1, fy = qd.getUTCFullYear() + (mo >= 3 ? 1 : 0);
+        const st = document.createElement('strong'); st.textContent = `Q${fyq} FY${String(fy).slice(2)} · ${d3.utcFormat('%b')(qd)}–${d3.utcFormat('%b %Y')(d3.utcMonth.offset(qd, 2))}`; tip.appendChild(st);
+        oems.map((o) => [o, table[i][o]]).filter(([, v]) => v >= 0.5).sort((a, b) => b[1] - a[1]).forEach(([o, v]) => {
+          const r = document.createElement('div'); r.className = 'r';
+          const a = document.createElement('span'); const sw = document.createElement('i'); sw.style.background = E.color(o); a.append(sw, o);
+          const b = document.createElement('b'); b.textContent = v.toFixed(1) + '%';
+          r.append(a, b); tip.appendChild(r);
+        });
+        tip.hidden = false; E.placeTip(el, tip, (cx / W) * el.clientWidth, 0);
+      })
+      .on('pointerleave', () => { tip.hidden = true; hl.attr('opacity', 0); });
+  });
+
+  // ---------- Exhibit 4: OEM league table ----------
+  dash.draw('oem-rows', (el) => {
+    const s = dash.data('oem_share');
+    if (s.status !== 'ok' || !s.data) { msg(el, s.status, 'Manufacturer data'); return; }
+    const max = d3.max(s.data, (r) => r.share_pct) || 1;
+    el.replaceChildren();
+    let rank = 0;
+    s.data.forEach((r) => {
+      const row = document.createElement('div'); row.className = 'mk-row';
+      const n = document.createElement('span'); n.className = 'mk-row-name';
+      const rk = document.createElement('span'); rk.className = 'mk-rank'; rk.textContent = r.oem === 'All other makers' ? '' : String(++rank);
+      n.append(rk, r.oem);
+      const tr = document.createElement('div'); tr.className = 'mk-track';
+      const f = document.createElement('div'); f.className = 'mk-fill'; f.style.background = E.color(r.oem); f.style.width = (r.share_pct / max) * 100 + '%';
+      tr.appendChild(f);
+      const v = document.createElement('span'); v.className = 'mk-num';
+      v.dataset.source = 'oem_share'; v.dataset.field = 'share_pct'; v.dataset.where = 'oem=' + encodeURIComponent(r.oem);
+      v.textContent = r.share_pct.toFixed(1);
+      const c = document.createElement('span'); c.className = 'mk-chg';
+      if (r.change_pp == null) { c.textContent = '—'; c.classList.add('mk-flat'); }
+      else {
+        c.dataset.source = 'oem_share'; c.dataset.field = 'change_pp'; c.dataset.where = 'oem=' + encodeURIComponent(r.oem);
+        c.classList.add(r.change_pp > 0.05 ? 'mk-up' : r.change_pp < -0.05 ? 'mk-down' : 'mk-flat');
+        c.textContent = (r.change_pp > 0 ? '+' : '') + r.change_pp.toFixed(1);
+      }
+      row.append(n, tr, v, c); el.appendChild(row);
+    });
+  });
+
+  // ---------- Exhibit 5: India tile map ----------
+  const TILES = [
+    ['JK', 'Jammu and Kashmir', 2, 0], ['LA', 'Ladakh', 3, 0],
+    ['PB', 'Punjab', 1, 1], ['HP', 'Himachal Pradesh', 2, 1], ['UK', 'Uttarakhand', 3, 1],
+    ['RJ', 'Rajasthan', 0, 2], ['HR', 'Haryana', 1, 2], ['DL', 'Delhi', 2, 2], ['UP', 'Uttar Pradesh', 3, 2], ['BR', 'Bihar', 4, 2], ['SK', 'Sikkim', 5, 2], ['AS', 'Assam', 6, 2], ['AR', 'Arunachal Pradesh', 7, 2],
+    ['GJ', 'Gujarat', 0, 3], ['MP', 'Madhya Pradesh', 1, 3], ['CG', 'Chhattisgarh', 2, 3], ['JH', 'Jharkhand', 3, 3], ['WB', 'West Bengal', 4, 3], ['ML', 'Meghalaya', 6, 3], ['NL', 'Nagaland', 7, 3],
+    ['DD', 'Dadra & Nagar Haveli and Daman & Diu', 0, 4], ['MH', 'Maharashtra', 1, 4], ['TG', 'Telangana', 2, 4], ['OD', 'Odisha', 3, 4], ['TR', 'Tripura', 5, 4], ['MZ', 'Mizoram', 6, 4], ['MN', 'Manipur', 7, 4],
+    ['GA', 'Goa', 0, 5], ['KA', 'Karnataka', 1, 5], ['AP', 'Andhra Pradesh', 2, 5],
+    ['KL', 'Kerala', 1, 6], ['TN', 'Tamil Nadu', 2, 6], ['PY', 'Puducherry', 3, 6], ['AN', 'Andaman & Nicobar Islands', 5, 6],
+  ];
+  dash.draw('tile-map', (el) => {
+    const s = dash.data('state_view'), k = kpiRow();
+    if (s.status !== 'ok' || !s.data) { msg(el, s.status, 'State data'); return; }
+    el.replaceChildren();
+    const by = new Map(s.data.map((r) => [r.state, r]));
+    const named = s.data.filter((r) => r.e2w_units >= 500);
+    const pmax = d3.max(named, (r) => r.penetration_pct) || 1, pmin = d3.min(named, (r) => r.penetration_pct) || 0;
+    const W = Math.max(280, el.clientWidth);
+    const cols = 8, rowsN = 7, gap = 5;
+    const size = Math.min(78, (W - gap * (cols - 1)) / cols);
+    const H = rowsN * size + (rowsN - 1) * gap;
+    const ox = (W - (cols * size + (cols - 1) * gap)) / 2;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', 'Tile map of India: EV penetration of two-wheelers by state');
+    const op = (v) => 0.14 + 0.86 * Math.max(0, Math.min(1, (v - pmin) / (pmax - pmin || 1)));
+    const tip = E.tip(el);
+    const g = svg.selectAll('g.t').data(TILES).join('g').attr('class', 't')
+      .attr('transform', (t) => `translate(${ox + t[2] * (size + gap)},${t[3] * (size + gap)})`);
+    const selSt = dash.params().state || '';
+    g.append('rect').attr('class', 'hit').attr('width', size).attr('height', size).attr('rx', 6).style('fill', 'var(--color-panel)')
+      .style('stroke', (t) => (t[1] === selSt ? 'var(--color-fg)' : 'none')).attr('stroke-width', 3);
+    g.attr('tabindex', 0).attr('role', 'button').attr('aria-label', (t) => `${t[1]}: drill into this state`)
+      .on('click', (ev, t) => E.setState(t[1]))
+      .on('keydown', (ev, t) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); E.setState(t[1]); } });
+    g.append('rect').attr('width', size).attr('height', size).attr('rx', 6)
+      .style('fill', (t) => (by.has(t[1]) ? dash.colors[1] : 'var(--cds-chart-grid)'))
+      .style('opacity', (t) => (by.has(t[1]) ? op(by.get(t[1]).penetration_pct) : 0.6) * (selSt && t[1] !== selSt ? 0.55 : 1));
+    const dark = (t) => by.has(t[1]) && op(by.get(t[1]).penetration_pct) * (selSt && t[1] !== selSt ? 0.55 : 1) > 0.55;
+    g.append('text').attr('x', 8).attr('y', 17).style('font-size', size < 50 ? '10px' : '12px').style('font-weight', 700)
+      .style('fill', (t) => (dark(t) ? '#ffffff' : 'var(--color-fg)')).text((t) => t[0]);
+    g.filter((t) => by.has(t[1])).append('text').attr('x', 8).attr('y', size - 9)
+      .style('font-size', size < 50 ? '10px' : '13px').style('font-variant-numeric', 'tabular-nums')
+      .style('fill', (t) => (dark(t) ? '#ffffff' : 'var(--color-fg)'))
+      .attr('data-source', 'state_view').attr('data-field', 'penetration_pct').attr('data-where', (t) => 'state=' + encodeURIComponent(t[1]))
+      .text((t) => by.get(t[1]).penetration_pct.toFixed(1) + '%');
+    g.on('pointerenter', (ev, t) => {
+        tip.replaceChildren();
+        const st = document.createElement('strong'); st.textContent = t[1]; tip.appendChild(st);
+        const r = by.get(t[1]);
+        if (r) { E.tipRow(tip, 'e2W registrations', E.inr.format(r.e2w_units)); E.tipRow(tip, 'Penetration', r.penetration_pct.toFixed(1) + '%'); }
+        else { const d = document.createElement('div'); d.className = 'r'; d.textContent = 'No registrations in this period'; tip.appendChild(d); }
+        const hint = document.createElement('div'); hint.className = 'r'; hint.textContent = t[1] === selSt ? 'Click to go back to All India' : 'Click to drill down'; tip.appendChild(hint);
+        tip.hidden = false;
+        const [px, py] = d3.pointer(ev, el);
+        E.placeTip(el, tip, px, py);
+      })
+      .on('pointerleave', () => { tip.hidden = true; });
+  });
+
+  // ---------- Exhibit 6: state ranking ----------
+  dash.draw('state-rows', (el) => {
+    const s = dash.data('state_view'), k = kpiRow();
+    if (s.status !== 'ok' || !s.data) { msg(el, s.status, 'State data'); return; }
+    // national rate from the state rows themselves, so it stays All India while a state is picked
+    const natE = d3.sum(s.data, (r) => r.e2w_units), natT = d3.sum(s.data, (r) => (r.penetration_pct ? r.e2w_units / (r.penetration_pct / 100) : 0));
+    const nat = natT ? (natE / natT) * 100 : null;
+    const max = d3.max(s.data, (r) => r.e2w_units) || 1;
+    el.replaceChildren();
+    const selSt = dash.params().state || '';
+    const list = s.data.slice(0, 15);
+    if (selSt && !list.some((r) => r.state === selSt)) { const extra = s.data.find((r) => r.state === selSt); if (extra) list.push(extra); }
+    list.forEach((r) => {
+      const row = document.createElement('div'); row.className = 'mk-row click' + (r.state === selSt ? ' sel' : '');
+      row.tabIndex = 0; row.setAttribute('role', 'button'); row.setAttribute('aria-label', `${r.state}: drill into this state`);
+      row.onclick = () => E.setState(r.state);
+      row.onkeydown = (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); E.setState(r.state); } };
+      const n = document.createElement('span'); n.className = 'mk-row-name';
+      const rk = document.createElement('span'); rk.className = 'mk-rank'; rk.textContent = String(s.data.indexOf(r) + 1);
+      n.append(rk, r.state);
+      const tr = document.createElement('div'); tr.className = 'mk-track';
+      const f = document.createElement('div'); f.className = 'mk-fill';
+      f.style.background = r.state === 'Rest of India' ? 'var(--cds-chart-muted)' : dash.colors[0];
+      f.style.width = (r.e2w_units / max) * 100 + '%';
+      tr.appendChild(f);
+      const v = document.createElement('span'); v.className = 'mk-num';
+      v.dataset.source = 'state_view'; v.dataset.field = 'e2w_units'; v.dataset.where = 'state=' + encodeURIComponent(r.state);
+      v.textContent = E.inr.format(r.e2w_units);
+      const pp = document.createElement('span'); pp.className = 'mk-chg ' + (nat != null && r.penetration_pct > nat ? 'mk-up' : 'mk-flat');
+      pp.dataset.source = 'state_view'; pp.dataset.field = 'penetration_pct'; pp.dataset.where = 'state=' + encodeURIComponent(r.state);
+      pp.textContent = r.penetration_pct.toFixed(1) + '%';
+      row.append(n, tr, v, pp); el.appendChild(row);
+    });
+  });
+
+  // ---------- refresh checks ----------
+  const checkRows = () => { const c = dash.data('refresh_checks'); return c.status === 'ok' && c.data && c.data.length ? c.data : null; };
+  dash.draw('checks-pill', (el) => {
+    const rows = checkRows(); el.replaceChildren();
+    if (!rows) { el.textContent = '—'; return; }
+    const fail = rows.filter((r) => r.status === 'FAIL').length, warn = rows.filter((r) => r.status === 'WARN').length;
+    const b = document.createElement('b');
+    b.className = fail ? 'bad' : warn ? 'warn' : 'ok';
+    b.textContent = fail ? `${fail} check${fail > 1 ? 's' : ''} failed` : `${rows.length - warn}/${rows.length} data checks passed`;
+    el.append(b);
+  });
+  dash.draw('checks-at', (el) => {
+    const rows = checkRows();
+    el.textContent = rows ? d3.timeFormat('%-d %b %Y, %H:%M')(new Date(rows[0].run_at)) : '—';
+  });
+  dash.draw('checks-list', (el) => {
+    const rows = checkRows(); el.replaceChildren();
+    if (!rows) return;
+    rows.forEach((r) => {
+      const li = document.createElement('li');
+      const s = document.createElement('span'); s.className = 'mk-gap ' + (r.status === 'PASS' ? 'ok' : r.status === 'WARN' ? 'warn' : 'bad'); s.textContent = r.status === 'PASS' ? 'Pass' : r.status === 'WARN' ? 'Warn' : 'Fail';
+      const t = document.createElement('span'); const n = document.createElement('span'); n.textContent = r.check + ' ';
+      const d = document.createElement('span'); d.className = 'd'; d.textContent = r.detail;
+      t.append(n, d); li.append(s, t); el.appendChild(li);
+    });
+  });
+
+  // ---------- Exhibit 7: reconciliation ----------
+  dash.draw('recon-rows', (el) => {
+    const s = dash.data('recon');
+    el.replaceChildren();
+    if (s.status !== 'ok' || !s.data) {
+      const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = 7; td.className = 'mk-msg';
+      td.textContent = s.status === 'error' ? 'The comparison didn’t load.' : '—'; tr.appendChild(td); el.appendChild(tr); return;
+    }
+    const gap = (v) => {
+      const sp = document.createElement('span');
+      if (v == null) { sp.textContent = '—'; return sp; }
+      sp.className = 'mk-gap ' + (Math.abs(v) <= 2 ? 'ok' : Math.abs(v) <= 6 ? 'warn' : 'bad');
+      sp.textContent = (v > 0 ? '+' : '') + v.toFixed(1) + '%';
+      return sp;
+    };
+    s.data.forEach((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = encodeURIComponent(r.id);
+      const td = (content, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; if (content && typeof content === 'object') c.appendChild(content); else c.textContent = content; tr.appendChild(c); };
+      td(r.check);
+      td(E.inr.format(r.published_units), 'n');
+      td(E.inr.format(r.dashboard_units), 'n');
+      td(gap(r.gap_pct), 'n');
+      td(r.excl_telangana_units == null ? '—' : E.inr.format(r.excl_telangana_units), 'n');
+      td(gap(r.gap_excl_pct), 'n');
+      let src;
+      if (/^https?:\/\//.test(r.url)) { src = document.createElement('a'); src.href = r.url; src.target = '_blank'; src.rel = 'noopener'; src.textContent = r.published_by; }
+      else src = document.createTextNode(r.published_by);
+      td(src, 'src');
+      el.appendChild(tr);
+    });
+  });
+
+dash._render();
+</script>
+</body>
+</html>

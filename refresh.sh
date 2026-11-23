@@ -1,10 +1,9 @@
 #!/bin/bash
-# Daily refresh: pull Vahan -> run checks -> (only if all pass) update data, commit, rebuild and deploy to Netlify.
+# Daily refresh: pull Vahan -> run checks -> (only if all pass) update data, rebuild the site, commit and push (GitHub Pages redeploys).
 # A failed check leaves the live site as it was and raises a macOS notification.
 set -uo pipefail
 export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:$PATH"
 cd "$(dirname "$0")"
-SITE_ID="727db92c-6120-4b70-8a65-e0ee22aa7bdf"
 LOG="logs/refresh-$(date +%Y-%m-%d).log"; mkdir -p logs tmp
 exec >>"$LOG" 2>&1
 echo "== $(date '+%F %T') refresh start"
@@ -25,11 +24,12 @@ fi
 
 cp tmp/new/{monthly,oem_monthly,states,maker_monthly_raw,checks,state_monthly,oem_state_monthly}.csv data/
 python3 -I build_site.py
-git add data && git -c user.email="vansharora26@users.noreply.github.com" commit -qm "Data refresh $(date +%F)" || echo "no data change"
-if npx -y netlify-cli@17.38.1 deploy --prod --dir site --site "$SITE_ID" --message "Data refresh $(date +%F)"; then
-  echo "DEPLOYED"
+git add data docs cache
+git -c user.email="vansharora26@users.noreply.github.com" commit -qm "Data refresh $(date +%F)" || echo "no data change"
+if git push -q origin main; then
+  echo "DEPLOYED (pushed to GitHub Pages)"
 else
-  notify "Netlify deploy failed. Data was refreshed locally."; echo "DEPLOY FAILED"; exit 1
+  notify "Push to GitHub failed. Data was refreshed locally."; echo "DEPLOY FAILED"; exit 1
 fi
 find logs -name "refresh-*.log" -mtime +30 -delete
 echo "== $(date '+%F %T') refresh done"

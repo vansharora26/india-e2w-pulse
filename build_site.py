@@ -136,10 +136,10 @@ dash._render();
 </body>
 </html>
 """
-out = root / "site"
+out = root / "docs"   # GitHub Pages serves /docs on main
 (out / "data").mkdir(parents=True, exist_ok=True)
 (out / "index.html").write_text(html)
 for f in ["monthly.csv", "oem_monthly.csv", "states.csv", "reconciliation.csv", "checks.csv", "state_monthly.csv", "oem_state_monthly.csv"]:
     shutil.copy(root / "data" / f, out / "data" / f)
-(out / "_headers").write_text("/data/*\n  Cache-Control: no-cache\n  Access-Control-Allow-Origin: *\n")
+(out / ".nojekyll").write_text("")
 print("built", out)

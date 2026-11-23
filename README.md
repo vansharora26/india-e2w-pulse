@@ -1,6 +1,8 @@
 # India e2W Pulse
 
-Data pipeline behind the India e2W Pulse dashboard (https://claude.ai/artifact/Nn9MPPKszgt1Ur5tYEbx3w).
+Live dashboard: https://vansharora26.github.io/india-e2w-pulse/ (e.g. ?state=Karnataka&period=FY26)
+
+Data pipeline and site for the India e2W Pulse dashboard.
 
 - `vahan_fetch.py OUT_DIR` pulls electric two-wheeler registrations from the public Vahan report view
   (vahan.parivahan.gov.in): two-wheeler categories 2WIC/2WN/2WT, fuels ELECTRIC(BOV) and PURE EV, month-wise,
@@ -9,4 +11,6 @@ Data pipeline behind the India e2W Pulse dashboard (https://claude.ai/artifact/N
 - `data/` is the data currently on the dashboard. `data/reconciliation.csv` holds published figures used for cross-checks.
 - `dashboard_page.html` is a copy of the dashboard page, for reference.
 
-A daily cloud routine refreshes the data: fetch → validate → commit → upload to the dashboard (only if all checks pass).
+`refresh.sh` runs daily at 08:17 IST (launchd): fetch → validate → rebuild `docs/` → commit → push. GitHub Pages serves `docs/`. A failed check leaves the live site unchanged.
+
+Data source: VAHAN dashboard, Ministry of Road Transport & Highways. Figures are registrations, not manufacturer dispatches.
