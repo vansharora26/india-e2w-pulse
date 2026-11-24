@@ -111,6 +111,7 @@ window.dash = (function () {
 })();
 """
 
+body = body.replace("</footer>", '    <p>This site uses Microsoft Clarity to understand how visitors use it (clicks and scrolling; typed text is masked).</p>\n  </footer>')
 html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -120,6 +121,13 @@ html = f"""<!doctype html>
 <meta name="description" content="Electric two-wheeler registrations in India from the Vahan dashboard: volume, penetration, makers and states, refreshed daily.">
 <meta property="og:title" content="India e2W Pulse">
 <meta property="og:description" content="Electric two-wheeler registrations in India from Vahan, refreshed daily.">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){{
+        c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    }})(window, document, "clarity", "script", "zijenvbs78");
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>{TOKENS}{style}</style>
