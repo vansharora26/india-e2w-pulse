@@ -1040,6 +1040,9 @@
     b.className = fail ? 'bad' : warn ? 'warn' : 'ok';
     b.textContent = fail ? `${fail} check${fail > 1 ? 's' : ''} failed` : `${rows.length - warn}/${rows.length} data checks passed`;
     el.append(b);
+    // say so plainly if the daily refresh has not run for more than two days
+    const ageH = (Date.now() - new Date(rows[0].run_at).getTime()) / 36e5;
+    if (ageH > 48) { b.className = 'warn'; b.textContent = `Last refreshed ${Math.floor(ageH / 24)} days ago`; }
   });
   dash.draw('checks-at', (el) => {
     const rows = checkRows();
