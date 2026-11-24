@@ -7,6 +7,9 @@ cd "$(dirname "$0")"
 LOG="logs/refresh-$(date +%Y-%m-%d).log"; mkdir -p logs tmp
 exec >>"$LOG" 2>&1
 echo "== $(date '+%F %T') refresh start"
+# a second scheduled run later in the day only does work if the morning run didn't succeed
+OK="logs/ok-$(date +%Y-%m-%d)"
+if [ -f "$OK" ] && [ "${FORCE:-0}" != "1" ]; then echo "already refreshed today"; exit 0; fi
 notify() { osascript -e "display notification \"$1\" with title \"India e2W Pulse\"" >/dev/null 2>&1 || true; }
 
 rm -rf tmp/new && mkdir -p tmp/new && cp data/reconciliation.csv tmp/new/
@@ -31,5 +34,7 @@ if git push -q origin main; then
 else
   notify "Push to GitHub failed. Data was refreshed locally."; echo "DEPLOY FAILED"; exit 1
 fi
+touch "$OK"
 find logs -name "refresh-*.log" -mtime +30 -delete
+find logs -name "ok-*" -mtime +7 -delete
 echo "== $(date '+%F %T') refresh done"

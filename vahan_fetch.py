@@ -24,10 +24,18 @@ def get(url, data=None, ajax=False):
     with op.open(req, timeout=90) as r:
         return r.read().decode("utf-8", "ignore")
 
+def select_id(page, option_text):
+    """Find a dropdown's id by an option it contains, so Vahan renumbering its j_idt ids doesn't break us."""
+    for sid, body in re.findall(r'<select id="([^"]+)_input"[^>]*>(.*?)</select>', page, re.S):
+        if option_text in html.unescape(body):
+            return sid
+    raise RuntimeError(f"Vahan page changed: no dropdown with option '{option_text}'")
+
 def state_codes():
     """Vahan state codes and display names from the report page's state list."""
     page = html.unescape(get(URL))
-    sel = re.search(r'<select id="j_idt36_input"[^>]*>(.*?)</select>', page, re.S).group(1)
+    sid = select_id(page, "All Vahan4 Running States")
+    sel = re.search(r'<select id="%s_input"[^>]*>(.*?)</select>' % re.escape(sid), page, re.S).group(1)
     return [(c, state_name(re.sub(r"\(\d+\)$", "", n))) for c, n in re.findall(r'<option value="([^"]+)"[^>]*>([^<]+)</option>', sel) if c != "-1"]
 
 class Session:
@@ -40,6 +48,8 @@ class Session:
         un = html.unescape(page)
         self.main_btn = re.search(r'<button id="(j_idt\d+)"[^>]*u:"VhCatg norms fuel VhClass combTablePnl', un).group(1)
         self.filter_btns = re.findall(r'<button id="(j_idt\d+)"[^>]*u:"combTablePnl"', un)
+        self.unit_sel = select_id(page, "Actual Value")
+        self.state_sel = select_id(page, "All Vahan4 Running States")
         self.fields = {}
 
     def post(self, source, render, extra=None):
@@ -56,7 +66,7 @@ class Session:
         return x
 
     def report(self, y_axis, year, fuels, categories, state="-1"):
-        self.fields = {"j_idt25_input": "A", "j_idt36_input": state, "selectedRto_input": "-1",
+        self.fields = {f"{self.unit_sel}_input": "A", f"{self.state_sel}_input": state, "selectedRto_input": "-1",
                        "yaxisVar_input": y_axis, "xaxisVar_input": "Month Wise",
                        "selectedYearType_input": "C", "selectedYear_input": str(year)}
         self.post(self.main_btn, "VhCatg norms fuel VhClass combTablePnl groupingTable msg vhCatgPnl", {self.main_btn: self.main_btn})
@@ -81,6 +91,9 @@ class Session:
                 break
             rows += more
             start += len(more)
+        # an empty national table means the query was malformed or Vahan misbehaved, never a real zero
+        if state == "-1" and not rows:
+            raise RuntimeError(f"Vahan returned an empty table for {y_axis} {year}")
         return head, rows
 
 TWO_W_CATEGORIES = ["2WIC", "2WN", "2WT"]
