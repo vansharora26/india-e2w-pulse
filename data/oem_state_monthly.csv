@@ -15290,7 +15290,7 @@ month,fy,state,oem,units,partial
 2025-01,FY25,Odisha,Komaki,17,0
 2025-01,FY25,Odisha,Lectrix,18,0
 2025-01,FY25,Odisha,Okinawa,38,0
-2025-01,FY25,Odisha,Ola Electric,932,0
+2025-01,FY25,Odisha,Ola Electric,933,0
 2025-01,FY25,Odisha,Others,62,0
 2025-01,FY25,Odisha,Pure EV,27,0
 2025-01,FY25,Odisha,Quantum,5,0
@@ -16926,7 +16926,7 @@ month,fy,state,oem,units,partial
 2025-05,FY26,Jharkhand,Quantum,13,0
 2025-05,FY26,Jharkhand,Revolt,14,0
 2025-05,FY26,Jharkhand,TVS,317,0
-2025-05,FY26,Karnataka,Ather,3200,0
+2025-05,FY26,Karnataka,Ather,3201,0
 2025-05,FY26,Karnataka,BGauss,73,0
 2025-05,FY26,Karnataka,Bajaj,1302,0
 2025-05,FY26,Karnataka,Bounce,504,0
@@ -18751,7 +18751,7 @@ month,fy,state,oem,units,partial
 2025-09,FY26,Jharkhand,Quantum,5,0
 2025-09,FY26,Jharkhand,Revolt,6,0
 2025-09,FY26,Jharkhand,TVS,263,0
-2025-09,FY26,Karnataka,Ather,4143,0
+2025-09,FY26,Karnataka,Ather,4144,0
 2025-09,FY26,Karnataka,BGauss,169,0
 2025-09,FY26,Karnataka,Bajaj,1273,0
 2025-09,FY26,Karnataka,Benling,2,0
@@ -20152,7 +20152,7 @@ month,fy,state,oem,units,partial
 2025-12,FY26,Karnataka,Bounce,83,0
 2025-12,FY26,Karnataka,E-Sprinto,1300,0
 2025-12,FY26,Karnataka,Greaves (Ampere),438,0
-2025-12,FY26,Karnataka,Hero (Vida),1047,0
+2025-12,FY26,Karnataka,Hero (Vida),1046,0
 2025-12,FY26,Karnataka,Honda,140,0
 2025-12,FY26,Karnataka,Joy e-bike (Wardwizard),3,0
 2025-12,FY26,Karnataka,Kinetic Green,22,0
@@ -20220,7 +20220,7 @@ month,fy,state,oem,units,partial
 2025-12,FY26,Maharashtra,Bajaj,4956,0
 2025-12,FY26,Maharashtra,Benling,1,0
 2025-12,FY26,Maharashtra,Greaves (Ampere),222,0
-2025-12,FY26,Maharashtra,Hero (Vida),1362,0
+2025-12,FY26,Maharashtra,Hero (Vida),1363,0
 2025-12,FY26,Maharashtra,Honda,55,0
 2025-12,FY26,Maharashtra,Jitendra EV,4,0
 2025-12,FY26,Maharashtra,Joy e-bike (Wardwizard),18,0
@@ -20548,7 +20548,7 @@ month,fy,state,oem,units,partial
 2026-01,FY26,Gujarat,Bajaj,1788,0
 2026-01,FY26,Gujarat,Bounce,1,0
 2026-01,FY26,Gujarat,Greaves (Ampere),127,0
-2026-01,FY26,Gujarat,Hero (Vida),504,0
+2026-01,FY26,Gujarat,Hero (Vida),505,0
 2026-01,FY26,Gujarat,Honda,12,0
 2026-01,FY26,Gujarat,Kinetic (DX),18,0
 2026-01,FY26,Gujarat,Kinetic Green,2,0
@@ -21075,7 +21075,7 @@ month,fy,state,oem,units,partial
 2026-02,FY26,Jharkhand,Revolt,5,0
 2026-02,FY26,Jharkhand,Suzuki,10,0
 2026-02,FY26,Jharkhand,TVS,322,0
-2026-02,FY26,Karnataka,Ather,4376,0
+2026-02,FY26,Karnataka,Ather,4375,0
 2026-02,FY26,Karnataka,BGauss,516,0
 2026-02,FY26,Karnataka,Bajaj,1809,0
 2026-02,FY26,Karnataka,Benling,3,0
@@ -21515,7 +21515,6 @@ month,fy,state,oem,units,partial
 2026-03,FY26,Haryana,Greaves (Ampere),31,0
 2026-03,FY26,Haryana,Hero (Vida),153,0
 2026-03,FY26,Haryana,Hero Electric,1,0
-2026-03,FY26,Haryana,Honda,1,0
 2026-03,FY26,Haryana,Kinetic (DX),9,0
 2026-03,FY26,Haryana,Komaki,3,0
 2026-03,FY26,Haryana,Lectrix,16,0
@@ -21564,7 +21563,7 @@ month,fy,state,oem,units,partial
 2026-03,FY26,Jharkhand,Revolt,11,0
 2026-03,FY26,Jharkhand,Suzuki,1,0
 2026-03,FY26,Jharkhand,TVS,587,0
-2026-03,FY26,Karnataka,Ather,7198,0
+2026-03,FY26,Karnataka,Ather,7197,0
 2026-03,FY26,Karnataka,BGauss,466,0
 2026-03,FY26,Karnataka,Bajaj,2863,0
 2026-03,FY26,Karnataka,Benling,3,0
@@ -21585,11 +21584,11 @@ month,fy,state,oem,units,partial
 2026-03,FY26,Karnataka,Pure EV,21,0
 2026-03,FY26,Karnataka,Quantum,295,0
 2026-03,FY26,Karnataka,Revolt,91,0
-2026-03,FY26,Karnataka,River,1099,0
+2026-03,FY26,Karnataka,River,1096,0
 2026-03,FY26,Karnataka,Simple Energy,734,0
 2026-03,FY26,Karnataka,Suzuki,19,0
 2026-03,FY26,Karnataka,TVS,6289,0
-2026-03,FY26,Karnataka,Ultraviolette,108,0
+2026-03,FY26,Karnataka,Ultraviolette,109,0
 2026-03,FY26,Karnataka,Yamaha,12,0
 2026-03,FY26,Kerala,Ather,2948,0
 2026-03,FY26,Kerala,BGauss,36,0
@@ -22097,7 +22096,7 @@ month,fy,state,oem,units,partial
 2026-04,FY27,Karnataka,TVS,6007,0
 2026-04,FY27,Karnataka,Ultraviolette,123,0
 2026-04,FY27,Karnataka,Yamaha,16,0
-2026-04,FY27,Kerala,Ather,2813,0
+2026-04,FY27,Kerala,Ather,2812,0
 2026-04,FY27,Kerala,BGauss,36,0
 2026-04,FY27,Kerala,Bajaj,1832,0
 2026-04,FY27,Kerala,Greaves (Ampere),55,0
@@ -22590,7 +22589,7 @@ month,fy,state,oem,units,partial
 2026-05,FY27,Karnataka,Quantum,142,0
 2026-05,FY27,Karnataka,Revolt,52,0
 2026-05,FY27,Karnataka,River,720,0
-2026-05,FY27,Karnataka,Simple Energy,383,0
+2026-05,FY27,Karnataka,Simple Energy,384,0
 2026-05,FY27,Karnataka,Suzuki,38,0
 2026-05,FY27,Karnataka,TVS,5675,0
 2026-05,FY27,Karnataka,Ultraviolette,126,0
@@ -22783,7 +22782,7 @@ month,fy,state,oem,units,partial
 2026-05,FY27,Tamil Nadu,River,446,0
 2026-05,FY27,Tamil Nadu,Simple Energy,197,0
 2026-05,FY27,Tamil Nadu,Suzuki,55,0
-2026-05,FY27,Tamil Nadu,TVS,5703,0
+2026-05,FY27,Tamil Nadu,TVS,5704,0
 2026-05,FY27,Tamil Nadu,Ultraviolette,47,0
 2026-05,FY27,Tamil Nadu,Yamaha,21,0
 2026-05,FY27,Telangana,Ather,2559,0
@@ -23271,7 +23270,7 @@ month,fy,state,oem,units,partial
 2026-06,FY27,Rajasthan,Others,82,0
 2026-06,FY27,Rajasthan,Pure EV,7,0
 2026-06,FY27,Rajasthan,Quantum,5,0
-2026-06,FY27,Rajasthan,Revolt,153,0
+2026-06,FY27,Rajasthan,Revolt,152,0
 2026-06,FY27,Rajasthan,River,128,0
 2026-06,FY27,Rajasthan,Simple Energy,15,0
 2026-06,FY27,Rajasthan,Suzuki,26,0
@@ -24153,7 +24152,7 @@ month,fy,state,oem,units,partial
 2026-08,FY27,Karnataka,River,923,0
 2026-08,FY27,Karnataka,Simple Energy,416,0
 2026-08,FY27,Karnataka,Suzuki,74,0
-2026-08,FY27,Karnataka,TVS,6705,0
+2026-08,FY27,Karnataka,TVS,6706,0
 2026-08,FY27,Karnataka,Ultraviolette,216,0
 2026-08,FY27,Karnataka,Yamaha,20,0
 2026-08,FY27,Kerala,Ather,3338,0
@@ -24240,7 +24239,7 @@ month,fy,state,oem,units,partial
 2026-08,FY27,Mizoram,Ultraviolette,1,0
 2026-08,FY27,Odisha,Ather,1504,0
 2026-08,FY27,Odisha,BGauss,73,0
-2026-08,FY27,Odisha,Bajaj,2668,0
+2026-08,FY27,Odisha,Bajaj,2669,0
 2026-08,FY27,Odisha,Greaves (Ampere),671,0
 2026-08,FY27,Odisha,Hero (Vida),2955,0
 2026-08,FY27,Odisha,Honda,46,0
@@ -24642,13 +24641,13 @@ month,fy,state,oem,units,partial
 2026-09,FY27,Jharkhand,Revolt,4,0
 2026-09,FY27,Jharkhand,TVS,625,0
 2026-09,FY27,Jharkhand,Yamaha,1,0
-2026-09,FY27,Karnataka,Ather,5717,0
+2026-09,FY27,Karnataka,Ather,5719,0
 2026-09,FY27,Karnataka,BGauss,710,0
 2026-09,FY27,Karnataka,Bajaj,2611,0
 2026-09,FY27,Karnataka,Bounce,2594,0
 2026-09,FY27,Karnataka,E-Sprinto,240,0
 2026-09,FY27,Karnataka,Greaves (Ampere),645,0
-2026-09,FY27,Karnataka,Hero (Vida),2179,0
+2026-09,FY27,Karnataka,Hero (Vida),2180,0
 2026-09,FY27,Karnataka,Honda,161,0
 2026-09,FY27,Karnataka,Kinetic (DX),26,0
 2026-09,FY27,Karnataka,Kinetic Green,7,0
@@ -24688,7 +24687,7 @@ month,fy,state,oem,units,partial
 2026-09,FY27,Lakshadweep,Bajaj,3,0
 2026-09,FY27,Lakshadweep,Hero (Vida),1,0
 2026-09,FY27,Lakshadweep,TVS,1,0
-2026-09,FY27,Madhya Pradesh,Ather,1467,0
+2026-09,FY27,Madhya Pradesh,Ather,1468,0
 2026-09,FY27,Madhya Pradesh,BGauss,177,0
 2026-09,FY27,Madhya Pradesh,Bajaj,4907,0
 2026-09,FY27,Madhya Pradesh,Greaves (Ampere),169,0
@@ -24708,7 +24707,7 @@ month,fy,state,oem,units,partial
 2026-09,FY27,Madhya Pradesh,River,149,0
 2026-09,FY27,Madhya Pradesh,Simple Energy,4,0
 2026-09,FY27,Madhya Pradesh,Suzuki,34,0
-2026-09,FY27,Madhya Pradesh,TVS,4324,0
+2026-09,FY27,Madhya Pradesh,TVS,4325,0
 2026-09,FY27,Madhya Pradesh,Ultraviolette,5,0
 2026-09,FY27,Maharashtra,Ather,4263,0
 2026-09,FY27,Maharashtra,BGauss,1022,0
@@ -24826,7 +24825,7 @@ month,fy,state,oem,units,partial
 2026-09,FY27,Rajasthan,TVS,3445,0
 2026-09,FY27,Rajasthan,Ultraviolette,11,0
 2026-09,FY27,Rajasthan,Yamaha,2,0
-2026-09,FY27,Tamil Nadu,Ather,2841,0
+2026-09,FY27,Tamil Nadu,Ather,2842,0
 2026-09,FY27,Tamil Nadu,BGauss,789,0
 2026-09,FY27,Tamil Nadu,Bajaj,2977,0
 2026-09,FY27,Tamil Nadu,E-Sprinto,1,0
@@ -24904,7 +24903,7 @@ month,fy,state,oem,units,partial
 2026-09,FY27,Uttar Pradesh,Revolt,88,0
 2026-09,FY27,Uttar Pradesh,Simple Energy,8,0
 2026-09,FY27,Uttar Pradesh,Suzuki,7,0
-2026-09,FY27,Uttar Pradesh,TVS,4399,0
+2026-09,FY27,Uttar Pradesh,TVS,4400,0
 2026-09,FY27,Uttar Pradesh,Ultraviolette,4,0
 2026-09,FY27,Uttar Pradesh,Yamaha,8,0
 2026-09,FY27,Uttarakhand,Ather,209,0
@@ -25102,7 +25101,7 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Gujarat,Yamaha,11,0
 2026-10,FY27,Haryana,Ather,360,0
 2026-10,FY27,Haryana,BGauss,7,0
-2026-10,FY27,Haryana,Bajaj,427,0
+2026-10,FY27,Haryana,Bajaj,426,0
 2026-10,FY27,Haryana,Greaves (Ampere),83,0
 2026-10,FY27,Haryana,Hero (Vida),234,0
 2026-10,FY27,Haryana,Honda,48,0
@@ -25153,12 +25152,12 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Jharkhand,Revolt,8,0
 2026-10,FY27,Jharkhand,TVS,717,0
 2026-10,FY27,Jharkhand,Yamaha,4,0
-2026-10,FY27,Karnataka,Ather,5260,0
+2026-10,FY27,Karnataka,Ather,5265,0
 2026-10,FY27,Karnataka,BGauss,683,0
 2026-10,FY27,Karnataka,Bajaj,2733,0
 2026-10,FY27,Karnataka,Bounce,825,0
 2026-10,FY27,Karnataka,Greaves (Ampere),805,0
-2026-10,FY27,Karnataka,Hero (Vida),2549,0
+2026-10,FY27,Karnataka,Hero (Vida),2550,0
 2026-10,FY27,Karnataka,Honda,130,0
 2026-10,FY27,Karnataka,Kinetic (DX),27,0
 2026-10,FY27,Karnataka,Kinetic Green,20,0
@@ -25173,22 +25172,22 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Karnataka,Pure EV,9,0
 2026-10,FY27,Karnataka,Quantum,136,0
 2026-10,FY27,Karnataka,Revolt,134,0
-2026-10,FY27,Karnataka,River,1252,0
+2026-10,FY27,Karnataka,River,1253,0
 2026-10,FY27,Karnataka,Simple Energy,594,0
 2026-10,FY27,Karnataka,Suzuki,51,0
-2026-10,FY27,Karnataka,TVS,7016,0
+2026-10,FY27,Karnataka,TVS,7017,0
 2026-10,FY27,Karnataka,Ultraviolette,104,0
 2026-10,FY27,Karnataka,Yamaha,14,0
-2026-10,FY27,Kerala,Ather,2112,0
+2026-10,FY27,Kerala,Ather,2114,0
 2026-10,FY27,Kerala,BGauss,53,0
-2026-10,FY27,Kerala,Bajaj,1722,0
+2026-10,FY27,Kerala,Bajaj,1723,0
 2026-10,FY27,Kerala,Benling,1,0
 2026-10,FY27,Kerala,Greaves (Ampere),75,0
 2026-10,FY27,Kerala,Hero (Vida),1107,0
 2026-10,FY27,Kerala,Hero Electric,1,0
 2026-10,FY27,Kerala,Honda,22,0
 2026-10,FY27,Kerala,Komaki,7,0
-2026-10,FY27,Kerala,Oben,101,0
+2026-10,FY27,Kerala,Oben,102,0
 2026-10,FY27,Kerala,Ola Electric,57,0
 2026-10,FY27,Kerala,Others,17,0
 2026-10,FY27,Kerala,Pure EV,1,0
@@ -25196,7 +25195,7 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Kerala,River,1450,0
 2026-10,FY27,Kerala,Simple Energy,111,0
 2026-10,FY27,Kerala,Suzuki,41,0
-2026-10,FY27,Kerala,TVS,2390,0
+2026-10,FY27,Kerala,TVS,2392,0
 2026-10,FY27,Kerala,Ultraviolette,44,0
 2026-10,FY27,Kerala,Yamaha,38,0
 2026-10,FY27,Lakshadweep,Bajaj,6,0
@@ -25207,7 +25206,7 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Madhya Pradesh,BGauss,272,0
 2026-10,FY27,Madhya Pradesh,Bajaj,4203,0
 2026-10,FY27,Madhya Pradesh,Greaves (Ampere),205,0
-2026-10,FY27,Madhya Pradesh,Hero (Vida),3117,0
+2026-10,FY27,Madhya Pradesh,Hero (Vida),3118,0
 2026-10,FY27,Madhya Pradesh,Honda,135,0
 2026-10,FY27,Madhya Pradesh,Joy e-bike (Wardwizard),2,0
 2026-10,FY27,Madhya Pradesh,Kinetic (DX),53,0
@@ -25221,8 +25220,8 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Madhya Pradesh,Revolt,125,0
 2026-10,FY27,Madhya Pradesh,River,219,0
 2026-10,FY27,Madhya Pradesh,Simple Energy,11,0
-2026-10,FY27,Madhya Pradesh,Suzuki,30,0
-2026-10,FY27,Madhya Pradesh,TVS,5020,0
+2026-10,FY27,Madhya Pradesh,Suzuki,32,0
+2026-10,FY27,Madhya Pradesh,TVS,5019,0
 2026-10,FY27,Madhya Pradesh,Ultraviolette,6,0
 2026-10,FY27,Madhya Pradesh,Yamaha,4,0
 2026-10,FY27,Maharashtra,Ather,3920,0
@@ -25407,10 +25406,10 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Tripura,TVS,1,0
 2026-10,FY27,Uttar Pradesh,Ather,2495,0
 2026-10,FY27,Uttar Pradesh,BGauss,135,0
-2026-10,FY27,Uttar Pradesh,Bajaj,3590,0
+2026-10,FY27,Uttar Pradesh,Bajaj,3594,0
 2026-10,FY27,Uttar Pradesh,Benling,2,0
-2026-10,FY27,Uttar Pradesh,Greaves (Ampere),577,0
-2026-10,FY27,Uttar Pradesh,Hero (Vida),3122,0
+2026-10,FY27,Uttar Pradesh,Greaves (Ampere),579,0
+2026-10,FY27,Uttar Pradesh,Hero (Vida),3124,0
 2026-10,FY27,Uttar Pradesh,Honda,201,0
 2026-10,FY27,Uttar Pradesh,Joy e-bike (Wardwizard),8,0
 2026-10,FY27,Uttar Pradesh,Kinetic (DX),80,0
@@ -25427,7 +25426,7 @@ month,fy,state,oem,units,partial
 2026-10,FY27,Uttar Pradesh,River,18,0
 2026-10,FY27,Uttar Pradesh,Simple Energy,11,0
 2026-10,FY27,Uttar Pradesh,Suzuki,6,0
-2026-10,FY27,Uttar Pradesh,TVS,5584,0
+2026-10,FY27,Uttar Pradesh,TVS,5592,0
 2026-10,FY27,Uttar Pradesh,Ultraviolette,2,0
 2026-10,FY27,Uttar Pradesh,Yamaha,22,0
 2026-10,FY27,Uttarakhand,Ather,302,0
@@ -25471,32 +25470,33 @@ month,fy,state,oem,units,partial
 2026-11,FY27,Andaman & Nicobar Islands,Bajaj,6,1
 2026-11,FY27,Andaman & Nicobar Islands,Suzuki,5,1
 2026-11,FY27,Andaman & Nicobar Islands,TVS,7,1
-2026-11,FY27,Andhra Pradesh,Ather,1068,1
-2026-11,FY27,Andhra Pradesh,BGauss,108,1
-2026-11,FY27,Andhra Pradesh,Bajaj,1410,1
+2026-11,FY27,Andhra Pradesh,Ather,1113,1
+2026-11,FY27,Andhra Pradesh,BGauss,114,1
+2026-11,FY27,Andhra Pradesh,Bajaj,1477,1
 2026-11,FY27,Andhra Pradesh,Benling,12,1
-2026-11,FY27,Andhra Pradesh,Greaves (Ampere),225,1
-2026-11,FY27,Andhra Pradesh,Hero (Vida),970,1
+2026-11,FY27,Andhra Pradesh,Greaves (Ampere),239,1
+2026-11,FY27,Andhra Pradesh,Hero (Vida),1036,1
 2026-11,FY27,Andhra Pradesh,Honda,5,1
-2026-11,FY27,Andhra Pradesh,Kinetic (DX),115,1
-2026-11,FY27,Andhra Pradesh,Kinetic Green,35,1
+2026-11,FY27,Andhra Pradesh,Kinetic (DX),117,1
+2026-11,FY27,Andhra Pradesh,Kinetic Green,38,1
 2026-11,FY27,Andhra Pradesh,Komaki,18,1
 2026-11,FY27,Andhra Pradesh,Lectrix,6,1
 2026-11,FY27,Andhra Pradesh,Motovolt,30,1
-2026-11,FY27,Andhra Pradesh,Oben,37,1
-2026-11,FY27,Andhra Pradesh,Ola Electric,225,1
-2026-11,FY27,Andhra Pradesh,Others,35,1
+2026-11,FY27,Andhra Pradesh,Oben,40,1
+2026-11,FY27,Andhra Pradesh,Ola Electric,238,1
+2026-11,FY27,Andhra Pradesh,Others,36,1
 2026-11,FY27,Andhra Pradesh,Pure EV,13,1
 2026-11,FY27,Andhra Pradesh,Quantum,32,1
 2026-11,FY27,Andhra Pradesh,Revolt,18,1
-2026-11,FY27,Andhra Pradesh,River,499,1
-2026-11,FY27,Andhra Pradesh,Simple Energy,147,1
-2026-11,FY27,Andhra Pradesh,Suzuki,62,1
-2026-11,FY27,Andhra Pradesh,TVS,1927,1
-2026-11,FY27,Andhra Pradesh,Ultraviolette,23,1
+2026-11,FY27,Andhra Pradesh,River,527,1
+2026-11,FY27,Andhra Pradesh,Simple Energy,151,1
+2026-11,FY27,Andhra Pradesh,Suzuki,65,1
+2026-11,FY27,Andhra Pradesh,TVS,2008,1
+2026-11,FY27,Andhra Pradesh,Ultraviolette,24,1
 2026-11,FY27,Andhra Pradesh,Yamaha,9,1
-2026-11,FY27,Arunachal Pradesh,Bajaj,2,1
+2026-11,FY27,Arunachal Pradesh,Bajaj,3,1
 2026-11,FY27,Arunachal Pradesh,Lectrix,1,1
+2026-11,FY27,Arunachal Pradesh,Others,2,1
 2026-11,FY27,Assam,Ather,96,1
 2026-11,FY27,Assam,Bajaj,30,1
 2026-11,FY27,Assam,Greaves (Ampere),11,1
@@ -25505,144 +25505,145 @@ month,fy,state,oem,units,partial
 2026-11,FY27,Assam,Lectrix,5,1
 2026-11,FY27,Assam,Odysse,3,1
 2026-11,FY27,Assam,Ola Electric,3,1
-2026-11,FY27,Assam,Others,10,1
+2026-11,FY27,Assam,Others,11,1
 2026-11,FY27,Assam,Pure EV,10,1
 2026-11,FY27,Assam,Suzuki,2,1
-2026-11,FY27,Assam,TVS,173,1
-2026-11,FY27,Bihar,Ather,446,1
+2026-11,FY27,Assam,TVS,183,1
+2026-11,FY27,Bihar,Ather,448,1
 2026-11,FY27,Bihar,BGauss,12,1
-2026-11,FY27,Bihar,Bajaj,358,1
-2026-11,FY27,Bihar,Greaves (Ampere),1266,1
-2026-11,FY27,Bihar,Hero (Vida),729,1
-2026-11,FY27,Bihar,Honda,14,1
+2026-11,FY27,Bihar,Bajaj,428,1
+2026-11,FY27,Bihar,Greaves (Ampere),1363,1
+2026-11,FY27,Bihar,Hero (Vida),757,1
+2026-11,FY27,Bihar,Honda,17,1
 2026-11,FY27,Bihar,Joy e-bike (Wardwizard),3,1
 2026-11,FY27,Bihar,Kinetic (DX),25,1
 2026-11,FY27,Bihar,Kinetic Green,4,1
 2026-11,FY27,Bihar,Komaki,3,1
-2026-11,FY27,Bihar,Lectrix,53,1
-2026-11,FY27,Bihar,Oben,123,1
+2026-11,FY27,Bihar,Lectrix,56,1
+2026-11,FY27,Bihar,Oben,128,1
 2026-11,FY27,Bihar,Odysse,2,1
 2026-11,FY27,Bihar,Okinawa,3,1
-2026-11,FY27,Bihar,Ola Electric,381,1
+2026-11,FY27,Bihar,Ola Electric,390,1
 2026-11,FY27,Bihar,Others,18,1
 2026-11,FY27,Bihar,Pure EV,4,1
 2026-11,FY27,Bihar,Quantum,1,1
-2026-11,FY27,Bihar,Revolt,138,1
-2026-11,FY27,Bihar,River,49,1
+2026-11,FY27,Bihar,Revolt,142,1
+2026-11,FY27,Bihar,River,58,1
 2026-11,FY27,Bihar,Simple Energy,17,1
 2026-11,FY27,Bihar,Suzuki,3,1
-2026-11,FY27,Bihar,TVS,1138,1
+2026-11,FY27,Bihar,TVS,1195,1
+2026-11,FY27,Bihar,Ultraviolette,1,1
 2026-11,FY27,Bihar,Yamaha,14,1
-2026-11,FY27,Chandigarh,Ather,21,1
+2026-11,FY27,Chandigarh,Ather,22,1
 2026-11,FY27,Chandigarh,Bajaj,24,1
 2026-11,FY27,Chandigarh,Greaves (Ampere),4,1
 2026-11,FY27,Chandigarh,Hero (Vida),27,1
 2026-11,FY27,Chandigarh,Honda,1,1
 2026-11,FY27,Chandigarh,Oben,1,1
-2026-11,FY27,Chandigarh,TVS,18,1
-2026-11,FY27,Chhattisgarh,Ather,495,1
-2026-11,FY27,Chhattisgarh,BGauss,81,1
-2026-11,FY27,Chhattisgarh,Bajaj,1226,1
-2026-11,FY27,Chhattisgarh,Greaves (Ampere),122,1
-2026-11,FY27,Chhattisgarh,Hero (Vida),505,1
-2026-11,FY27,Chhattisgarh,Honda,73,1
+2026-11,FY27,Chandigarh,TVS,20,1
+2026-11,FY27,Chhattisgarh,Ather,531,1
+2026-11,FY27,Chhattisgarh,BGauss,82,1
+2026-11,FY27,Chhattisgarh,Bajaj,1256,1
+2026-11,FY27,Chhattisgarh,Greaves (Ampere),124,1
+2026-11,FY27,Chhattisgarh,Hero (Vida),520,1
+2026-11,FY27,Chhattisgarh,Honda,78,1
 2026-11,FY27,Chhattisgarh,Joy e-bike (Wardwizard),1,1
-2026-11,FY27,Chhattisgarh,Kinetic (DX),25,1
+2026-11,FY27,Chhattisgarh,Kinetic (DX),26,1
 2026-11,FY27,Chhattisgarh,Kinetic Green,3,1
 2026-11,FY27,Chhattisgarh,Komaki,16,1
 2026-11,FY27,Chhattisgarh,Lectrix,6,1
 2026-11,FY27,Chhattisgarh,Oben,18,1
 2026-11,FY27,Chhattisgarh,Okinawa,7,1
-2026-11,FY27,Chhattisgarh,Ola Electric,274,1
+2026-11,FY27,Chhattisgarh,Ola Electric,282,1
 2026-11,FY27,Chhattisgarh,Others,1,1
 2026-11,FY27,Chhattisgarh,Revolt,6,1
-2026-11,FY27,Chhattisgarh,River,22,1
+2026-11,FY27,Chhattisgarh,River,23,1
 2026-11,FY27,Chhattisgarh,Simple Energy,11,1
 2026-11,FY27,Chhattisgarh,Suzuki,5,1
-2026-11,FY27,Chhattisgarh,TVS,1427,1
+2026-11,FY27,Chhattisgarh,TVS,1492,1
 2026-11,FY27,Chhattisgarh,Ultraviolette,1,1
 2026-11,FY27,Chhattisgarh,Yamaha,1,1
-2026-11,FY27,Dadra & Nagar Haveli and Daman & Diu,Ather,7,1
+2026-11,FY27,Dadra & Nagar Haveli and Daman & Diu,Ather,10,1
 2026-11,FY27,Dadra & Nagar Haveli and Daman & Diu,Bajaj,9,1
 2026-11,FY27,Dadra & Nagar Haveli and Daman & Diu,TVS,3,1
-2026-11,FY27,Delhi,Ather,820,1
-2026-11,FY27,Delhi,BGauss,919,1
-2026-11,FY27,Delhi,Bajaj,896,1
+2026-11,FY27,Delhi,Ather,843,1
+2026-11,FY27,Delhi,BGauss,920,1
+2026-11,FY27,Delhi,Bajaj,916,1
 2026-11,FY27,Delhi,Greaves (Ampere),188,1
-2026-11,FY27,Delhi,Hero (Vida),573,1
-2026-11,FY27,Delhi,Honda,27,1
+2026-11,FY27,Delhi,Hero (Vida),604,1
+2026-11,FY27,Delhi,Honda,28,1
 2026-11,FY27,Delhi,Jitendra EV,80,1
-2026-11,FY27,Delhi,Kinetic (DX),21,1
-2026-11,FY27,Delhi,Kinetic Green,2,1
+2026-11,FY27,Delhi,Kinetic (DX),23,1
+2026-11,FY27,Delhi,Kinetic Green,3,1
 2026-11,FY27,Delhi,Komaki,5,1
-2026-11,FY27,Delhi,Lectrix,36,1
-2026-11,FY27,Delhi,Motovolt,164,1
-2026-11,FY27,Delhi,Oben,26,1
+2026-11,FY27,Delhi,Lectrix,37,1
+2026-11,FY27,Delhi,Motovolt,165,1
+2026-11,FY27,Delhi,Oben,32,1
 2026-11,FY27,Delhi,Okinawa,2,1
-2026-11,FY27,Delhi,Ola Electric,153,1
+2026-11,FY27,Delhi,Ola Electric,163,1
 2026-11,FY27,Delhi,Others,26,1
 2026-11,FY27,Delhi,Quantum,3,1
-2026-11,FY27,Delhi,Revolt,52,1
-2026-11,FY27,Delhi,River,181,1
-2026-11,FY27,Delhi,Simple Energy,41,1
-2026-11,FY27,Delhi,Suzuki,11,1
-2026-11,FY27,Delhi,TVS,1289,1
+2026-11,FY27,Delhi,Revolt,53,1
+2026-11,FY27,Delhi,River,211,1
+2026-11,FY27,Delhi,Simple Energy,58,1
+2026-11,FY27,Delhi,Suzuki,12,1
+2026-11,FY27,Delhi,TVS,1332,1
 2026-11,FY27,Delhi,Ultraviolette,2,1
 2026-11,FY27,Delhi,Yamaha,11,1
-2026-11,FY27,Goa,Ather,247,1
-2026-11,FY27,Goa,Bajaj,213,1
-2026-11,FY27,Goa,Greaves (Ampere),24,1
+2026-11,FY27,Goa,Ather,261,1
+2026-11,FY27,Goa,Bajaj,230,1
+2026-11,FY27,Goa,Greaves (Ampere),25,1
 2026-11,FY27,Goa,Hero (Vida),8,1
 2026-11,FY27,Goa,Joy e-bike (Wardwizard),2,1
 2026-11,FY27,Goa,Lectrix,2,1
 2026-11,FY27,Goa,Ola Electric,24,1
 2026-11,FY27,Goa,Others,2,1
 2026-11,FY27,Goa,River,1,1
-2026-11,FY27,Goa,Simple Energy,151,1
-2026-11,FY27,Goa,TVS,71,1
+2026-11,FY27,Goa,Simple Energy,164,1
+2026-11,FY27,Goa,TVS,76,1
 2026-11,FY27,Goa,Ultraviolette,3,1
 2026-11,FY27,Goa,Yamaha,5,1
-2026-11,FY27,Gujarat,Ather,1310,1
-2026-11,FY27,Gujarat,BGauss,206,1
-2026-11,FY27,Gujarat,Bajaj,2737,1
-2026-11,FY27,Gujarat,Greaves (Ampere),203,1
-2026-11,FY27,Gujarat,Hero (Vida),526,1
-2026-11,FY27,Gujarat,Honda,23,1
-2026-11,FY27,Gujarat,Jitendra EV,2,1
-2026-11,FY27,Gujarat,Kinetic (DX),89,1
+2026-11,FY27,Gujarat,Ather,1379,1
+2026-11,FY27,Gujarat,BGauss,218,1
+2026-11,FY27,Gujarat,Bajaj,2921,1
+2026-11,FY27,Gujarat,Greaves (Ampere),218,1
+2026-11,FY27,Gujarat,Hero (Vida),574,1
+2026-11,FY27,Gujarat,Honda,24,1
+2026-11,FY27,Gujarat,Jitendra EV,3,1
+2026-11,FY27,Gujarat,Kinetic (DX),95,1
 2026-11,FY27,Gujarat,Komaki,1,1
 2026-11,FY27,Gujarat,Lectrix,1,1
 2026-11,FY27,Gujarat,Oben,24,1
-2026-11,FY27,Gujarat,Ola Electric,208,1
-2026-11,FY27,Gujarat,Others,68,1
+2026-11,FY27,Gujarat,Ola Electric,214,1
+2026-11,FY27,Gujarat,Others,76,1
 2026-11,FY27,Gujarat,Pure EV,3,1
 2026-11,FY27,Gujarat,Quantum,32,1
-2026-11,FY27,Gujarat,Revolt,68,1
-2026-11,FY27,Gujarat,River,98,1
+2026-11,FY27,Gujarat,Revolt,70,1
+2026-11,FY27,Gujarat,River,106,1
 2026-11,FY27,Gujarat,Simple Energy,34,1
 2026-11,FY27,Gujarat,Suzuki,42,1
-2026-11,FY27,Gujarat,TVS,1238,1
+2026-11,FY27,Gujarat,TVS,1303,1
 2026-11,FY27,Gujarat,Ultraviolette,1,1
 2026-11,FY27,Gujarat,Yamaha,5,1
-2026-11,FY27,Haryana,Ather,321,1
+2026-11,FY27,Haryana,Ather,334,1
 2026-11,FY27,Haryana,BGauss,13,1
-2026-11,FY27,Haryana,Bajaj,418,1
+2026-11,FY27,Haryana,Bajaj,432,1
 2026-11,FY27,Haryana,Greaves (Ampere),102,1
-2026-11,FY27,Haryana,Hero (Vida),140,1
+2026-11,FY27,Haryana,Hero (Vida),149,1
 2026-11,FY27,Haryana,Honda,33,1
 2026-11,FY27,Haryana,Kinetic (DX),9,1
 2026-11,FY27,Haryana,Kinetic Green,1,1
 2026-11,FY27,Haryana,Komaki,3,1
 2026-11,FY27,Haryana,Lectrix,9,1
-2026-11,FY27,Haryana,Oben,14,1
-2026-11,FY27,Haryana,Ola Electric,297,1
+2026-11,FY27,Haryana,Oben,16,1
+2026-11,FY27,Haryana,Ola Electric,306,1
 2026-11,FY27,Haryana,Others,8,1
 2026-11,FY27,Haryana,Quantum,2,1
 2026-11,FY27,Haryana,Revolt,22,1
 2026-11,FY27,Haryana,Suzuki,22,1
-2026-11,FY27,Haryana,TVS,512,1
+2026-11,FY27,Haryana,TVS,538,1
 2026-11,FY27,Himachal Pradesh,Ather,35,1
-2026-11,FY27,Himachal Pradesh,Bajaj,20,1
+2026-11,FY27,Himachal Pradesh,Bajaj,22,1
 2026-11,FY27,Himachal Pradesh,Greaves (Ampere),10,1
 2026-11,FY27,Himachal Pradesh,Hero (Vida),12,1
 2026-11,FY27,Himachal Pradesh,Joy e-bike (Wardwizard),3,1
@@ -25651,173 +25652,173 @@ month,fy,state,oem,units,partial
 2026-11,FY27,Himachal Pradesh,Pure EV,1,1
 2026-11,FY27,Himachal Pradesh,Revolt,1,1
 2026-11,FY27,Himachal Pradesh,TVS,25,1
-2026-11,FY27,Jammu and Kashmir,Ather,173,1
-2026-11,FY27,Jammu and Kashmir,Bajaj,35,1
+2026-11,FY27,Jammu and Kashmir,Ather,182,1
+2026-11,FY27,Jammu and Kashmir,Bajaj,36,1
 2026-11,FY27,Jammu and Kashmir,Greaves (Ampere),12,1
-2026-11,FY27,Jammu and Kashmir,Hero (Vida),25,1
+2026-11,FY27,Jammu and Kashmir,Hero (Vida),26,1
 2026-11,FY27,Jammu and Kashmir,Kinetic Green,2,1
 2026-11,FY27,Jammu and Kashmir,Lectrix,8,1
 2026-11,FY27,Jammu and Kashmir,Ola Electric,10,1
 2026-11,FY27,Jammu and Kashmir,Others,5,1
-2026-11,FY27,Jammu and Kashmir,TVS,75,1
+2026-11,FY27,Jammu and Kashmir,TVS,77,1
 2026-11,FY27,Jammu and Kashmir,Yamaha,1,1
-2026-11,FY27,Jharkhand,Ather,288,1
+2026-11,FY27,Jharkhand,Ather,306,1
 2026-11,FY27,Jharkhand,BGauss,12,1
-2026-11,FY27,Jharkhand,Bajaj,164,1
-2026-11,FY27,Jharkhand,Greaves (Ampere),260,1
-2026-11,FY27,Jharkhand,Hero (Vida),178,1
-2026-11,FY27,Jharkhand,Honda,12,1
+2026-11,FY27,Jharkhand,Bajaj,172,1
+2026-11,FY27,Jharkhand,Greaves (Ampere),284,1
+2026-11,FY27,Jharkhand,Hero (Vida),187,1
+2026-11,FY27,Jharkhand,Honda,13,1
 2026-11,FY27,Jharkhand,Lectrix,40,1
 2026-11,FY27,Jharkhand,Oben,4,1
-2026-11,FY27,Jharkhand,Ola Electric,73,1
+2026-11,FY27,Jharkhand,Ola Electric,78,1
 2026-11,FY27,Jharkhand,Others,5,1
 2026-11,FY27,Jharkhand,Pure EV,4,1
 2026-11,FY27,Jharkhand,Quantum,4,1
 2026-11,FY27,Jharkhand,Revolt,18,1
 2026-11,FY27,Jharkhand,Suzuki,1,1
-2026-11,FY27,Jharkhand,TVS,678,1
+2026-11,FY27,Jharkhand,TVS,716,1
 2026-11,FY27,Jharkhand,Ultraviolette,4,1
 2026-11,FY27,Jharkhand,Yamaha,12,1
-2026-11,FY27,Karnataka,Ather,4147,1
-2026-11,FY27,Karnataka,BGauss,349,1
-2026-11,FY27,Karnataka,Bajaj,2071,1
+2026-11,FY27,Karnataka,Ather,4358,1
+2026-11,FY27,Karnataka,BGauss,354,1
+2026-11,FY27,Karnataka,Bajaj,2160,1
 2026-11,FY27,Karnataka,Bounce,52,1
 2026-11,FY27,Karnataka,E-Sprinto,500,1
-2026-11,FY27,Karnataka,Greaves (Ampere),865,1
-2026-11,FY27,Karnataka,Hero (Vida),2111,1
-2026-11,FY27,Karnataka,Honda,64,1
-2026-11,FY27,Karnataka,Kinetic (DX),68,1
-2026-11,FY27,Karnataka,Kinetic Green,8,1
-2026-11,FY27,Karnataka,Komaki,73,1
+2026-11,FY27,Karnataka,Greaves (Ampere),943,1
+2026-11,FY27,Karnataka,Hero (Vida),2200,1
+2026-11,FY27,Karnataka,Honda,215,1
+2026-11,FY27,Karnataka,Kinetic (DX),69,1
+2026-11,FY27,Karnataka,Kinetic Green,9,1
+2026-11,FY27,Karnataka,Komaki,74,1
 2026-11,FY27,Karnataka,Lectrix,23,1
-2026-11,FY27,Karnataka,Oben,85,1
+2026-11,FY27,Karnataka,Oben,94,1
 2026-11,FY27,Karnataka,Odysse,39,1
 2026-11,FY27,Karnataka,Okinawa,7,1
-2026-11,FY27,Karnataka,Ola Electric,250,1
+2026-11,FY27,Karnataka,Ola Electric,268,1
 2026-11,FY27,Karnataka,Others,89,1
 2026-11,FY27,Karnataka,Pure EV,3,1
 2026-11,FY27,Karnataka,Quantum,50,1
-2026-11,FY27,Karnataka,Revolt,98,1
-2026-11,FY27,Karnataka,River,740,1
-2026-11,FY27,Karnataka,Simple Energy,522,1
-2026-11,FY27,Karnataka,Suzuki,48,1
-2026-11,FY27,Karnataka,TVS,5338,1
-2026-11,FY27,Karnataka,Ultraviolette,19,1
-2026-11,FY27,Karnataka,Yamaha,12,1
-2026-11,FY27,Kerala,Ather,1743,1
-2026-11,FY27,Kerala,BGauss,28,1
-2026-11,FY27,Kerala,Bajaj,1183,1
-2026-11,FY27,Kerala,Greaves (Ampere),93,1
-2026-11,FY27,Kerala,Hero (Vida),845,1
-2026-11,FY27,Kerala,Honda,21,1
+2026-11,FY27,Karnataka,Revolt,112,1
+2026-11,FY27,Karnataka,River,769,1
+2026-11,FY27,Karnataka,Simple Energy,535,1
+2026-11,FY27,Karnataka,Suzuki,53,1
+2026-11,FY27,Karnataka,TVS,5572,1
+2026-11,FY27,Karnataka,Ultraviolette,25,1
+2026-11,FY27,Karnataka,Yamaha,13,1
+2026-11,FY27,Kerala,Ather,1856,1
+2026-11,FY27,Kerala,BGauss,32,1
+2026-11,FY27,Kerala,Bajaj,1259,1
+2026-11,FY27,Kerala,Greaves (Ampere),100,1
+2026-11,FY27,Kerala,Hero (Vida),917,1
+2026-11,FY27,Kerala,Honda,22,1
 2026-11,FY27,Kerala,Komaki,3,1
-2026-11,FY27,Kerala,Oben,63,1
+2026-11,FY27,Kerala,Oben,64,1
 2026-11,FY27,Kerala,Ola Electric,16,1
-2026-11,FY27,Kerala,Others,14,1
-2026-11,FY27,Kerala,Revolt,20,1
-2026-11,FY27,Kerala,River,1264,1
-2026-11,FY27,Kerala,Simple Energy,113,1
+2026-11,FY27,Kerala,Others,15,1
+2026-11,FY27,Kerala,Revolt,23,1
+2026-11,FY27,Kerala,River,1318,1
+2026-11,FY27,Kerala,Simple Energy,117,1
 2026-11,FY27,Kerala,Suzuki,34,1
-2026-11,FY27,Kerala,TVS,1797,1
+2026-11,FY27,Kerala,TVS,1911,1
 2026-11,FY27,Kerala,Ultraviolette,18,1
-2026-11,FY27,Kerala,Yamaha,39,1
+2026-11,FY27,Kerala,Yamaha,42,1
 2026-11,FY27,Lakshadweep,Bajaj,1,1
 2026-11,FY27,Lakshadweep,Hero (Vida),2,1
 2026-11,FY27,Lakshadweep,Oben,1,1
 2026-11,FY27,Lakshadweep,TVS,1,1
-2026-11,FY27,Madhya Pradesh,Ather,1323,1
-2026-11,FY27,Madhya Pradesh,BGauss,392,1
-2026-11,FY27,Madhya Pradesh,Bajaj,5011,1
-2026-11,FY27,Madhya Pradesh,Greaves (Ampere),280,1
-2026-11,FY27,Madhya Pradesh,Hero (Vida),2845,1
-2026-11,FY27,Madhya Pradesh,Honda,121,1
+2026-11,FY27,Madhya Pradesh,Ather,1377,1
+2026-11,FY27,Madhya Pradesh,BGauss,403,1
+2026-11,FY27,Madhya Pradesh,Bajaj,5254,1
+2026-11,FY27,Madhya Pradesh,Greaves (Ampere),289,1
+2026-11,FY27,Madhya Pradesh,Hero (Vida),2913,1
+2026-11,FY27,Madhya Pradesh,Honda,128,1
 2026-11,FY27,Madhya Pradesh,Joy e-bike (Wardwizard),2,1
-2026-11,FY27,Madhya Pradesh,Kinetic (DX),84,1
-2026-11,FY27,Madhya Pradesh,Kinetic Green,14,1
-2026-11,FY27,Madhya Pradesh,Komaki,25,1
-2026-11,FY27,Madhya Pradesh,Lectrix,43,1
+2026-11,FY27,Madhya Pradesh,Kinetic (DX),96,1
+2026-11,FY27,Madhya Pradesh,Kinetic Green,15,1
+2026-11,FY27,Madhya Pradesh,Komaki,30,1
+2026-11,FY27,Madhya Pradesh,Lectrix,45,1
 2026-11,FY27,Madhya Pradesh,Motovolt,1,1
-2026-11,FY27,Madhya Pradesh,Oben,135,1
-2026-11,FY27,Madhya Pradesh,Ola Electric,909,1
-2026-11,FY27,Madhya Pradesh,Others,47,1
-2026-11,FY27,Madhya Pradesh,Pure EV,22,1
-2026-11,FY27,Madhya Pradesh,Revolt,163,1
+2026-11,FY27,Madhya Pradesh,Oben,143,1
+2026-11,FY27,Madhya Pradesh,Ola Electric,940,1
+2026-11,FY27,Madhya Pradesh,Others,48,1
+2026-11,FY27,Madhya Pradesh,Pure EV,27,1
+2026-11,FY27,Madhya Pradesh,Revolt,168,1
 2026-11,FY27,Madhya Pradesh,River,126,1
 2026-11,FY27,Madhya Pradesh,Simple Energy,14,1
-2026-11,FY27,Madhya Pradesh,Suzuki,16,1
-2026-11,FY27,Madhya Pradesh,TVS,4096,1
+2026-11,FY27,Madhya Pradesh,Suzuki,18,1
+2026-11,FY27,Madhya Pradesh,TVS,4231,1
 2026-11,FY27,Madhya Pradesh,Ultraviolette,2,1
 2026-11,FY27,Madhya Pradesh,Yamaha,5,1
-2026-11,FY27,Maharashtra,Ather,3059,1
-2026-11,FY27,Maharashtra,BGauss,1216,1
-2026-11,FY27,Maharashtra,Bajaj,11464,1
-2026-11,FY27,Maharashtra,Bounce,109,1
-2026-11,FY27,Maharashtra,Greaves (Ampere),524,1
-2026-11,FY27,Maharashtra,Hero (Vida),2390,1
-2026-11,FY27,Maharashtra,Honda,50,1
+2026-11,FY27,Maharashtra,Ather,3183,1
+2026-11,FY27,Maharashtra,BGauss,1223,1
+2026-11,FY27,Maharashtra,Bajaj,12010,1
+2026-11,FY27,Maharashtra,Bounce,110,1
+2026-11,FY27,Maharashtra,Greaves (Ampere),555,1
+2026-11,FY27,Maharashtra,Hero (Vida),2489,1
+2026-11,FY27,Maharashtra,Honda,54,1
 2026-11,FY27,Maharashtra,Jitendra EV,21,1
 2026-11,FY27,Maharashtra,Joy e-bike (Wardwizard),4,1
-2026-11,FY27,Maharashtra,Kinetic (DX),144,1
+2026-11,FY27,Maharashtra,Kinetic (DX),149,1
 2026-11,FY27,Maharashtra,Kinetic Green,42,1
-2026-11,FY27,Maharashtra,Komaki,21,1
-2026-11,FY27,Maharashtra,Lectrix,75,1
+2026-11,FY27,Maharashtra,Komaki,22,1
+2026-11,FY27,Maharashtra,Lectrix,79,1
 2026-11,FY27,Maharashtra,Motovolt,2,1
-2026-11,FY27,Maharashtra,Oben,75,1
+2026-11,FY27,Maharashtra,Oben,77,1
 2026-11,FY27,Maharashtra,Odysse,1,1
 2026-11,FY27,Maharashtra,Okinawa,6,1
-2026-11,FY27,Maharashtra,Ola Electric,939,1
-2026-11,FY27,Maharashtra,Others,454,1
+2026-11,FY27,Maharashtra,Ola Electric,979,1
+2026-11,FY27,Maharashtra,Others,457,1
 2026-11,FY27,Maharashtra,Pure EV,7,1
-2026-11,FY27,Maharashtra,Revolt,227,1
-2026-11,FY27,Maharashtra,River,374,1
-2026-11,FY27,Maharashtra,Simple Energy,164,1
-2026-11,FY27,Maharashtra,Suzuki,80,1
-2026-11,FY27,Maharashtra,TVS,5553,1
-2026-11,FY27,Maharashtra,Ultraviolette,26,1
-2026-11,FY27,Maharashtra,Yamaha,23,1
+2026-11,FY27,Maharashtra,Revolt,240,1
+2026-11,FY27,Maharashtra,River,387,1
+2026-11,FY27,Maharashtra,Simple Energy,169,1
+2026-11,FY27,Maharashtra,Suzuki,86,1
+2026-11,FY27,Maharashtra,TVS,5918,1
+2026-11,FY27,Maharashtra,Ultraviolette,27,1
+2026-11,FY27,Maharashtra,Yamaha,25,1
 2026-11,FY27,Manipur,Ather,50,1
-2026-11,FY27,Manipur,Bajaj,11,1
+2026-11,FY27,Manipur,Bajaj,12,1
 2026-11,FY27,Manipur,Greaves (Ampere),5,1
 2026-11,FY27,Manipur,Hero (Vida),22,1
 2026-11,FY27,Manipur,Others,5,1
-2026-11,FY27,Manipur,TVS,29,1
-2026-11,FY27,Mizoram,Ather,45,1
+2026-11,FY27,Manipur,TVS,31,1
+2026-11,FY27,Mizoram,Ather,90,1
 2026-11,FY27,Mizoram,Bajaj,32,1
 2026-11,FY27,Mizoram,Hero (Vida),2,1
 2026-11,FY27,Mizoram,Others,1,1
 2026-11,FY27,Mizoram,Simple Energy,21,1
 2026-11,FY27,Mizoram,TVS,8,1
 2026-11,FY27,Mizoram,Ultraviolette,1,1
-2026-11,FY27,Mizoram,Yamaha,5,1
-2026-11,FY27,Odisha,Ather,945,1
-2026-11,FY27,Odisha,BGauss,89,1
-2026-11,FY27,Odisha,Bajaj,1446,1
-2026-11,FY27,Odisha,Greaves (Ampere),742,1
-2026-11,FY27,Odisha,Hero (Vida),2733,1
-2026-11,FY27,Odisha,Honda,54,1
+2026-11,FY27,Mizoram,Yamaha,7,1
+2026-11,FY27,Odisha,Ather,981,1
+2026-11,FY27,Odisha,BGauss,93,1
+2026-11,FY27,Odisha,Bajaj,1531,1
+2026-11,FY27,Odisha,Greaves (Ampere),773,1
+2026-11,FY27,Odisha,Hero (Vida),2893,1
+2026-11,FY27,Odisha,Honda,56,1
 2026-11,FY27,Odisha,Joy e-bike (Wardwizard),1,1
 2026-11,FY27,Odisha,Kinetic (DX),25,1
 2026-11,FY27,Odisha,Kinetic Green,12,1
-2026-11,FY27,Odisha,Komaki,10,1
-2026-11,FY27,Odisha,Lectrix,98,1
+2026-11,FY27,Odisha,Komaki,11,1
+2026-11,FY27,Odisha,Lectrix,101,1
 2026-11,FY27,Odisha,Oben,36,1
-2026-11,FY27,Odisha,Okinawa,23,1
-2026-11,FY27,Odisha,Ola Electric,298,1
-2026-11,FY27,Odisha,Others,15,1
+2026-11,FY27,Odisha,Okinawa,25,1
+2026-11,FY27,Odisha,Ola Electric,299,1
+2026-11,FY27,Odisha,Others,16,1
 2026-11,FY27,Odisha,Pure EV,5,1
-2026-11,FY27,Odisha,Quantum,6,1
-2026-11,FY27,Odisha,Revolt,46,1
+2026-11,FY27,Odisha,Quantum,7,1
+2026-11,FY27,Odisha,Revolt,47,1
 2026-11,FY27,Odisha,River,54,1
 2026-11,FY27,Odisha,Simple Energy,54,1
-2026-11,FY27,Odisha,Suzuki,27,1
-2026-11,FY27,Odisha,TVS,3098,1
+2026-11,FY27,Odisha,Suzuki,29,1
+2026-11,FY27,Odisha,TVS,3220,1
 2026-11,FY27,Odisha,Ultraviolette,7,1
-2026-11,FY27,Odisha,Yamaha,12,1
+2026-11,FY27,Odisha,Yamaha,14,1
 2026-11,FY27,Puducherry,Ather,52,1
 2026-11,FY27,Puducherry,BGauss,1,1
 2026-11,FY27,Puducherry,Bajaj,29,1
-2026-11,FY27,Puducherry,Greaves (Ampere),17,1
-2026-11,FY27,Puducherry,Hero (Vida),47,1
+2026-11,FY27,Puducherry,Greaves (Ampere),19,1
+2026-11,FY27,Puducherry,Hero (Vida),48,1
 2026-11,FY27,Puducherry,Kinetic Green,1,1
 2026-11,FY27,Puducherry,Lectrix,1,1
 2026-11,FY27,Puducherry,Oben,1,1
@@ -25827,160 +25828,160 @@ month,fy,state,oem,units,partial
 2026-11,FY27,Puducherry,River,33,1
 2026-11,FY27,Puducherry,Simple Energy,12,1
 2026-11,FY27,Puducherry,Suzuki,6,1
-2026-11,FY27,Puducherry,TVS,168,1
-2026-11,FY27,Punjab,Ather,549,1
-2026-11,FY27,Punjab,Bajaj,1172,1
+2026-11,FY27,Puducherry,TVS,173,1
+2026-11,FY27,Punjab,Ather,565,1
+2026-11,FY27,Punjab,Bajaj,1218,1
 2026-11,FY27,Punjab,Greaves (Ampere),106,1
-2026-11,FY27,Punjab,Hero (Vida),242,1
+2026-11,FY27,Punjab,Hero (Vida),252,1
 2026-11,FY27,Punjab,Honda,33,1
-2026-11,FY27,Punjab,Oben,13,1
-2026-11,FY27,Punjab,Ola Electric,328,1
-2026-11,FY27,Punjab,Others,6,1
+2026-11,FY27,Punjab,Oben,14,1
+2026-11,FY27,Punjab,Ola Electric,339,1
+2026-11,FY27,Punjab,Others,7,1
 2026-11,FY27,Punjab,Pure EV,1,1
 2026-11,FY27,Punjab,Suzuki,1,1
-2026-11,FY27,Punjab,TVS,1152,1
+2026-11,FY27,Punjab,TVS,1215,1
 2026-11,FY27,Punjab,Ultraviolette,13,1
 2026-11,FY27,Punjab,Yamaha,1,1
-2026-11,FY27,Rajasthan,Ather,2477,1
-2026-11,FY27,Rajasthan,BGauss,561,1
-2026-11,FY27,Rajasthan,Bajaj,2527,1
-2026-11,FY27,Rajasthan,E-Sprinto,360,1
-2026-11,FY27,Rajasthan,Greaves (Ampere),530,1
-2026-11,FY27,Rajasthan,Hero (Vida),2007,1
-2026-11,FY27,Rajasthan,Honda,89,1
+2026-11,FY27,Rajasthan,Ather,2556,1
+2026-11,FY27,Rajasthan,BGauss,571,1
+2026-11,FY27,Rajasthan,Bajaj,2678,1
+2026-11,FY27,Rajasthan,E-Sprinto,375,1
+2026-11,FY27,Rajasthan,Greaves (Ampere),532,1
+2026-11,FY27,Rajasthan,Hero (Vida),2045,1
+2026-11,FY27,Rajasthan,Honda,91,1
 2026-11,FY27,Rajasthan,Jitendra EV,4,1
 2026-11,FY27,Rajasthan,Joy e-bike (Wardwizard),4,1
-2026-11,FY27,Rajasthan,Kinetic (DX),101,1
-2026-11,FY27,Rajasthan,Kinetic Green,3,1
-2026-11,FY27,Rajasthan,Komaki,17,1
-2026-11,FY27,Rajasthan,Lectrix,79,1
-2026-11,FY27,Rajasthan,Oben,76,1
+2026-11,FY27,Rajasthan,Kinetic (DX),103,1
+2026-11,FY27,Rajasthan,Kinetic Green,5,1
+2026-11,FY27,Rajasthan,Komaki,19,1
+2026-11,FY27,Rajasthan,Lectrix,80,1
+2026-11,FY27,Rajasthan,Oben,82,1
 2026-11,FY27,Rajasthan,Odysse,1,1
 2026-11,FY27,Rajasthan,Okinawa,57,1
-2026-11,FY27,Rajasthan,Ola Electric,468,1
-2026-11,FY27,Rajasthan,Others,77,1
+2026-11,FY27,Rajasthan,Ola Electric,488,1
+2026-11,FY27,Rajasthan,Others,78,1
 2026-11,FY27,Rajasthan,Pure EV,6,1
 2026-11,FY27,Rajasthan,Quantum,3,1
-2026-11,FY27,Rajasthan,Revolt,244,1
-2026-11,FY27,Rajasthan,River,204,1
+2026-11,FY27,Rajasthan,Revolt,251,1
+2026-11,FY27,Rajasthan,River,208,1
 2026-11,FY27,Rajasthan,Simple Energy,28,1
-2026-11,FY27,Rajasthan,Suzuki,22,1
-2026-11,FY27,Rajasthan,TVS,3710,1
+2026-11,FY27,Rajasthan,Suzuki,26,1
+2026-11,FY27,Rajasthan,TVS,3832,1
 2026-11,FY27,Rajasthan,Ultraviolette,4,1
 2026-11,FY27,Rajasthan,Yamaha,4,1
-2026-11,FY27,Tamil Nadu,Ather,2342,1
-2026-11,FY27,Tamil Nadu,BGauss,663,1
-2026-11,FY27,Tamil Nadu,Bajaj,1191,1
-2026-11,FY27,Tamil Nadu,Greaves (Ampere),3439,1
-2026-11,FY27,Tamil Nadu,Hero (Vida),830,1
+2026-11,FY27,Tamil Nadu,Ather,2467,1
+2026-11,FY27,Tamil Nadu,BGauss,738,1
+2026-11,FY27,Tamil Nadu,Bajaj,1273,1
+2026-11,FY27,Tamil Nadu,Greaves (Ampere),3596,1
+2026-11,FY27,Tamil Nadu,Hero (Vida),886,1
 2026-11,FY27,Tamil Nadu,Honda,24,1
 2026-11,FY27,Tamil Nadu,Jitendra EV,8,1
 2026-11,FY27,Tamil Nadu,Joy e-bike (Wardwizard),5,1
 2026-11,FY27,Tamil Nadu,Kinetic (DX),21,1
-2026-11,FY27,Tamil Nadu,Kinetic Green,448,1
-2026-11,FY27,Tamil Nadu,Komaki,44,1
-2026-11,FY27,Tamil Nadu,Lectrix,108,1
+2026-11,FY27,Tamil Nadu,Kinetic Green,462,1
+2026-11,FY27,Tamil Nadu,Komaki,48,1
+2026-11,FY27,Tamil Nadu,Lectrix,118,1
 2026-11,FY27,Tamil Nadu,Motovolt,122,1
-2026-11,FY27,Tamil Nadu,Oben,75,1
-2026-11,FY27,Tamil Nadu,Okinawa,14,1
-2026-11,FY27,Tamil Nadu,Ola Electric,450,1
-2026-11,FY27,Tamil Nadu,Others,396,1
+2026-11,FY27,Tamil Nadu,Oben,79,1
+2026-11,FY27,Tamil Nadu,Okinawa,15,1
+2026-11,FY27,Tamil Nadu,Ola Electric,474,1
+2026-11,FY27,Tamil Nadu,Others,413,1
 2026-11,FY27,Tamil Nadu,Pure EV,18,1
 2026-11,FY27,Tamil Nadu,Quantum,137,1
-2026-11,FY27,Tamil Nadu,Revolt,31,1
-2026-11,FY27,Tamil Nadu,River,728,1
-2026-11,FY27,Tamil Nadu,Simple Energy,304,1
-2026-11,FY27,Tamil Nadu,Suzuki,87,1
-2026-11,FY27,Tamil Nadu,TVS,5326,1
+2026-11,FY27,Tamil Nadu,Revolt,33,1
+2026-11,FY27,Tamil Nadu,River,758,1
+2026-11,FY27,Tamil Nadu,Simple Energy,323,1
+2026-11,FY27,Tamil Nadu,Suzuki,93,1
+2026-11,FY27,Tamil Nadu,TVS,5644,1
 2026-11,FY27,Tamil Nadu,Ultraviolette,14,1
-2026-11,FY27,Tamil Nadu,Yamaha,49,1
-2026-11,FY27,Telangana,Ather,1096,1
-2026-11,FY27,Telangana,BGauss,47,1
-2026-11,FY27,Telangana,Bajaj,1950,1
+2026-11,FY27,Tamil Nadu,Yamaha,52,1
+2026-11,FY27,Telangana,Ather,1167,1
+2026-11,FY27,Telangana,BGauss,51,1
+2026-11,FY27,Telangana,Bajaj,2039,1
 2026-11,FY27,Telangana,Bounce,338,1
-2026-11,FY27,Telangana,Greaves (Ampere),232,1
-2026-11,FY27,Telangana,Hero (Vida),905,1
-2026-11,FY27,Telangana,Honda,41,1
-2026-11,FY27,Telangana,Kinetic (DX),33,1
+2026-11,FY27,Telangana,Greaves (Ampere),237,1
+2026-11,FY27,Telangana,Hero (Vida),997,1
+2026-11,FY27,Telangana,Honda,43,1
+2026-11,FY27,Telangana,Kinetic (DX),34,1
 2026-11,FY27,Telangana,Kinetic Green,5,1
-2026-11,FY27,Telangana,Komaki,23,1
-2026-11,FY27,Telangana,Lectrix,62,1
+2026-11,FY27,Telangana,Komaki,28,1
+2026-11,FY27,Telangana,Lectrix,63,1
 2026-11,FY27,Telangana,Motovolt,1,1
-2026-11,FY27,Telangana,Oben,135,1
-2026-11,FY27,Telangana,Ola Electric,81,1
-2026-11,FY27,Telangana,Others,47,1
+2026-11,FY27,Telangana,Oben,139,1
+2026-11,FY27,Telangana,Ola Electric,90,1
+2026-11,FY27,Telangana,Others,52,1
 2026-11,FY27,Telangana,Pure EV,6,1
-2026-11,FY27,Telangana,Quantum,9,1
-2026-11,FY27,Telangana,Revolt,39,1
-2026-11,FY27,Telangana,River,903,1
-2026-11,FY27,Telangana,Simple Energy,105,1
-2026-11,FY27,Telangana,Suzuki,76,1
-2026-11,FY27,Telangana,TVS,2220,1
+2026-11,FY27,Telangana,Quantum,12,1
+2026-11,FY27,Telangana,Revolt,45,1
+2026-11,FY27,Telangana,River,963,1
+2026-11,FY27,Telangana,Simple Energy,114,1
+2026-11,FY27,Telangana,Suzuki,80,1
+2026-11,FY27,Telangana,TVS,2460,1
 2026-11,FY27,Telangana,Ultraviolette,25,1
-2026-11,FY27,Telangana,Yamaha,6,1
+2026-11,FY27,Telangana,Yamaha,9,1
 2026-11,FY27,Tripura,Ather,2,1
 2026-11,FY27,Tripura,Bajaj,18,1
-2026-11,FY27,Tripura,Greaves (Ampere),6,1
+2026-11,FY27,Tripura,Greaves (Ampere),9,1
 2026-11,FY27,Tripura,Hero (Vida),12,1
 2026-11,FY27,Tripura,TVS,9,1
-2026-11,FY27,Uttar Pradesh,Ather,2138,1
-2026-11,FY27,Uttar Pradesh,BGauss,178,1
-2026-11,FY27,Uttar Pradesh,Bajaj,3443,1
+2026-11,FY27,Uttar Pradesh,Ather,2215,1
+2026-11,FY27,Uttar Pradesh,BGauss,184,1
+2026-11,FY27,Uttar Pradesh,Bajaj,3649,1
 2026-11,FY27,Uttar Pradesh,Benling,2,1
-2026-11,FY27,Uttar Pradesh,Greaves (Ampere),675,1
-2026-11,FY27,Uttar Pradesh,Hero (Vida),2609,1
-2026-11,FY27,Uttar Pradesh,Honda,204,1
+2026-11,FY27,Uttar Pradesh,Greaves (Ampere),687,1
+2026-11,FY27,Uttar Pradesh,Hero (Vida),2670,1
+2026-11,FY27,Uttar Pradesh,Honda,216,1
 2026-11,FY27,Uttar Pradesh,Joy e-bike (Wardwizard),1,1
-2026-11,FY27,Uttar Pradesh,Kinetic (DX),135,1
+2026-11,FY27,Uttar Pradesh,Kinetic (DX),136,1
 2026-11,FY27,Uttar Pradesh,Kinetic Green,76,1
-2026-11,FY27,Uttar Pradesh,Komaki,23,1
-2026-11,FY27,Uttar Pradesh,Lectrix,305,1
+2026-11,FY27,Uttar Pradesh,Komaki,30,1
+2026-11,FY27,Uttar Pradesh,Lectrix,333,1
 2026-11,FY27,Uttar Pradesh,Oben,75,1
 2026-11,FY27,Uttar Pradesh,Odysse,10,1
 2026-11,FY27,Uttar Pradesh,Okinawa,5,1
-2026-11,FY27,Uttar Pradesh,Ola Electric,1605,1
-2026-11,FY27,Uttar Pradesh,Others,58,1
+2026-11,FY27,Uttar Pradesh,Ola Electric,1640,1
+2026-11,FY27,Uttar Pradesh,Others,68,1
 2026-11,FY27,Uttar Pradesh,Quantum,13,1
-2026-11,FY27,Uttar Pradesh,Revolt,185,1
-2026-11,FY27,Uttar Pradesh,River,42,1
+2026-11,FY27,Uttar Pradesh,Revolt,188,1
+2026-11,FY27,Uttar Pradesh,River,46,1
 2026-11,FY27,Uttar Pradesh,Simple Energy,43,1
 2026-11,FY27,Uttar Pradesh,Suzuki,6,1
-2026-11,FY27,Uttar Pradesh,TVS,3914,1
-2026-11,FY27,Uttar Pradesh,Ultraviolette,1,1
+2026-11,FY27,Uttar Pradesh,TVS,4129,1
+2026-11,FY27,Uttar Pradesh,Ultraviolette,2,1
 2026-11,FY27,Uttar Pradesh,Yamaha,9,1
-2026-11,FY27,Uttarakhand,Ather,200,1
+2026-11,FY27,Uttarakhand,Ather,222,1
 2026-11,FY27,Uttarakhand,BGauss,25,1
-2026-11,FY27,Uttarakhand,Bajaj,218,1
-2026-11,FY27,Uttarakhand,Greaves (Ampere),80,1
-2026-11,FY27,Uttarakhand,Hero (Vida),163,1
-2026-11,FY27,Uttarakhand,Honda,15,1
+2026-11,FY27,Uttarakhand,Bajaj,227,1
+2026-11,FY27,Uttarakhand,Greaves (Ampere),86,1
+2026-11,FY27,Uttarakhand,Hero (Vida),169,1
+2026-11,FY27,Uttarakhand,Honda,17,1
 2026-11,FY27,Uttarakhand,Jitendra EV,1,1
 2026-11,FY27,Uttarakhand,Joy e-bike (Wardwizard),3,1
-2026-11,FY27,Uttarakhand,Kinetic (DX),12,1
+2026-11,FY27,Uttarakhand,Kinetic (DX),13,1
 2026-11,FY27,Uttarakhand,Kinetic Green,1,1
 2026-11,FY27,Uttarakhand,Komaki,4,1
 2026-11,FY27,Uttarakhand,Lectrix,18,1
-2026-11,FY27,Uttarakhand,Ola Electric,36,1
+2026-11,FY27,Uttarakhand,Ola Electric,40,1
 2026-11,FY27,Uttarakhand,Others,5,1
 2026-11,FY27,Uttarakhand,Suzuki,1,1
-2026-11,FY27,Uttarakhand,TVS,202,1
+2026-11,FY27,Uttarakhand,TVS,214,1
 2026-11,FY27,Uttarakhand,Yamaha,3,1
-2026-11,FY27,West Bengal,Ather,283,1
-2026-11,FY27,West Bengal,BGauss,41,1
-2026-11,FY27,West Bengal,Bajaj,615,1
-2026-11,FY27,West Bengal,Greaves (Ampere),270,1
-2026-11,FY27,West Bengal,Hero (Vida),493,1
-2026-11,FY27,West Bengal,Honda,12,1
+2026-11,FY27,West Bengal,Ather,295,1
+2026-11,FY27,West Bengal,BGauss,43,1
+2026-11,FY27,West Bengal,Bajaj,644,1
+2026-11,FY27,West Bengal,Greaves (Ampere),285,1
+2026-11,FY27,West Bengal,Hero (Vida),539,1
+2026-11,FY27,West Bengal,Honda,14,1
 2026-11,FY27,West Bengal,Kinetic (DX),3,1
 2026-11,FY27,West Bengal,Kinetic Green,1,1
-2026-11,FY27,West Bengal,Komaki,10,1
+2026-11,FY27,West Bengal,Komaki,11,1
 2026-11,FY27,West Bengal,Lectrix,1,1
-2026-11,FY27,West Bengal,Oben,26,1
-2026-11,FY27,West Bengal,Ola Electric,52,1
+2026-11,FY27,West Bengal,Oben,29,1
+2026-11,FY27,West Bengal,Ola Electric,58,1
 2026-11,FY27,West Bengal,Others,17,1
-2026-11,FY27,West Bengal,Revolt,24,1
-2026-11,FY27,West Bengal,Simple Energy,28,1
+2026-11,FY27,West Bengal,Revolt,25,1
+2026-11,FY27,West Bengal,Simple Energy,32,1
 2026-11,FY27,West Bengal,Suzuki,3,1
-2026-11,FY27,West Bengal,TVS,861,1
-2026-11,FY27,West Bengal,Ultraviolette,13,1
-2026-11,FY27,West Bengal,Yamaha,7,1
+2026-11,FY27,West Bengal,TVS,901,1
+2026-11,FY27,West Bengal,Ultraviolette,14,1
+2026-11,FY27,West Bengal,Yamaha,8,1
