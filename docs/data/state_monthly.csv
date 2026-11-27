@@ -9,10 +9,10 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-04,FY22,Dadra & Nagar Haveli and Daman & Diu,1,655,0
 2021-04,FY22,Delhi,272,14220,0
 2021-04,FY22,Goa,36,3385,0
-2021-04,FY22,Gujarat,98,49039,0
+2021-04,FY22,Gujarat,98,49040,0
 2021-04,FY22,Haryana,106,31047,0
 2021-04,FY22,Himachal Pradesh,9,4380,0
-2021-04,FY22,Jammu and Kashmir,22,6881,0
+2021-04,FY22,Jammu and Kashmir,22,6882,0
 2021-04,FY22,Jharkhand,80,26962,0
 2021-04,FY22,Karnataka,1547,60379,0
 2021-04,FY22,Kerala,380,57651,0
@@ -27,7 +27,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-04,FY22,Odisha,191,36958,0
 2021-04,FY22,Puducherry,19,2582,0
 2021-04,FY22,Punjab,10,24353,0
-2021-04,FY22,Rajasthan,324,48843,0
+2021-04,FY22,Rajasthan,324,48844,0
 2021-04,FY22,Sikkim,0,397,0
 2021-04,FY22,Tamil Nadu,1296,107704,0
 2021-04,FY22,Telangana,482,45543,0
@@ -75,13 +75,13 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-06,FY22,Andhra Pradesh,382,54305,0
 2021-06,FY22,Arunachal Pradesh,0,726,0
 2021-06,FY22,Assam,6,22575,0
-2021-06,FY22,Bihar,67,100782,0
+2021-06,FY22,Bihar,67,100781,0
 2021-06,FY22,Chandigarh,2,1315,0
 2021-06,FY22,Chhattisgarh,138,31803,0
 2021-06,FY22,Dadra & Nagar Haveli and Daman & Diu,2,623,0
 2021-06,FY22,Delhi,205,22167,0
 2021-06,FY22,Goa,18,1533,0
-2021-06,FY22,Gujarat,207,59132,0
+2021-06,FY22,Gujarat,207,59133,0
 2021-06,FY22,Haryana,74,31928,0
 2021-06,FY22,Himachal Pradesh,25,5100,0
 2021-06,FY22,Jammu and Kashmir,87,8681,0
@@ -91,7 +91,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-06,FY22,Ladakh,0,3,0
 2021-06,FY22,Lakshadweep,0,13,0
 2021-06,FY22,Madhya Pradesh,228,90930,0
-2021-06,FY22,Maharashtra,890,75146,0
+2021-06,FY22,Maharashtra,890,75145,0
 2021-06,FY22,Manipur,0,93,0
 2021-06,FY22,Meghalaya,0,358,0
 2021-06,FY22,Mizoram,0,649,0
@@ -104,7 +104,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-06,FY22,Tamil Nadu,661,45225,0
 2021-06,FY22,Telangana,335,39862,0
 2021-06,FY22,Tripura,1,1522,0
-2021-06,FY22,Uttar Pradesh,92,264449,0
+2021-06,FY22,Uttar Pradesh,92,264450,0
 2021-06,FY22,Uttarakhand,37,9767,0
 2021-06,FY22,West Bengal,12,67345,0
 2021-07,FY22,Andaman & Nicobar Islands,0,462,0
@@ -115,7 +115,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-07,FY22,Chandigarh,11,1284,0
 2021-07,FY22,Chhattisgarh,253,30633,0
 2021-07,FY22,Dadra & Nagar Haveli and Daman & Diu,3,704,0
-2021-07,FY22,Delhi,817,24938,0
+2021-07,FY22,Delhi,817,24939,0
 2021-07,FY22,Goa,64,1691,0
 2021-07,FY22,Gujarat,358,68672,0
 2021-07,FY22,Haryana,134,24472,0
@@ -156,7 +156,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-08,FY22,Gujarat,584,54732,0
 2021-08,FY22,Haryana,441,30324,0
 2021-08,FY22,Himachal Pradesh,32,5436,0
-2021-08,FY22,Jammu and Kashmir,122,9979,0
+2021-08,FY22,Jammu and Kashmir,122,9980,0
 2021-08,FY22,Jharkhand,137,26579,0
 2021-08,FY22,Karnataka,3318,80297,0
 2021-08,FY22,Kerala,599,52535,0
@@ -173,7 +173,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-08,FY22,Punjab,342,27373,0
 2021-08,FY22,Rajasthan,1451,57071,0
 2021-08,FY22,Sikkim,0,488,0
-2021-08,FY22,Tamil Nadu,2746,109496,0
+2021-08,FY22,Tamil Nadu,2746,109495,0
 2021-08,FY22,Telangana,737,51218,0
 2021-08,FY22,Tripura,0,2463,0
 2021-08,FY22,Uttar Pradesh,530,146779,0
@@ -194,12 +194,12 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-09,FY22,Himachal Pradesh,33,4984,0
 2021-09,FY22,Jammu and Kashmir,158,7531,0
 2021-09,FY22,Jharkhand,149,24543,0
-2021-09,FY22,Karnataka,3537,80801,0
+2021-09,FY22,Karnataka,3537,80800,0
 2021-09,FY22,Kerala,788,48285,0
 2021-09,FY22,Ladakh,0,27,0
 2021-09,FY22,Lakshadweep,0,27,0
 2021-09,FY22,Madhya Pradesh,590,65163,0
-2021-09,FY22,Maharashtra,2167,92458,0
+2021-09,FY22,Maharashtra,2167,92459,0
 2021-09,FY22,Manipur,0,3495,0
 2021-09,FY22,Meghalaya,0,1394,0
 2021-09,FY22,Mizoram,0,1468,0
@@ -212,7 +212,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-09,FY22,Tamil Nadu,2882,108568,0
 2021-09,FY22,Telangana,929,50603,0
 2021-09,FY22,Tripura,0,2736,0
-2021-09,FY22,Uttar Pradesh,730,132995,0
+2021-09,FY22,Uttar Pradesh,730,132994,0
 2021-09,FY22,Uttarakhand,169,9925,0
 2021-09,FY22,West Bengal,84,65437,0
 2021-10,FY22,Andaman & Nicobar Islands,0,358,0
@@ -228,7 +228,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-10,FY22,Gujarat,1460,84843,0
 2021-10,FY22,Haryana,505,26861,0
 2021-10,FY22,Himachal Pradesh,29,4647,0
-2021-10,FY22,Jammu and Kashmir,199,8680,0
+2021-10,FY22,Jammu and Kashmir,199,8681,0
 2021-10,FY22,Jharkhand,253,28885,0
 2021-10,FY22,Karnataka,3709,76926,0
 2021-10,FY22,Kerala,833,42445,0
@@ -270,7 +270,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-11,FY22,Kerala,948,43768,0
 2021-11,FY22,Ladakh,0,28,0
 2021-11,FY22,Lakshadweep,0,22,0
-2021-11,FY22,Madhya Pradesh,940,99571,0
+2021-11,FY22,Madhya Pradesh,940,99570,0
 2021-11,FY22,Maharashtra,3682,168397,0
 2021-11,FY22,Manipur,3,2500,0
 2021-11,FY22,Meghalaya,0,1443,0
@@ -284,9 +284,9 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-11,FY22,Tamil Nadu,2845,111751,0
 2021-11,FY22,Telangana,1176,60935,0
 2021-11,FY22,Tripura,0,3845,0
-2021-11,FY22,Uttar Pradesh,1347,225365,0
+2021-11,FY22,Uttar Pradesh,1347,225366,0
 2021-11,FY22,Uttarakhand,262,20987,0
-2021-11,FY22,West Bengal,309,79827,0
+2021-11,FY22,West Bengal,309,79828,0
 2021-12,FY22,Andaman & Nicobar Islands,0,372,0
 2021-12,FY22,Andhra Pradesh,995,43188,0
 2021-12,FY22,Arunachal Pradesh,0,1041,0
@@ -303,7 +303,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2021-12,FY22,Jammu and Kashmir,110,4091,0
 2021-12,FY22,Jharkhand,293,26078,0
 2021-12,FY22,Karnataka,4389,83272,0
-2021-12,FY22,Kerala,1109,44072,0
+2021-12,FY22,Kerala,1109,44073,0
 2021-12,FY22,Ladakh,0,15,0
 2021-12,FY22,Lakshadweep,0,13,0
 2021-12,FY22,Madhya Pradesh,901,110874,0
@@ -331,20 +331,20 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-01,FY22,Chandigarh,18,1289,0
 2022-01,FY22,Chhattisgarh,595,31987,0
 2022-01,FY22,Dadra & Nagar Haveli and Daman & Diu,6,755,0
-2022-01,FY22,Delhi,1762,24601,0
+2022-01,FY22,Delhi,1762,24599,0
 2022-01,FY22,Goa,194,3014,0
-2022-01,FY22,Gujarat,2192,58121,0
+2022-01,FY22,Gujarat,2192,58122,0
 2022-01,FY22,Haryana,598,28323,0
 2022-01,FY22,Himachal Pradesh,22,3490,0
 2022-01,FY22,Jammu and Kashmir,76,3564,0
 2022-01,FY22,Jharkhand,240,24621,0
 2022-01,FY22,Karnataka,4387,74284,0
-2022-01,FY22,Kerala,1403,45785,0
+2022-01,FY22,Kerala,1403,45786,0
 2022-01,FY22,Ladakh,6,21,0
 2022-01,FY22,Lakshadweep,0,27,0
 2022-01,FY22,Madhya Pradesh,862,75058,0
 2022-01,FY22,Maharashtra,5138,137007,0
-2022-01,FY22,Manipur,5,3664,0
+2022-01,FY22,Manipur,5,3665,0
 2022-01,FY22,Meghalaya,0,1115,0
 2022-01,FY22,Mizoram,0,1385,0
 2022-01,FY22,Nagaland,0,411,0
@@ -356,7 +356,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-01,FY22,Tamil Nadu,4232,124705,0
 2022-01,FY22,Telangana,1449,48984,0
 2022-01,FY22,Tripura,5,3044,0
-2022-01,FY22,Uttar Pradesh,1322,168980,0
+2022-01,FY22,Uttar Pradesh,1322,168981,0
 2022-01,FY22,Uttarakhand,185,10414,0
 2022-01,FY22,West Bengal,369,61088,0
 2022-02,FY22,Andaman & Nicobar Islands,0,385,0
@@ -369,7 +369,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-02,FY22,Dadra & Nagar Haveli and Daman & Diu,4,817,0
 2022-02,FY22,Delhi,2384,25399,0
 2022-02,FY22,Goa,267,3253,0
-2022-02,FY22,Gujarat,2612,68687,0
+2022-02,FY22,Gujarat,2612,68688,0
 2022-02,FY22,Haryana,678,25659,0
 2022-02,FY22,Himachal Pradesh,57,4046,0
 2022-02,FY22,Jammu and Kashmir,101,4838,0
@@ -401,7 +401,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-03,FY22,Assam,179,29681,0
 2022-03,FY22,Bihar,1328,85172,0
 2022-03,FY22,Chandigarh,55,1882,0
-2022-03,FY22,Chhattisgarh,958,31241,0
+2022-03,FY22,Chhattisgarh,958,31240,0
 2022-03,FY22,Dadra & Nagar Haveli and Daman & Diu,5,757,0
 2022-03,FY22,Delhi,3488,28855,0
 2022-03,FY22,Goa,235,4382,0
@@ -440,7 +440,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-04,FY23,Chhattisgarh,1397,30840,0
 2022-04,FY23,Dadra & Nagar Haveli and Daman & Diu,4,801,0
 2022-04,FY23,Delhi,2830,32206,0
-2022-04,FY23,Goa,377,3819,0
+2022-04,FY23,Goa,377,3820,0
 2022-04,FY23,Gujarat,6696,88681,0
 2022-04,FY23,Haryana,1215,30537,0
 2022-04,FY23,Himachal Pradesh,99,4624,0
@@ -458,8 +458,8 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-04,FY23,Nagaland,2,448,0
 2022-04,FY23,Odisha,2262,44344,0
 2022-04,FY23,Puducherry,82,3035,0
-2022-04,FY23,Punjab,815,29949,0
-2022-04,FY23,Rajasthan,3772,70515,0
+2022-04,FY23,Punjab,815,29950,0
+2022-04,FY23,Rajasthan,3772,70516,0
 2022-04,FY23,Sikkim,0,454,0
 2022-04,FY23,Tamil Nadu,5423,107501,0
 2022-04,FY23,Telangana,2755,46072,0
@@ -471,7 +471,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-05,FY23,Andhra Pradesh,1633,49010,0
 2022-05,FY23,Arunachal Pradesh,0,1241,0
 2022-05,FY23,Assam,112,28733,0
-2022-05,FY23,Bihar,458,113041,0
+2022-05,FY23,Bihar,458,113042,0
 2022-05,FY23,Chandigarh,44,1789,0
 2022-05,FY23,Chhattisgarh,833,28818,0
 2022-05,FY23,Dadra & Nagar Haveli and Daman & Diu,6,788,0
@@ -502,7 +502,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-05,FY23,Tripura,14,2770,0
 2022-05,FY23,Uttar Pradesh,1697,274012,0
 2022-05,FY23,Uttarakhand,378,12935,0
-2022-05,FY23,West Bengal,683,68743,0
+2022-05,FY23,West Bengal,683,68742,0
 2022-06,FY23,Andaman & Nicobar Islands,0,426,0
 2022-06,FY23,Andhra Pradesh,1759,38310,0
 2022-06,FY23,Arunachal Pradesh,0,1255,0
@@ -519,10 +519,10 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-06,FY23,Jammu and Kashmir,161,8144,0
 2022-06,FY23,Jharkhand,460,32644,0
 2022-06,FY23,Karnataka,6803,92116,0
-2022-06,FY23,Kerala,2570,44128,0
+2022-06,FY23,Kerala,2570,44129,0
 2022-06,FY23,Ladakh,14,590,0
 2022-06,FY23,Lakshadweep,0,10,0
-2022-06,FY23,Madhya Pradesh,1434,83428,0
+2022-06,FY23,Madhya Pradesh,1434,83427,0
 2022-06,FY23,Maharashtra,7880,115804,0
 2022-06,FY23,Manipur,13,3394,0
 2022-06,FY23,Meghalaya,2,1295,0
@@ -536,7 +536,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-06,FY23,Tamil Nadu,3748,110909,0
 2022-06,FY23,Telangana,2124,49270,0
 2022-06,FY23,Tripura,21,2762,0
-2022-06,FY23,Uttar Pradesh,1364,198434,0
+2022-06,FY23,Uttar Pradesh,1364,198435,0
 2022-06,FY23,Uttarakhand,374,13128,0
 2022-06,FY23,West Bengal,659,67897,0
 2022-07,FY23,Andaman & Nicobar Islands,0,386,0
@@ -549,7 +549,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-07,FY23,Dadra & Nagar Haveli and Daman & Diu,9,734,0
 2022-07,FY23,Delhi,2654,30643,0
 2022-07,FY23,Goa,580,2806,0
-2022-07,FY23,Gujarat,5593,83355,0
+2022-07,FY23,Gujarat,5593,83356,0
 2022-07,FY23,Haryana,712,30650,0
 2022-07,FY23,Himachal Pradesh,92,5385,0
 2022-07,FY23,Jammu and Kashmir,316,9344,0
@@ -558,7 +558,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-07,FY23,Kerala,1966,37748,0
 2022-07,FY23,Ladakh,0,315,0
 2022-07,FY23,Lakshadweep,0,11,0
-2022-07,FY23,Madhya Pradesh,1722,81594,0
+2022-07,FY23,Madhya Pradesh,1722,81593,0
 2022-07,FY23,Maharashtra,8442,111937,0
 2022-07,FY23,Manipur,21,4107,0
 2022-07,FY23,Meghalaya,3,1365,0
@@ -588,7 +588,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-08,FY23,Gujarat,5060,75015,0
 2022-08,FY23,Haryana,917,33328,0
 2022-08,FY23,Himachal Pradesh,59,5281,0
-2022-08,FY23,Jammu and Kashmir,182,9488,0
+2022-08,FY23,Jammu and Kashmir,182,9489,0
 2022-08,FY23,Jharkhand,561,25329,0
 2022-08,FY23,Karnataka,7473,88960,0
 2022-08,FY23,Kerala,3069,51000,0
@@ -600,7 +600,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-08,FY23,Meghalaya,2,1741,0
 2022-08,FY23,Mizoram,6,2061,0
 2022-08,FY23,Nagaland,0,553,0
-2022-08,FY23,Odisha,2008,30559,0
+2022-08,FY23,Odisha,2008,30560,0
 2022-08,FY23,Puducherry,91,3808,0
 2022-08,FY23,Punjab,645,32603,0
 2022-08,FY23,Rajasthan,4157,60266,0
@@ -641,14 +641,14 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-09,FY23,Punjab,590,27413,0
 2022-09,FY23,Rajasthan,4678,53972,0
 2022-09,FY23,Sikkim,0,443,0
-2022-09,FY23,Tamil Nadu,5113,121832,0
+2022-09,FY23,Tamil Nadu,5113,121831,0
 2022-09,FY23,Telangana,2905,50092,0
 2022-09,FY23,Tripura,17,3842,0
-2022-09,FY23,Uttar Pradesh,1786,97342,0
+2022-09,FY23,Uttar Pradesh,1786,97340,0
 2022-09,FY23,Uttarakhand,385,9325,0
 2022-09,FY23,West Bengal,728,64282,0
 2022-10,FY23,Andaman & Nicobar Islands,0,408,0
-2022-10,FY23,Andhra Pradesh,2580,74423,0
+2022-10,FY23,Andhra Pradesh,2580,74422,0
 2022-10,FY23,Arunachal Pradesh,0,851,0
 2022-10,FY23,Assam,193,38011,0
 2022-10,FY23,Bihar,1379,88910,0
@@ -658,7 +658,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-10,FY23,Delhi,3695,50685,0
 2022-10,FY23,Goa,705,6245,0
 2022-10,FY23,Gujarat,6634,115558,0
-2022-10,FY23,Haryana,1313,38916,0
+2022-10,FY23,Haryana,1313,38915,0
 2022-10,FY23,Himachal Pradesh,79,5561,0
 2022-10,FY23,Jammu and Kashmir,256,9188,0
 2022-10,FY23,Jharkhand,949,50062,0
@@ -680,7 +680,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-10,FY23,Tamil Nadu,5529,111611,0
 2022-10,FY23,Telangana,2741,53703,0
 2022-10,FY23,Tripura,13,3434,0
-2022-10,FY23,Uttar Pradesh,3010,258174,0
+2022-10,FY23,Uttar Pradesh,3010,258175,0
 2022-10,FY23,Uttarakhand,796,19544,0
 2022-10,FY23,West Bengal,539,50705,0
 2022-11,FY23,Andaman & Nicobar Islands,6,406,0
@@ -693,7 +693,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-11,FY23,Dadra & Nagar Haveli and Daman & Diu,14,1290,0
 2022-11,FY23,Delhi,3870,41687,0
 2022-11,FY23,Goa,587,5299,0
-2022-11,FY23,Gujarat,8320,165868,0
+2022-11,FY23,Gujarat,8320,165867,0
 2022-11,FY23,Haryana,1370,58450,0
 2022-11,FY23,Himachal Pradesh,133,9188,0
 2022-11,FY23,Jammu and Kashmir,194,4666,0
@@ -702,8 +702,8 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-11,FY23,Kerala,3702,40602,0
 2022-11,FY23,Ladakh,0,23,0
 2022-11,FY23,Lakshadweep,0,11,0
-2022-11,FY23,Madhya Pradesh,3430,130366,0
-2022-11,FY23,Maharashtra,13718,205067,0
+2022-11,FY23,Madhya Pradesh,3430,130367,0
+2022-11,FY23,Maharashtra,13718,205068,0
 2022-11,FY23,Manipur,2,5537,0
 2022-11,FY23,Meghalaya,3,1443,0
 2022-11,FY23,Mizoram,8,1544,0
@@ -723,13 +723,13 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-12,FY23,Andhra Pradesh,2732,47503,0
 2022-12,FY23,Arunachal Pradesh,1,926,0
 2022-12,FY23,Assam,250,34724,0
-2022-12,FY23,Bihar,987,60449,0
+2022-12,FY23,Bihar,987,60448,0
 2022-12,FY23,Chandigarh,123,1462,0
 2022-12,FY23,Chhattisgarh,1882,26361,0
 2022-12,FY23,Dadra & Nagar Haveli and Daman & Diu,20,1109,0
 2022-12,FY23,Delhi,3822,21768,0
 2022-12,FY23,Goa,528,4987,0
-2022-12,FY23,Gujarat,7905,107143,0
+2022-12,FY23,Gujarat,7905,107144,0
 2022-12,FY23,Haryana,888,37560,0
 2022-12,FY23,Himachal Pradesh,99,6736,0
 2022-12,FY23,Jammu and Kashmir,150,3945,0
@@ -744,7 +744,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-12,FY23,Meghalaya,1,1182,0
 2022-12,FY23,Mizoram,11,1790,0
 2022-12,FY23,Nagaland,0,370,0
-2022-12,FY23,Odisha,2380,38235,0
+2022-12,FY23,Odisha,2380,38234,0
 2022-12,FY23,Puducherry,177,2396,0
 2022-12,FY23,Punjab,635,36006,0
 2022-12,FY23,Rajasthan,5061,57277,0
@@ -752,7 +752,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2022-12,FY23,Tamil Nadu,4990,77945,0
 2022-12,FY23,Telangana,3211,52392,0
 2022-12,FY23,Tripura,57,3395,0
-2022-12,FY23,Uttar Pradesh,2337,134808,0
+2022-12,FY23,Uttar Pradesh,2337,134809,0
 2022-12,FY23,Uttarakhand,581,10630,0
 2022-12,FY23,West Bengal,1048,69021,0
 2023-01,FY23,Andaman & Nicobar Islands,0,374,0
@@ -768,7 +768,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-01,FY23,Gujarat,5874,70923,0
 2023-01,FY23,Haryana,706,29983,0
 2023-01,FY23,Himachal Pradesh,78,4408,0
-2023-01,FY23,Jammu and Kashmir,115,3940,0
+2023-01,FY23,Jammu and Kashmir,115,3939,0
 2023-01,FY23,Jharkhand,655,27269,0
 2023-01,FY23,Karnataka,9970,95184,0
 2023-01,FY23,Kerala,4671,43164,0
@@ -780,10 +780,10 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-01,FY23,Meghalaya,4,1377,0
 2023-01,FY23,Mizoram,10,1600,0
 2023-01,FY23,Nagaland,0,433,0
-2023-01,FY23,Odisha,2532,47993,0
+2023-01,FY23,Odisha,2532,47992,0
 2023-01,FY23,Puducherry,196,4392,0
 2023-01,FY23,Punjab,591,33130,0
-2023-01,FY23,Rajasthan,4625,63129,0
+2023-01,FY23,Rajasthan,4625,63128,0
 2023-01,FY23,Sikkim,0,470,0
 2023-01,FY23,Tamil Nadu,5509,135786,0
 2023-01,FY23,Telangana,3125,52356,0
@@ -794,7 +794,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-02,FY23,Andaman & Nicobar Islands,0,347,0
 2023-02,FY23,Andhra Pradesh,2909,51882,0
 2023-02,FY23,Arunachal Pradesh,0,819,0
-2023-02,FY23,Assam,188,36778,0
+2023-02,FY23,Assam,188,36777,0
 2023-02,FY23,Bihar,911,77942,0
 2023-02,FY23,Chandigarh,216,958,0
 2023-02,FY23,Chhattisgarh,1875,30813,0
@@ -827,7 +827,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-02,FY23,Uttar Pradesh,1973,190875,0
 2023-02,FY23,Uttarakhand,426,11075,0
 2023-02,FY23,West Bengal,815,67223,0
-2023-03,FY23,Andaman & Nicobar Islands,1,377,0
+2023-03,FY23,Andaman & Nicobar Islands,1,376,0
 2023-03,FY23,Andhra Pradesh,3521,54425,0
 2023-03,FY23,Arunachal Pradesh,0,1129,0
 2023-03,FY23,Assam,221,41561,0
@@ -846,7 +846,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-03,FY23,Kerala,6776,50815,0
 2023-03,FY23,Ladakh,0,30,0
 2023-03,FY23,Lakshadweep,0,13,0
-2023-03,FY23,Madhya Pradesh,3230,100843,0
+2023-03,FY23,Madhya Pradesh,3230,100844,0
 2023-03,FY23,Maharashtra,17079,154679,0
 2023-03,FY23,Manipur,3,3989,0
 2023-03,FY23,Meghalaya,1,1910,0
@@ -858,7 +858,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-03,FY23,Rajasthan,6375,86857,0
 2023-03,FY23,Sikkim,0,453,0
 2023-03,FY23,Tamil Nadu,8387,120457,0
-2023-03,FY23,Telangana,3259,50344,0
+2023-03,FY23,Telangana,3259,50343,0
 2023-03,FY23,Tripura,23,3016,0
 2023-03,FY23,Uttar Pradesh,3564,206399,0
 2023-03,FY23,Uttarakhand,587,13076,0
@@ -878,7 +878,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-04,FY24,Himachal Pradesh,96,4854,0
 2023-04,FY24,Jammu and Kashmir,212,6303,0
 2023-04,FY24,Jharkhand,682,36353,0
-2023-04,FY24,Karnataka,9729,92231,0
+2023-04,FY24,Karnataka,9729,92230,0
 2023-04,FY24,Kerala,4664,33030,0
 2023-04,FY24,Ladakh,0,43,0
 2023-04,FY24,Lakshadweep,0,2,0
@@ -888,7 +888,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-04,FY24,Meghalaya,3,1501,0
 2023-04,FY24,Mizoram,8,1566,0
 2023-04,FY24,Nagaland,0,558,0
-2023-04,FY24,Odisha,2848,43971,0
+2023-04,FY24,Odisha,2848,43972,0
 2023-04,FY24,Puducherry,157,3070,0
 2023-04,FY24,Punjab,378,28274,0
 2023-04,FY24,Rajasthan,3914,68164,0
@@ -910,7 +910,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-05,FY24,Delhi,4973,32300,0
 2023-05,FY24,Goa,873,3950,0
 2023-05,FY24,Gujarat,9608,87190,0
-2023-05,FY24,Haryana,1058,34394,0
+2023-05,FY24,Haryana,1058,34393,0
 2023-05,FY24,Himachal Pradesh,118,5280,0
 2023-05,FY24,Jammu and Kashmir,258,9087,0
 2023-05,FY24,Jharkhand,839,41803,0
@@ -932,7 +932,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-05,FY24,Tamil Nadu,10332,110022,0
 2023-05,FY24,Telangana,5794,48904,0
 2023-05,FY24,Tripura,65,3304,0
-2023-05,FY24,Uttar Pradesh,4744,300344,0
+2023-05,FY24,Uttar Pradesh,4744,300345,0
 2023-05,FY24,Uttarakhand,683,14783,0
 2023-05,FY24,West Bengal,1487,77496,0
 2023-06,FY24,Andaman & Nicobar Islands,0,373,0
@@ -1017,12 +1017,12 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-08,FY24,Dadra & Nagar Haveli and Daman & Diu,6,604,0
 2023-08,FY24,Delhi,2123,33356,0
 2023-08,FY24,Goa,694,4105,0
-2023-08,FY24,Gujarat,5754,87164,0
+2023-08,FY24,Gujarat,5754,87166,0
 2023-08,FY24,Haryana,403,38097,0
 2023-08,FY24,Himachal Pradesh,64,5350,0
-2023-08,FY24,Jammu and Kashmir,98,9756,0
+2023-08,FY24,Jammu and Kashmir,98,9757,0
 2023-08,FY24,Jharkhand,456,27961,0
-2023-08,FY24,Karnataka,9846,102353,0
+2023-08,FY24,Karnataka,9846,102354,0
 2023-08,FY24,Kerala,4827,49877,0
 2023-08,FY24,Ladakh,0,63,0
 2023-08,FY24,Lakshadweep,1,7,0
@@ -1037,7 +1037,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-08,FY24,Punjab,645,34772,0
 2023-08,FY24,Rajasthan,4313,76672,0
 2023-08,FY24,Sikkim,0,465,0
-2023-08,FY24,Tamil Nadu,6246,129120,0
+2023-08,FY24,Tamil Nadu,6246,129119,0
 2023-08,FY24,Telangana,3111,56867,0
 2023-08,FY24,Tripura,33,3159,0
 2023-08,FY24,Uttar Pradesh,2755,148346,0
@@ -1051,9 +1051,9 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-09,FY24,Chandigarh,134,1885,0
 2023-09,FY24,Chhattisgarh,2200,30921,0
 2023-09,FY24,Dadra & Nagar Haveli and Daman & Diu,13,733,0
-2023-09,FY24,Delhi,2007,31873,0
+2023-09,FY24,Delhi,2007,31872,0
 2023-09,FY24,Goa,563,5552,0
-2023-09,FY24,Gujarat,7209,129878,0
+2023-09,FY24,Gujarat,7209,129879,0
 2023-09,FY24,Haryana,322,44444,0
 2023-09,FY24,Himachal Pradesh,68,5415,0
 2023-09,FY24,Jammu and Kashmir,113,8451,0
@@ -1063,7 +1063,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-09,FY24,Ladakh,0,41,0
 2023-09,FY24,Lakshadweep,0,7,0
 2023-09,FY24,Madhya Pradesh,3357,75572,0
-2023-09,FY24,Maharashtra,12461,134797,0
+2023-09,FY24,Maharashtra,12461,134798,0
 2023-09,FY24,Manipur,0,432,0
 2023-09,FY24,Meghalaya,11,1987,0
 2023-09,FY24,Mizoram,6,1561,0
@@ -1094,17 +1094,17 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-10,FY24,Himachal Pradesh,53,4486,0
 2023-10,FY24,Jammu and Kashmir,138,6763,0
 2023-10,FY24,Jharkhand,505,33717,0
-2023-10,FY24,Karnataka,11319,109948,0
+2023-10,FY24,Karnataka,11319,109949,0
 2023-10,FY24,Kerala,5087,37381,0
 2023-10,FY24,Ladakh,0,33,0
 2023-10,FY24,Lakshadweep,0,11,0
 2023-10,FY24,Madhya Pradesh,3369,101226,0
-2023-10,FY24,Maharashtra,15783,167429,0
+2023-10,FY24,Maharashtra,15783,167428,0
 2023-10,FY24,Manipur,6,1037,0
-2023-10,FY24,Meghalaya,1,1780,0
+2023-10,FY24,Meghalaya,1,1779,0
 2023-10,FY24,Mizoram,36,1966,0
 2023-10,FY24,Nagaland,0,471,0
-2023-10,FY24,Odisha,3972,71604,0
+2023-10,FY24,Odisha,3972,71605,0
 2023-10,FY24,Puducherry,197,3763,0
 2023-10,FY24,Punjab,760,34026,0
 2023-10,FY24,Rajasthan,4915,106287,0
@@ -1126,7 +1126,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-11,FY24,Delhi,3996,57223,0
 2023-11,FY24,Goa,986,6238,0
 2023-11,FY24,Gujarat,5424,152571,0
-2023-11,FY24,Haryana,566,42362,0
+2023-11,FY24,Haryana,566,42361,0
 2023-11,FY24,Himachal Pradesh,53,6140,0
 2023-11,FY24,Jammu and Kashmir,174,8762,0
 2023-11,FY24,Jharkhand,830,63817,0
@@ -1153,8 +1153,8 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-11,FY24,West Bengal,1007,97270,0
 2023-12,FY24,Andaman & Nicobar Islands,7,431,0
 2023-12,FY24,Andhra Pradesh,2376,60992,0
-2023-12,FY24,Arunachal Pradesh,2,1376,0
-2023-12,FY24,Assam,204,38493,0
+2023-12,FY24,Arunachal Pradesh,2,1375,0
+2023-12,FY24,Assam,204,38492,0
 2023-12,FY24,Bihar,1356,91111,0
 2023-12,FY24,Chandigarh,137,1167,0
 2023-12,FY24,Chhattisgarh,1891,31897,0
@@ -1162,7 +1162,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2023-12,FY24,Delhi,5389,27247,0
 2023-12,FY24,Goa,799,4312,0
 2023-12,FY24,Gujarat,4082,85883,0
-2023-12,FY24,Haryana,1020,60570,0
+2023-12,FY24,Haryana,1020,60571,0
 2023-12,FY24,Himachal Pradesh,102,9993,0
 2023-12,FY24,Jammu and Kashmir,99,3669,0
 2023-12,FY24,Jharkhand,634,32722,0
@@ -1212,7 +1212,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-01,FY24,Meghalaya,26,1631,0
 2024-01,FY24,Mizoram,28,1873,0
 2024-01,FY24,Nagaland,0,505,0
-2024-01,FY24,Odisha,3884,53517,0
+2024-01,FY24,Odisha,3884,53516,0
 2024-01,FY24,Puducherry,310,5142,0
 2024-01,FY24,Punjab,821,33563,0
 2024-01,FY24,Rajasthan,4433,79045,0
@@ -1220,7 +1220,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-01,FY24,Tamil Nadu,7578,153742,0
 2024-01,FY24,Telangana,4509,61234,0
 2024-01,FY24,Tripura,3,3219,0
-2024-01,FY24,Uttar Pradesh,5792,184374,0
+2024-01,FY24,Uttar Pradesh,5792,184375,0
 2024-01,FY24,Uttarakhand,381,11674,0
 2024-01,FY24,West Bengal,1636,72384,0
 2024-02,FY24,Andaman & Nicobar Islands,5,476,0
@@ -1250,7 +1250,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-02,FY24,Nagaland,0,763,0
 2024-02,FY24,Odisha,3732,57302,0
 2024-02,FY24,Puducherry,384,4550,0
-2024-02,FY24,Punjab,1017,34403,0
+2024-02,FY24,Punjab,1017,34402,0
 2024-02,FY24,Rajasthan,5145,81488,0
 2024-02,FY24,Sikkim,0,407,0
 2024-02,FY24,Tamil Nadu,8647,145152,0
@@ -1264,7 +1264,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-03,FY24,Arunachal Pradesh,0,1258,0
 2024-03,FY24,Assam,1267,42705,0
 2024-03,FY24,Bihar,2585,103086,0
-2024-03,FY24,Chandigarh,216,1536,0
+2024-03,FY24,Chandigarh,216,1535,0
 2024-03,FY24,Chhattisgarh,3668,46267,0
 2024-03,FY24,Dadra & Nagar Haveli and Daman & Diu,25,778,0
 2024-03,FY24,Delhi,5024,31881,0
@@ -1272,9 +1272,9 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-03,FY24,Gujarat,8495,94814,0
 2024-03,FY24,Haryana,1391,41809,0
 2024-03,FY24,Himachal Pradesh,91,4732,0
-2024-03,FY24,Jammu and Kashmir,299,6603,0
+2024-03,FY24,Jammu and Kashmir,299,6604,0
 2024-03,FY24,Jharkhand,826,38130,0
-2024-03,FY24,Karnataka,23100,125312,0
+2024-03,FY24,Karnataka,23100,125314,0
 2024-03,FY24,Kerala,8432,43356,0
 2024-03,FY24,Ladakh,0,13,0
 2024-03,FY24,Lakshadweep,0,22,0
@@ -1309,13 +1309,13 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-04,FY25,Haryana,1043,37019,0
 2024-04,FY25,Himachal Pradesh,77,5062,0
 2024-04,FY25,Jammu and Kashmir,246,8735,0
-2024-04,FY25,Jharkhand,597,46917,0
+2024-04,FY25,Jharkhand,597,46915,0
 2024-04,FY25,Karnataka,7642,105374,0
 2024-04,FY25,Kerala,3433,37760,0
 2024-04,FY25,Ladakh,0,12,0
 2024-04,FY25,Lakshadweep,0,1,0
 2024-04,FY25,Madhya Pradesh,2858,121753,0
-2024-04,FY25,Maharashtra,11999,173602,0
+2024-04,FY25,Maharashtra,11999,173601,0
 2024-04,FY25,Manipur,0,1767,0
 2024-04,FY25,Meghalaya,4,1678,0
 2024-04,FY25,Mizoram,23,1868,0
@@ -1339,7 +1339,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-05,FY25,Chandigarh,119,1752,0
 2024-05,FY25,Chhattisgarh,1863,42779,0
 2024-05,FY25,Dadra & Nagar Haveli and Daman & Diu,20,1016,0
-2024-05,FY25,Delhi,2275,34356,0
+2024-05,FY25,Delhi,2275,34355,0
 2024-05,FY25,Goa,787,3793,0
 2024-05,FY25,Gujarat,4657,92320,0
 2024-05,FY25,Haryana,1012,35750,0
@@ -1358,14 +1358,14 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-05,FY25,Nagaland,0,750,0
 2024-05,FY25,Odisha,4708,52757,0
 2024-05,FY25,Puducherry,282,4542,0
-2024-05,FY25,Punjab,1259,35641,0
+2024-05,FY25,Punjab,1259,35643,0
 2024-05,FY25,Rajasthan,4651,87790,0
 2024-05,FY25,Sikkim,1,641,0
 2024-05,FY25,Tamil Nadu,7147,120000,0
 2024-05,FY25,Telangana,4128,58439,0
 2024-05,FY25,Tripura,24,3459,0
 2024-05,FY25,Uttar Pradesh,5872,252050,0
-2024-05,FY25,Uttarakhand,609,17384,0
+2024-05,FY25,Uttarakhand,609,17385,0
 2024-05,FY25,West Bengal,1702,85937,0
 2024-06,FY25,Andaman & Nicobar Islands,1,443,0
 2024-06,FY25,Andhra Pradesh,4482,54598,0
@@ -1394,7 +1394,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-06,FY25,Nagaland,0,399,0
 2024-06,FY25,Odisha,4087,48889,0
 2024-06,FY25,Puducherry,275,4169,0
-2024-06,FY25,Punjab,1087,28843,0
+2024-06,FY25,Punjab,1087,28844,0
 2024-06,FY25,Rajasthan,5105,78618,0
 2024-06,FY25,Sikkim,0,592,0
 2024-06,FY25,Tamil Nadu,8483,122277,0
@@ -1413,7 +1413,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-07,FY25,Dadra & Nagar Haveli and Daman & Diu,32,969,0
 2024-07,FY25,Delhi,4641,37525,0
 2024-07,FY25,Goa,657,3099,0
-2024-07,FY25,Gujarat,7578,102159,0
+2024-07,FY25,Gujarat,7578,102153,0
 2024-07,FY25,Haryana,1215,34315,0
 2024-07,FY25,Himachal Pradesh,139,6080,0
 2024-07,FY25,Jammu and Kashmir,337,11266,0
@@ -1438,7 +1438,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-07,FY25,Tripura,62,3107,0
 2024-07,FY25,Uttar Pradesh,8448,198553,0
 2024-07,FY25,Uttarakhand,671,15361,0
-2024-07,FY25,West Bengal,2592,96297,0
+2024-07,FY25,West Bengal,2592,96296,0
 2024-08,FY25,Andaman & Nicobar Islands,5,495,0
 2024-08,FY25,Andhra Pradesh,2864,48675,0
 2024-08,FY25,Arunachal Pradesh,0,1590,0
@@ -1449,7 +1449,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-08,FY25,Dadra & Nagar Haveli and Daman & Diu,38,835,0
 2024-08,FY25,Delhi,2585,35740,0
 2024-08,FY25,Goa,542,4262,0
-2024-08,FY25,Gujarat,4854,94208,0
+2024-08,FY25,Gujarat,4854,94204,0
 2024-08,FY25,Haryana,2439,47341,0
 2024-08,FY25,Himachal Pradesh,124,6565,0
 2024-08,FY25,Jammu and Kashmir,340,10285,0
@@ -1459,14 +1459,14 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-08,FY25,Ladakh,0,125,0
 2024-08,FY25,Lakshadweep,0,8,0
 2024-08,FY25,Madhya Pradesh,4538,75226,0
-2024-08,FY25,Maharashtra,14618,137148,0
+2024-08,FY25,Maharashtra,14618,137147,0
 2024-08,FY25,Manipur,7,2461,0
 2024-08,FY25,Meghalaya,7,2034,0
 2024-08,FY25,Mizoram,34,1665,0
 2024-08,FY25,Nagaland,1,544,0
 2024-08,FY25,Odisha,4575,38032,0
 2024-08,FY25,Puducherry,317,4301,0
-2024-08,FY25,Punjab,2003,38248,0
+2024-08,FY25,Punjab,2003,38249,0
 2024-08,FY25,Rajasthan,5582,93405,0
 2024-08,FY25,Sikkim,0,514,0
 2024-08,FY25,Tamil Nadu,9997,128494,0
@@ -1494,7 +1494,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-09,FY25,Kerala,7129,60023,0
 2024-09,FY25,Ladakh,4,79,0
 2024-09,FY25,Lakshadweep,1,14,0
-2024-09,FY25,Madhya Pradesh,5052,64727,0
+2024-09,FY25,Madhya Pradesh,5052,64728,0
 2024-09,FY25,Maharashtra,15895,138087,0
 2024-09,FY25,Manipur,2,1498,0
 2024-09,FY25,Meghalaya,15,2006,0
@@ -1502,7 +1502,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-09,FY25,Nagaland,0,479,0
 2024-09,FY25,Odisha,3663,36448,0
 2024-09,FY25,Puducherry,372,4184,0
-2024-09,FY25,Punjab,1781,29248,0
+2024-09,FY25,Punjab,1781,29249,0
 2024-09,FY25,Rajasthan,5169,62930,0
 2024-09,FY25,Sikkim,0,466,0
 2024-09,FY25,Tamil Nadu,11137,123041,0
@@ -1525,7 +1525,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-10,FY25,Haryana,3131,57393,0
 2024-10,FY25,Himachal Pradesh,122,6602,0
 2024-10,FY25,Jammu and Kashmir,359,12932,0
-2024-10,FY25,Jharkhand,1449,49231,0
+2024-10,FY25,Jharkhand,1449,49232,0
 2024-10,FY25,Karnataka,17712,145484,0
 2024-10,FY25,Kerala,5710,46061,0
 2024-10,FY25,Ladakh,0,26,0
@@ -1536,14 +1536,14 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-10,FY25,Meghalaya,13,2155,0
 2024-10,FY25,Mizoram,49,1812,0
 2024-10,FY25,Nagaland,1,468,0
-2024-10,FY25,Odisha,6877,89168,0
+2024-10,FY25,Odisha,6877,89169,0
 2024-10,FY25,Puducherry,378,4250,0
 2024-10,FY25,Punjab,2907,44777,0
 2024-10,FY25,Rajasthan,11707,134853,0
 2024-10,FY25,Sikkim,0,544,0
 2024-10,FY25,Tamil Nadu,10204,119366,0
 2024-10,FY25,Telangana,4754,60427,0
-2024-10,FY25,Tripura,36,5048,0
+2024-10,FY25,Tripura,36,5047,0
 2024-10,FY25,Uttar Pradesh,13633,259937,0
 2024-10,FY25,Uttarakhand,883,20281,0
 2024-10,FY25,West Bengal,2284,96604,0
@@ -1553,21 +1553,21 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-11,FY25,Assam,320,30972,0
 2024-11,FY25,Bihar,2780,192630,0
 2024-11,FY25,Chandigarh,223,1945,0
-2024-11,FY25,Chhattisgarh,3522,87573,0
+2024-11,FY25,Chhattisgarh,3522,87572,0
 2024-11,FY25,Dadra & Nagar Haveli and Daman & Diu,14,1501,0
 2024-11,FY25,Delhi,1846,61899,0
 2024-11,FY25,Goa,442,4786,0
-2024-11,FY25,Gujarat,4102,147055,0
-2024-11,FY25,Haryana,2173,85795,0
-2024-11,FY25,Himachal Pradesh,134,10558,0
+2024-11,FY25,Gujarat,4102,147057,0
+2024-11,FY25,Haryana,2173,85794,0
+2024-11,FY25,Himachal Pradesh,134,10559,0
 2024-11,FY25,Jammu and Kashmir,242,7839,0
 2024-11,FY25,Jharkhand,1227,64425,0
-2024-11,FY25,Karnataka,13995,138483,0
+2024-11,FY25,Karnataka,13994,138482,0
 2024-11,FY25,Kerala,5874,40433,0
 2024-11,FY25,Ladakh,0,51,0
 2024-11,FY25,Lakshadweep,0,8,0
 2024-11,FY25,Madhya Pradesh,9909,249112,0
-2024-11,FY25,Maharashtra,21022,268481,0
+2024-11,FY25,Maharashtra,21022,268482,0
 2024-11,FY25,Manipur,3,1354,0
 2024-11,FY25,Meghalaya,33,1860,0
 2024-11,FY25,Mizoram,55,2089,0
@@ -1577,7 +1577,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2024-11,FY25,Punjab,2734,59461,0
 2024-11,FY25,Rajasthan,9456,246801,0
 2024-11,FY25,Sikkim,0,493,0
-2024-11,FY25,Tamil Nadu,11089,135784,0
+2024-11,FY25,Tamil Nadu,11089,135783,0
 2024-11,FY25,Telangana,6981,86552,0
 2024-11,FY25,Tripura,50,4052,0
 2024-11,FY25,Uttar Pradesh,13786,493399,0
@@ -1695,7 +1695,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-03,FY25,Andhra Pradesh,4174,49581,0
 2025-03,FY25,Arunachal Pradesh,3,1139,0
 2025-03,FY25,Assam,350,39423,0
-2025-03,FY25,Bihar,2467,92114,0
+2025-03,FY25,Bihar,2467,92113,0
 2025-03,FY25,Chandigarh,162,1761,0
 2025-03,FY25,Chhattisgarh,3136,46980,0
 2025-03,FY25,Dadra & Nagar Haveli and Daman & Diu,17,886,0
@@ -1706,7 +1706,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-03,FY25,Himachal Pradesh,106,5428,0
 2025-03,FY25,Jammu and Kashmir,190,6842,0
 2025-03,FY25,Jharkhand,1070,41677,0
-2025-03,FY25,Karnataka,17849,112311,0
+2025-03,FY25,Karnataka,17849,112310,0
 2025-03,FY25,Kerala,7767,44926,0
 2025-03,FY25,Ladakh,0,6,0
 2025-03,FY25,Lakshadweep,0,85,0
@@ -1726,7 +1726,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-03,FY25,Tripura,50,2931,0
 2025-03,FY25,Uttar Pradesh,12241,220566,0
 2025-03,FY25,Uttarakhand,499,12508,0
-2025-03,FY25,West Bengal,3053,77219,0
+2025-03,FY25,West Bengal,3053,77220,0
 2025-04,FY26,Andaman & Nicobar Islands,3,491,0
 2025-04,FY26,Andhra Pradesh,4001,58359,0
 2025-04,FY26,Arunachal Pradesh,8,1403,0
@@ -1737,7 +1737,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-04,FY26,Dadra & Nagar Haveli and Daman & Diu,17,1266,0
 2025-04,FY26,Delhi,2314,34777,0
 2025-04,FY26,Goa,477,4047,0
-2025-04,FY26,Gujarat,4185,96077,0
+2025-04,FY26,Gujarat,4185,96078,0
 2025-04,FY26,Haryana,1589,42801,0
 2025-04,FY26,Himachal Pradesh,60,5921,0
 2025-04,FY26,Jammu and Kashmir,201,8865,0
@@ -1760,7 +1760,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-04,FY26,Tamil Nadu,9830,126463,0
 2025-04,FY26,Telangana,3916,54646,0
 2025-04,FY26,Tripura,30,2668,0
-2025-04,FY26,Uttar Pradesh,8532,307283,0
+2025-04,FY26,Uttar Pradesh,8532,307282,0
 2025-04,FY26,Uttarakhand,605,16568,0
 2025-04,FY26,West Bengal,2289,91922,0
 2025-05,FY26,Andaman & Nicobar Islands,6,513,0
@@ -1809,7 +1809,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-06,FY26,Dadra & Nagar Haveli and Daman & Diu,8,824,0
 2025-06,FY26,Delhi,2785,37897,0
 2025-06,FY26,Goa,770,3507,0
-2025-06,FY26,Gujarat,5680,100626,0
+2025-06,FY26,Gujarat,5680,100625,0
 2025-06,FY26,Haryana,1342,43734,0
 2025-06,FY26,Himachal Pradesh,104,6450,0
 2025-06,FY26,Jammu and Kashmir,307,8960,0
@@ -1850,11 +1850,11 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-07,FY26,Himachal Pradesh,77,5733,0
 2025-07,FY26,Jammu and Kashmir,300,11046,0
 2025-07,FY26,Jharkhand,1003,32938,0
-2025-07,FY26,Karnataka,13203,93116,0
+2025-07,FY26,Karnataka,13203,93114,0
 2025-07,FY26,Kerala,6444,43946,0
 2025-07,FY26,Ladakh,0,94,0
 2025-07,FY26,Lakshadweep,1,38,0
-2025-07,FY26,Madhya Pradesh,8103,70395,0
+2025-07,FY26,Madhya Pradesh,8103,70396,0
 2025-07,FY26,Maharashtra,15228,159110,0
 2025-07,FY26,Manipur,25,2051,0
 2025-07,FY26,Meghalaya,26,2109,0
@@ -1870,7 +1870,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-07,FY26,Tripura,41,2621,0
 2025-07,FY26,Uttar Pradesh,10046,166807,0
 2025-07,FY26,Uttarakhand,814,14951,0
-2025-07,FY26,West Bengal,2343,70470,0
+2025-07,FY26,West Bengal,2343,70471,0
 2025-08,FY26,Andaman & Nicobar Islands,8,549,0
 2025-08,FY26,Andhra Pradesh,3792,54898,0
 2025-08,FY26,Arunachal Pradesh,5,1809,0
@@ -1881,7 +1881,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-08,FY26,Dadra & Nagar Haveli and Daman & Diu,6,872,0
 2025-08,FY26,Delhi,4464,40694,0
 2025-08,FY26,Goa,690,5334,0
-2025-08,FY26,Gujarat,4942,115420,0
+2025-08,FY26,Gujarat,4942,115419,0
 2025-08,FY26,Haryana,1103,42078,0
 2025-08,FY26,Himachal Pradesh,83,6353,0
 2025-08,FY26,Jammu and Kashmir,220,9267,0
@@ -1891,7 +1891,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-08,FY26,Ladakh,0,84,0
 2025-08,FY26,Lakshadweep,0,31,0
 2025-08,FY26,Madhya Pradesh,7305,74699,0
-2025-08,FY26,Maharashtra,16357,164547,0
+2025-08,FY26,Maharashtra,16357,164548,0
 2025-08,FY26,Manipur,45,3783,0
 2025-08,FY26,Meghalaya,30,2133,0
 2025-08,FY26,Mizoram,28,1901,0
@@ -1922,7 +1922,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-09,FY26,Himachal Pradesh,64,4437,0
 2025-09,FY26,Jammu and Kashmir,149,8003,0
 2025-09,FY26,Jharkhand,953,34982,0
-2025-09,FY26,Karnataka,14894,97514,0
+2025-09,FY26,Karnataka,14894,97513,0
 2025-09,FY26,Kerala,7191,50560,0
 2025-09,FY26,Ladakh,0,45,0
 2025-09,FY26,Lakshadweep,1,47,0
@@ -1953,11 +1953,11 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-10,FY26,Dadra & Nagar Haveli and Daman & Diu,11,1104,0
 2025-10,FY26,Delhi,4439,83337,0
 2025-10,FY26,Goa,823,7862,0
-2025-10,FY26,Gujarat,6610,256245,0
+2025-10,FY26,Gujarat,6610,256246,0
 2025-10,FY26,Haryana,1610,97368,0
 2025-10,FY26,Himachal Pradesh,84,6859,0
 2025-10,FY26,Jammu and Kashmir,266,15895,0
-2025-10,FY26,Jharkhand,1385,97709,0
+2025-10,FY26,Jharkhand,1385,97710,0
 2025-10,FY26,Karnataka,19293,194317,0
 2025-10,FY26,Kerala,6779,62864,0
 2025-10,FY26,Ladakh,0,49,0
@@ -1968,53 +1968,53 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-10,FY26,Meghalaya,19,2965,0
 2025-10,FY26,Mizoram,71,2091,0
 2025-10,FY26,Nagaland,2,275,0
-2025-10,FY26,Odisha,7753,114874,0
+2025-10,FY26,Odisha,7753,114875,0
 2025-10,FY26,Puducherry,312,5812,0
-2025-10,FY26,Punjab,3016,66835,0
-2025-10,FY26,Rajasthan,11365,232898,0
+2025-10,FY26,Punjab,3016,66836,0
+2025-10,FY26,Rajasthan,11365,232897,0
 2025-10,FY26,Sikkim,0,605,0
 2025-10,FY26,Tamil Nadu,12342,183343,0
 2025-10,FY26,Telangana,5870,71044,0
 2025-10,FY26,Tripura,47,3892,0
-2025-10,FY26,Uttar Pradesh,11338,498861,0
+2025-10,FY26,Uttar Pradesh,11338,498862,0
 2025-10,FY26,Uttarakhand,1143,32281,0
 2025-10,FY26,West Bengal,2419,131146,0
 2025-11,FY26,Andaman & Nicobar Islands,18,571,0
 2025-11,FY26,Andhra Pradesh,6505,103803,0
 2025-11,FY26,Arunachal Pradesh,3,1505,0
 2025-11,FY26,Assam,276,29623,0
-2025-11,FY26,Bihar,2720,196155,0
+2025-11,FY26,Bihar,2720,196156,0
 2025-11,FY26,Chandigarh,123,2668,0
-2025-11,FY26,Chhattisgarh,2639,53746,0
+2025-11,FY26,Chhattisgarh,2639,53745,0
 2025-11,FY26,Dadra & Nagar Haveli and Daman & Diu,19,2499,0
 2025-11,FY26,Delhi,3001,64818,0
 2025-11,FY26,Goa,561,5478,0
-2025-11,FY26,Gujarat,5102,172355,0
+2025-11,FY26,Gujarat,5102,172356,0
 2025-11,FY26,Haryana,993,90307,0
-2025-11,FY26,Himachal Pradesh,93,16887,0
+2025-11,FY26,Himachal Pradesh,93,16888,0
 2025-11,FY26,Jammu and Kashmir,161,7214,0
 2025-11,FY26,Jharkhand,999,54251,0
-2025-11,FY26,Karnataka,14863,129135,0
+2025-11,FY26,Karnataka,14863,129136,0
 2025-11,FY26,Kerala,6501,49036,0
 2025-11,FY26,Ladakh,0,33,0
 2025-11,FY26,Lakshadweep,4,62,0
-2025-11,FY26,Madhya Pradesh,9216,144968,0
+2025-11,FY26,Madhya Pradesh,9216,144967,0
 2025-11,FY26,Maharashtra,18405,299869,0
 2025-11,FY26,Manipur,33,2476,0
 2025-11,FY26,Meghalaya,21,2295,0
 2025-11,FY26,Mizoram,76,1813,0
 2025-11,FY26,Nagaland,3,788,0
-2025-11,FY26,Odisha,6244,57373,0
+2025-11,FY26,Odisha,6244,57375,0
 2025-11,FY26,Puducherry,349,4540,0
 2025-11,FY26,Punjab,2285,98643,0
 2025-11,FY26,Rajasthan,7520,201807,0
 2025-11,FY26,Sikkim,1,579,0
 2025-11,FY26,Tamil Nadu,12582,156717,0
-2025-11,FY26,Telangana,6930,84906,0
+2025-11,FY26,Telangana,6930,84905,0
 2025-11,FY26,Tripura,69,3780,0
 2025-11,FY26,Uttar Pradesh,13597,457091,0
 2025-11,FY26,Uttarakhand,1018,34314,0
-2025-11,FY26,West Bengal,1984,113984,0
+2025-11,FY26,West Bengal,1984,113985,0
 2025-12,FY26,Andaman & Nicobar Islands,1,623,0
 2025-12,FY26,Andhra Pradesh,4011,46421,0
 2025-12,FY26,Arunachal Pradesh,5,1234,0
@@ -2040,7 +2040,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-12,FY26,Meghalaya,5,1659,0
 2025-12,FY26,Mizoram,81,2078,0
 2025-12,FY26,Nagaland,0,459,0
-2025-12,FY26,Odisha,7139,54191,0
+2025-12,FY26,Odisha,7139,54192,0
 2025-12,FY26,Puducherry,345,4192,0
 2025-12,FY26,Punjab,1922,43245,0
 2025-12,FY26,Rajasthan,5266,57902,0
@@ -2048,7 +2048,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2025-12,FY26,Tamil Nadu,13331,125679,0
 2025-12,FY26,Telangana,6554,66832,0
 2025-12,FY26,Tripura,35,3123,0
-2025-12,FY26,Uttar Pradesh,7585,152458,0
+2025-12,FY26,Uttar Pradesh,7585,152459,0
 2025-12,FY26,Uttarakhand,667,12615,0
 2025-12,FY26,West Bengal,2057,85031,0
 2026-01,FY26,Andaman & Nicobar Islands,2,730,0
@@ -2059,10 +2059,10 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-01,FY26,Chandigarh,128,2316,0
 2026-01,FY26,Chhattisgarh,2907,51671,0
 2026-01,FY26,Dadra & Nagar Haveli and Daman & Diu,15,1315,0
-2026-01,FY26,Delhi,3882,55166,0
+2026-01,FY26,Delhi,3882,55165,0
 2026-01,FY26,Goa,618,5295,0
-2026-01,FY26,Gujarat,5533,133824,0
-2026-01,FY26,Haryana,919,53979,0
+2026-01,FY26,Gujarat,5532,133823,0
+2026-01,FY26,Haryana,919,53980,0
 2026-01,FY26,Himachal Pradesh,82,7283,0
 2026-01,FY26,Jammu and Kashmir,170,4990,0
 2026-01,FY26,Jharkhand,900,44203,0
@@ -2075,10 +2075,10 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-01,FY26,Manipur,28,2524,0
 2026-01,FY26,Meghalaya,13,2002,0
 2026-01,FY26,Mizoram,80,2478,0
-2026-01,FY26,Nagaland,2,539,0
+2026-01,FY26,Nagaland,2,537,0
 2026-01,FY26,Odisha,7324,69410,0
 2026-01,FY26,Puducherry,536,7457,0
-2026-01,FY26,Punjab,2135,51727,0
+2026-01,FY26,Punjab,2135,51726,0
 2026-01,FY26,Rajasthan,6569,94865,0
 2026-01,FY26,Sikkim,0,672,0
 2026-01,FY26,Tamil Nadu,15827,202996,0
@@ -2098,11 +2098,11 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-02,FY26,Delhi,2542,41371,0
 2026-02,FY26,Goa,613,5208,0
 2026-02,FY26,Gujarat,5042,117398,0
-2026-02,FY26,Haryana,740,42137,0
-2026-02,FY26,Himachal Pradesh,75,6080,0
+2026-02,FY26,Haryana,740,42136,0
+2026-02,FY26,Himachal Pradesh,75,6081,0
 2026-02,FY26,Jammu and Kashmir,224,7815,0
 2026-02,FY26,Jharkhand,823,38515,0
-2026-02,FY26,Karnataka,15482,119904,0
+2026-02,FY26,Karnataka,15482,119905,0
 2026-02,FY26,Kerala,7620,54110,0
 2026-02,FY26,Ladakh,0,34,0
 2026-02,FY26,Lakshadweep,10,141,0
@@ -2111,16 +2111,16 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-02,FY26,Manipur,32,2722,0
 2026-02,FY26,Meghalaya,6,1960,0
 2026-02,FY26,Mizoram,82,1902,0
-2026-02,FY26,Nagaland,1,607,0
+2026-02,FY26,Nagaland,1,606,0
 2026-02,FY26,Odisha,6840,68686,0
 2026-02,FY26,Puducherry,425,5647,0
 2026-02,FY26,Punjab,1860,42902,0
-2026-02,FY26,Rajasthan,5960,81431,0
+2026-02,FY26,Rajasthan,5960,81432,0
 2026-02,FY26,Sikkim,6,542,0
 2026-02,FY26,Tamil Nadu,15410,187664,0
 2026-02,FY26,Telangana,5525,57635,0
 2026-02,FY26,Tripura,28,2767,0
-2026-02,FY26,Uttar Pradesh,8530,241803,0
+2026-02,FY26,Uttar Pradesh,8531,241806,0
 2026-02,FY26,Uttarakhand,603,14853,0
 2026-02,FY26,West Bengal,2044,83529,0
 2026-03,FY26,Andaman & Nicobar Islands,8,756,0
@@ -2133,7 +2133,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-03,FY26,Dadra & Nagar Haveli and Daman & Diu,18,950,0
 2026-03,FY26,Delhi,4126,47082,0
 2026-03,FY26,Goa,1265,6513,0
-2026-03,FY26,Gujarat,8705,134965,0
+2026-03,FY26,Gujarat,8705,134967,0
 2026-03,FY26,Haryana,1524,47747,0
 2026-03,FY26,Himachal Pradesh,111,6198,0
 2026-03,FY26,Jammu and Kashmir,470,10483,0
@@ -2162,7 +2162,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-04,FY27,Andaman & Nicobar Islands,3,661,0
 2026-04,FY27,Andhra Pradesh,7636,73127,0
 2026-04,FY27,Arunachal Pradesh,4,1612,0
-2026-04,FY27,Assam,434,40468,0
+2026-04,FY27,Assam,434,40469,0
 2026-04,FY27,Bihar,3194,136926,0
 2026-04,FY27,Chandigarh,140,2186,0
 2026-04,FY27,Chhattisgarh,2601,38614,0
@@ -2174,7 +2174,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-04,FY27,Himachal Pradesh,103,6791,0
 2026-04,FY27,Jammu and Kashmir,405,10806,0
 2026-04,FY27,Jharkhand,1216,56602,0
-2026-04,FY27,Karnataka,21075,128897,0
+2026-04,FY27,Karnataka,21075,128899,0
 2026-04,FY27,Kerala,8845,52984,0
 2026-04,FY27,Ladakh,0,37,0
 2026-04,FY27,Lakshadweep,6,92,0
@@ -2184,17 +2184,17 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-04,FY27,Meghalaya,25,2322,0
 2026-04,FY27,Mizoram,90,2254,0
 2026-04,FY27,Nagaland,0,626,0
-2026-04,FY27,Odisha,9933,72349,0
+2026-04,FY27,Odisha,9933,72348,0
 2026-04,FY27,Puducherry,493,5291,0
 2026-04,FY27,Punjab,2963,44692,0
 2026-04,FY27,Rajasthan,8845,102989,0
 2026-04,FY27,Sikkim,0,590,0
-2026-04,FY27,Tamil Nadu,18902,162433,0
+2026-04,FY27,Tamil Nadu,18902,162432,0
 2026-04,FY27,Telangana,7430,61733,0
 2026-04,FY27,Tripura,29,2743,0
 2026-04,FY27,Uttar Pradesh,12827,322218,0
 2026-04,FY27,Uttarakhand,979,18733,0
-2026-04,FY27,West Bengal,2432,89286,0
+2026-04,FY27,West Bengal,2432,89287,0
 2026-05,FY27,Andaman & Nicobar Islands,9,636,0
 2026-05,FY27,Andhra Pradesh,7448,62743,0
 2026-05,FY27,Arunachal Pradesh,4,1478,0
@@ -2215,7 +2215,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-05,FY27,Ladakh,0,157,0
 2026-05,FY27,Lakshadweep,17,122,0
 2026-05,FY27,Madhya Pradesh,10904,102720,0
-2026-05,FY27,Maharashtra,23299,183209,0
+2026-05,FY27,Maharashtra,23299,183210,0
 2026-05,FY27,Manipur,87,3257,0
 2026-05,FY27,Meghalaya,7,2422,0
 2026-05,FY27,Mizoram,114,2273,0
@@ -2234,7 +2234,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-06,FY27,Andaman & Nicobar Islands,0,746,0
 2026-06,FY27,Andhra Pradesh,9200,71599,0
 2026-06,FY27,Arunachal Pradesh,2,1637,0
-2026-06,FY27,Assam,668,32557,0
+2026-06,FY27,Assam,668,32556,0
 2026-06,FY27,Bihar,4138,104412,0
 2026-06,FY27,Chandigarh,153,2264,0
 2026-06,FY27,Chhattisgarh,4021,41017,0
@@ -2244,7 +2244,7 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-06,FY27,Gujarat,9001,116221,0
 2026-06,FY27,Haryana,1597,47184,0
 2026-06,FY27,Himachal Pradesh,104,6287,0
-2026-06,FY27,Jammu and Kashmir,509,12645,0
+2026-06,FY27,Jammu and Kashmir,509,12647,0
 2026-06,FY27,Jharkhand,1710,44728,0
 2026-06,FY27,Karnataka,24363,133065,0
 2026-06,FY27,Kerala,10174,61430,0
@@ -2259,9 +2259,9 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-06,FY27,Odisha,13166,64675,0
 2026-06,FY27,Puducherry,618,6295,0
 2026-06,FY27,Punjab,3522,45017,0
-2026-06,FY27,Rajasthan,10527,85299,0
+2026-06,FY27,Rajasthan,10527,85298,0
 2026-06,FY27,Sikkim,1,636,0
-2026-06,FY27,Tamil Nadu,23936,185674,0
+2026-06,FY27,Tamil Nadu,23936,185673,0
 2026-06,FY27,Telangana,8418,60782,0
 2026-06,FY27,Tripura,104,2852,0
 2026-06,FY27,Uttar Pradesh,15844,256813,0
@@ -2282,48 +2282,48 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-07,FY27,Himachal Pradesh,126,9154,0
 2026-07,FY27,Jammu and Kashmir,417,12388,0
 2026-07,FY27,Jharkhand,1800,40138,0
-2026-07,FY27,Karnataka,25776,131710,0
-2026-07,FY27,Kerala,10243,60667,0
+2026-07,FY27,Karnataka,25776,131711,0
+2026-07,FY27,Kerala,10244,60670,0
 2026-07,FY27,Ladakh,0,187,0
 2026-07,FY27,Lakshadweep,6,56,0
-2026-07,FY27,Madhya Pradesh,14562,88439,0
+2026-07,FY27,Madhya Pradesh,14562,88440,0
 2026-07,FY27,Maharashtra,29066,195811,0
 2026-07,FY27,Manipur,18,1150,0
 2026-07,FY27,Meghalaya,9,2343,0
 2026-07,FY27,Mizoram,160,2728,0
 2026-07,FY27,Nagaland,2,661,0
-2026-07,FY27,Odisha,12939,59717,0
+2026-07,FY27,Odisha,12939,59718,0
 2026-07,FY27,Puducherry,642,6532,0
 2026-07,FY27,Punjab,3602,48080,0
-2026-07,FY27,Rajasthan,10844,92961,0
+2026-07,FY27,Rajasthan,10844,92954,0
 2026-07,FY27,Sikkim,0,626,0
-2026-07,FY27,Tamil Nadu,24242,194303,0
+2026-07,FY27,Tamil Nadu,24242,194302,0
 2026-07,FY27,Telangana,8881,71844,0
 2026-07,FY27,Tripura,81,2973,0
-2026-07,FY27,Uttar Pradesh,17201,213378,0
+2026-07,FY27,Uttar Pradesh,17201,213380,0
 2026-07,FY27,Uttarakhand,1503,19754,0
-2026-07,FY27,West Bengal,4560,94260,0
+2026-07,FY27,West Bengal,4560,94261,0
 2026-08,FY27,Andaman & Nicobar Islands,7,571,0
 2026-08,FY27,Andhra Pradesh,8753,72020,0
 2026-08,FY27,Arunachal Pradesh,0,1604,0
 2026-08,FY27,Assam,585,30812,0
 2026-08,FY27,Bihar,3926,77571,0
 2026-08,FY27,Chandigarh,83,2365,0
-2026-08,FY27,Chhattisgarh,3955,36034,0
+2026-08,FY27,Chhattisgarh,3954,36034,0
 2026-08,FY27,Dadra & Nagar Haveli and Daman & Diu,23,1159,0
-2026-08,FY27,Delhi,6697,51360,0
+2026-08,FY27,Delhi,6697,51361,0
 2026-08,FY27,Goa,977,4686,0
 2026-08,FY27,Gujarat,8666,127181,0
 2026-08,FY27,Haryana,1382,52511,0
 2026-08,FY27,Himachal Pradesh,108,7289,0
 2026-08,FY27,Jammu and Kashmir,385,12642,0
 2026-08,FY27,Jharkhand,1621,37129,0
-2026-08,FY27,Karnataka,23533,133341,0
+2026-08,FY27,Karnataka,23533,133342,0
 2026-08,FY27,Kerala,11446,73049,0
 2026-08,FY27,Ladakh,0,96,0
 2026-08,FY27,Lakshadweep,3,68,0
-2026-08,FY27,Madhya Pradesh,11646,85938,0
-2026-08,FY27,Maharashtra,24629,191435,0
+2026-08,FY27,Madhya Pradesh,11646,85941,0
+2026-08,FY27,Maharashtra,24629,191434,0
 2026-08,FY27,Manipur,20,1716,0
 2026-08,FY27,Meghalaya,7,2290,0
 2026-08,FY27,Mizoram,114,2220,0
@@ -2331,40 +2331,40 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-08,FY27,Odisha,12683,53929,0
 2026-08,FY27,Puducherry,593,5913,0
 2026-08,FY27,Punjab,2973,49563,0
-2026-08,FY27,Rajasthan,11462,94378,0
+2026-08,FY27,Rajasthan,11462,94376,0
 2026-08,FY27,Sikkim,0,594,0
 2026-08,FY27,Tamil Nadu,20065,174132,0
 2026-08,FY27,Telangana,8716,62463,0
 2026-08,FY27,Tripura,56,2949,0
-2026-08,FY27,Uttar Pradesh,15306,195513,0
+2026-08,FY27,Uttar Pradesh,15306,195515,0
 2026-08,FY27,Uttarakhand,1016,17439,0
 2026-08,FY27,West Bengal,3548,66499,0
 2026-09,FY27,Andaman & Nicobar Islands,2,904,0
 2026-09,FY27,Andhra Pradesh,8188,61269,0
 2026-09,FY27,Arunachal Pradesh,4,1574,0
 2026-09,FY27,Assam,570,33114,0
-2026-09,FY27,Bihar,4903,79193,0
+2026-09,FY27,Bihar,4903,79194,0
 2026-09,FY27,Chandigarh,95,2185,0
-2026-09,FY27,Chhattisgarh,3789,34339,0
+2026-09,FY27,Chhattisgarh,3789,34349,0
 2026-09,FY27,Dadra & Nagar Haveli and Daman & Diu,19,1419,0
-2026-09,FY27,Delhi,8825,59176,0
+2026-09,FY27,Delhi,8825,59177,0
 2026-09,FY27,Goa,1132,6487,0
 2026-09,FY27,Gujarat,9543,132228,0
-2026-09,FY27,Haryana,1845,57843,0
+2026-09,FY27,Haryana,1845,57845,0
 2026-09,FY27,Himachal Pradesh,121,7225,0
-2026-09,FY27,Jammu and Kashmir,419,11996,0
-2026-09,FY27,Jharkhand,1805,36959,0
-2026-09,FY27,Karnataka,25203,130339,0
-2026-09,FY27,Kerala,12198,80093,0
+2026-09,FY27,Jammu and Kashmir,419,11998,0
+2026-09,FY27,Jharkhand,1806,36960,0
+2026-09,FY27,Karnataka,25204,130348,0
+2026-09,FY27,Kerala,12198,80096,0
 2026-09,FY27,Ladakh,0,88,0
 2026-09,FY27,Lakshadweep,5,40,0
-2026-09,FY27,Madhya Pradesh,14969,92838,0
-2026-09,FY27,Maharashtra,31256,215196,0
+2026-09,FY27,Madhya Pradesh,14971,92853,0
+2026-09,FY27,Maharashtra,31257,215197,0
 2026-09,FY27,Manipur,16,1854,0
 2026-09,FY27,Meghalaya,6,2665,0
 2026-09,FY27,Mizoram,155,2348,0
 2026-09,FY27,Nagaland,0,678,0
-2026-09,FY27,Odisha,13336,58025,0
+2026-09,FY27,Odisha,13337,58026,0
 2026-09,FY27,Puducherry,560,5234,0
 2026-09,FY27,Punjab,3672,50957,0
 2026-09,FY27,Rajasthan,11916,95363,0
@@ -2372,35 +2372,35 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-09,FY27,Tamil Nadu,22586,172919,0
 2026-09,FY27,Telangana,9316,66129,0
 2026-09,FY27,Tripura,63,3048,0
-2026-09,FY27,Uttar Pradesh,16874,194748,0
+2026-09,FY27,Uttar Pradesh,16874,194755,0
 2026-09,FY27,Uttarakhand,1167,18107,0
 2026-09,FY27,West Bengal,4331,86905,0
 2026-10,FY27,Andaman & Nicobar Islands,35,680,0
 2026-10,FY27,Andhra Pradesh,11044,116963,0
 2026-10,FY27,Arunachal Pradesh,0,1518,0
 2026-10,FY27,Assam,639,50703,0
-2026-10,FY27,Bihar,5036,93496,0
-2026-10,FY27,Chandigarh,102,2542,0
-2026-10,FY27,Chhattisgarh,4744,48852,0
+2026-10,FY27,Bihar,5037,93501,0
+2026-10,FY27,Chandigarh,102,2544,0
+2026-10,FY27,Chhattisgarh,4753,48871,0
 2026-10,FY27,Dadra & Nagar Haveli and Daman & Diu,40,1734,0
-2026-10,FY27,Delhi,8054,64347,0
+2026-10,FY27,Delhi,8054,64350,0
 2026-10,FY27,Goa,951,6585,0
-2026-10,FY27,Gujarat,11963,222198,0
+2026-10,FY27,Gujarat,11963,222199,0
 2026-10,FY27,Haryana,2149,70394,0
 2026-10,FY27,Himachal Pradesh,128,8035,0
-2026-10,FY27,Jammu and Kashmir,473,10524,0
-2026-10,FY27,Jharkhand,2229,49000,0
-2026-10,FY27,Karnataka,24553,160513,0
-2026-10,FY27,Kerala,9394,58775,0
+2026-10,FY27,Jammu and Kashmir,473,10526,0
+2026-10,FY27,Jharkhand,2229,49005,0
+2026-10,FY27,Karnataka,24557,160545,0
+2026-10,FY27,Kerala,9403,58841,0
 2026-10,FY27,Ladakh,0,30,0
 2026-10,FY27,Lakshadweep,12,87,0
-2026-10,FY27,Madhya Pradesh,16562,130676,0
-2026-10,FY27,Maharashtra,33529,271286,0
+2026-10,FY27,Madhya Pradesh,16568,130724,0
+2026-10,FY27,Maharashtra,33529,271302,0
 2026-10,FY27,Manipur,68,2615,0
 2026-10,FY27,Meghalaya,5,3038,0
 2026-10,FY27,Mizoram,143,2438,0
 2026-10,FY27,Nagaland,0,764,0
-2026-10,FY27,Odisha,16356,104580,0
+2026-10,FY27,Odisha,16356,104578,0
 2026-10,FY27,Puducherry,527,5317,0
 2026-10,FY27,Punjab,3558,55438,0
 2026-10,FY27,Rajasthan,15992,137258,0
@@ -2408,42 +2408,42 @@ month,fy,state,e2w_units,total_2w_units,partial
 2026-10,FY27,Tamil Nadu,19885,151351,0
 2026-10,FY27,Telangana,11788,76062,0
 2026-10,FY27,Tripura,43,3949,0
-2026-10,FY27,Uttar Pradesh,18785,264991,0
+2026-10,FY27,Uttar Pradesh,18796,265071,0
 2026-10,FY27,Uttarakhand,1190,21551,0
 2026-10,FY27,West Bengal,5473,134142,0
-2026-11,FY27,Andaman & Nicobar Islands,18,573,1
-2026-11,FY27,Andhra Pradesh,7366,65947,1
-2026-11,FY27,Arunachal Pradesh,6,1197,1
-2026-11,FY27,Assam,393,32357,1
-2026-11,FY27,Bihar,5092,194493,1
-2026-11,FY27,Chandigarh,99,3297,1
-2026-11,FY27,Chhattisgarh,4490,89994,1
-2026-11,FY27,Dadra & Nagar Haveli and Daman & Diu,22,1302,1
-2026-11,FY27,Delhi,5717,75024,1
-2026-11,FY27,Goa,803,5708,1
-2026-11,FY27,Gujarat,7344,195032,1
-2026-11,FY27,Haryana,1999,105948,1
-2026-11,FY27,Himachal Pradesh,119,7245,1
-2026-11,FY27,Jammu and Kashmir,359,11579,1
-2026-11,FY27,Jharkhand,1860,80813,1
-2026-11,FY27,Karnataka,18586,146549,1
-2026-11,FY27,Kerala,7747,42599,1
+2026-11,FY27,Andaman & Nicobar Islands,18,619,1
+2026-11,FY27,Andhra Pradesh,7825,68814,1
+2026-11,FY27,Arunachal Pradesh,6,1279,1
+2026-11,FY27,Assam,417,33546,1
+2026-11,FY27,Bihar,5339,203020,1
+2026-11,FY27,Chandigarh,104,3374,1
+2026-11,FY27,Chhattisgarh,4676,92931,1
+2026-11,FY27,Dadra & Nagar Haveli and Daman & Diu,25,1405,1
+2026-11,FY27,Delhi,5949,78251,1
+2026-11,FY27,Goa,833,5914,1
+2026-11,FY27,Gujarat,7773,205010,1
+2026-11,FY27,Haryana,2094,110178,1
+2026-11,FY27,Himachal Pradesh,136,8200,1
+2026-11,FY27,Jammu and Kashmir,375,11878,1
+2026-11,FY27,Jharkhand,1896,82648,1
+2026-11,FY27,Karnataka,19606,152140,1
+2026-11,FY27,Kerala,8226,44876,1
 2026-11,FY27,Ladakh,0,25,1
-2026-11,FY27,Lakshadweep,5,110,1
-2026-11,FY27,Madhya Pradesh,16275,246059,1
-2026-11,FY27,Maharashtra,28322,272988,1
-2026-11,FY27,Manipur,125,2348,1
-2026-11,FY27,Meghalaya,0,2174,1
-2026-11,FY27,Mizoram,162,1607,1
-2026-11,FY27,Nagaland,0,707,1
-2026-11,FY27,Odisha,10290,68248,1
-2026-11,FY27,Puducherry,391,4393,1
-2026-11,FY27,Punjab,3765,88581,1
-2026-11,FY27,Rajasthan,14131,241796,1
-2026-11,FY27,Sikkim,0,417,1
-2026-11,FY27,Tamil Nadu,17821,156131,1
-2026-11,FY27,Telangana,8998,79105,1
-2026-11,FY27,Tripura,50,3998,1
-2026-11,FY27,Uttar Pradesh,16433,505952,1
-2026-11,FY27,Uttarakhand,1049,30814,1
-2026-11,FY27,West Bengal,2923,95166,1
+2026-11,FY27,Lakshadweep,6,113,1
+2026-11,FY27,Madhya Pradesh,16859,253893,1
+2026-11,FY27,Maharashtra,29865,286526,1
+2026-11,FY27,Manipur,144,2611,1
+2026-11,FY27,Meghalaya,0,2320,1
+2026-11,FY27,Mizoram,189,1819,1
+2026-11,FY27,Nagaland,0,801,1
+2026-11,FY27,Odisha,10723,70762,1
+2026-11,FY27,Puducherry,419,4640,1
+2026-11,FY27,Punjab,3976,94228,1
+2026-11,FY27,Rajasthan,14581,252369,1
+2026-11,FY27,Sikkim,0,432,1
+2026-11,FY27,Tamil Nadu,18840,164361,1
+2026-11,FY27,Telangana,9894,86050,1
+2026-11,FY27,Tripura,50,4198,1
+2026-11,FY27,Uttar Pradesh,17327,528615,1
+2026-11,FY27,Uttarakhand,1138,33641,1
+2026-11,FY27,West Bengal,3125,100466,1
